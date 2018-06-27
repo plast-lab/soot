@@ -1,9 +1,9 @@
 package soot.baf;
 
-import org.objectweb.asm.Handle;
-import org.objectweb.asm.Label;
-import org.objectweb.asm.MethodVisitor;
-import org.objectweb.asm.Opcodes;
+import modified.org.objectweb.asm.Handle;
+import modified.org.objectweb.asm.Label;
+import modified.org.objectweb.asm.MethodVisitor;
+import modified.org.objectweb.asm.Opcodes;
 import soot.*;
 import soot.baf.internal.BafLocal;
 import soot.jimple.*;
@@ -91,7 +91,7 @@ public class BafASMBackend extends AbstractASMBackend {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see soot.AbstractASMBackend#generateMethodBody(org.objectweb.asm.
+	 * @see soot.AbstractASMBackend#generateMethodBody(modified.org.objectweb.asm.
 	 * MethodVisitor, soot.SootMethod)
 	 */
 	@Override
@@ -348,7 +348,7 @@ public class BafASMBackend extends AbstractASMBackend {
 				} else if (c instanceof StringConstant) {
 					mv.visitLdcInsn(((StringConstant) c).value);
 				} else if (c instanceof ClassConstant) {
-					mv.visitLdcInsn(org.objectweb.asm.Type.getType(((ClassConstant) c).getValue()));
+					mv.visitLdcInsn(modified.org.objectweb.asm.Type.getType(((ClassConstant) c).getValue()));
 				} else if (c instanceof DoubleConstant) {
 					double v = ((DoubleConstant) c).value;
 					/*
@@ -1293,7 +1293,7 @@ public class BafASMBackend extends AbstractASMBackend {
 
 						@Override
 						public void caseClassConstant(ClassConstant v) {
-							argsArray[j] = org.objectweb.asm.Type.getType(v.getValue());
+							argsArray[j] = modified.org.objectweb.asm.Type.getType(v.getValue());
 						}
 					});
 					++index;

@@ -18,7 +18,7 @@
  */
 package soot.asm;
 
-import org.objectweb.asm.tree.AbstractInsnNode;
+import modified.org.objectweb.asm.tree.AbstractInsnNode;
 import soot.Local;
 import soot.Value;
 import soot.ValueBox;

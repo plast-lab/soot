@@ -18,8 +18,8 @@
  */
 package soot.asm;
 
-import org.objectweb.asm.*;
-import org.objectweb.asm.Attribute;
+import modified.org.objectweb.asm.*;
+import modified.org.objectweb.asm.Attribute;
 import soot.*;
 import soot.Type;
 import soot.tagkit.*;

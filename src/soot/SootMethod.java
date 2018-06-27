@@ -19,7 +19,7 @@
  */
 
 /*
- * Modified by the Sable Research Group and others 1997-1999.  
+ * Modified by the Sable Research Group and others 1997-1999.
  * See the 'credits' file distributed with Soot for the complete list of
  * contributors.  (Soot is distributed at http://www.sable.mcgill.ca/soot)
  */
@@ -31,6 +31,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.StringTokenizer;
 
 import soot.dava.DavaBody;
@@ -89,6 +90,9 @@ public class SootMethod extends AbstractHost implements ClassMember, Numberable,
 	/** Tells this method how to find out where its body lives. */
 	protected volatile MethodSource ms;
 
+	/** Bytecode offset map obtained from a MethodSource. */
+        protected volatile Map<Unit, Integer> offsetMap;
+
 	/**
 	 * Uses methodSource to retrieve the method body in question; does not set
 	 * it to be the active body.
@@ -129,14 +133,26 @@ public class SootMethod extends AbstractHost implements ClassMember, Numberable,
 		}
 	}
 
+
+
 	/** Sets the MethodSource of the current SootMethod. */
 	public void setSource(MethodSource ms) {
-		this.ms = ms;
+	        this.ms = ms;
 	}
 
 	/** Returns the MethodSource of the current SootMethod. */
 	public MethodSource getSource() {
 		return ms;
+	}
+
+	/** Returns the bytecode offset map of the current SootMethod. */
+        public Map<Unit, Integer> getOffsetMap() {
+	    if (offsetMap != null) return offsetMap;
+	    if (ms != null && ms.hasBytecodeOffsetMap()) {
+		offsetMap = ms.bytecodeOffsetMap();
+		return offsetMap;
+	    }
+	    return null;
 	}
 
 	/**
@@ -276,7 +292,7 @@ public class SootMethod extends AbstractHost implements ClassMember, Numberable,
 
 	/**
 	 * Gets the modifiers of this method.
-	 * 
+	 *
 	 * @see soot.Modifier
 	 */
 	@Override
@@ -286,7 +302,7 @@ public class SootMethod extends AbstractHost implements ClassMember, Numberable,
 
 	/**
 	 * Sets the modifiers of this method.
-	 * 
+	 *
 	 * @see soot.Modifier
 	 */
 	@Override
@@ -386,8 +402,9 @@ public class SootMethod extends AbstractHost implements ClassMember, Numberable,
 		setActiveBody(b);
 
 		// If configured, we drop the method source to save memory
-		if (Options.v().drop_bodies_after_load())
+		if (Options.v().drop_bodies_after_load()) {
 			ms = null;
+		}
 
 		return b;
 	}
@@ -551,7 +568,7 @@ public class SootMethod extends AbstractHost implements ClassMember, Numberable,
 	}
 
 	/**
-	 * 
+	 *
 	 * @return yes if this is the main method
 	 */
 	public boolean isMain() {
@@ -565,7 +582,7 @@ public class SootMethod extends AbstractHost implements ClassMember, Numberable,
 	}
 
 	/**
-	 * 
+	 *
 	 * @return yes, if this function is a constructor. Please not that <clinit>
 	 *         methods are not treated as constructors in this method.
 	 */
@@ -574,7 +591,7 @@ public class SootMethod extends AbstractHost implements ClassMember, Numberable,
 	}
 
 	/**
-	 * 
+	 *
 	 * @return yes, if this function is a static initializer.
 	 */
 	public boolean isStaticInitializer() {

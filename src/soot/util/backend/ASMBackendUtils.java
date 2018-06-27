@@ -1,8 +1,8 @@
 package soot.util.backend;
 
 
-import org.objectweb.asm.ByteVector;
-import org.objectweb.asm.ClassWriter;
+import modified.org.objectweb.asm.ByteVector;
+import modified.org.objectweb.asm.ClassWriter;
 import soot.*;
 import soot.baf.DoubleWordType;
 import soot.options.Options;
@@ -176,9 +176,9 @@ public class ASMBackendUtils {
      * @param attr Soot attribute
      * @return ASM attribute
      */
-    public static org.objectweb.asm.Attribute createASMAttribute(Attribute attr) {
+    public static modified.org.objectweb.asm.Attribute createASMAttribute(Attribute attr) {
         final Attribute a = attr;
-        return new org.objectweb.asm.Attribute(
+        return new modified.org.objectweb.asm.Attribute(
                 attr.getName()) {
             @Override
             protected ByteVector write(final ClassWriter cw,

@@ -1,6 +1,6 @@
 package soot.util.backend;
 
-import org.objectweb.asm.ClassWriter;
+import modified.org.objectweb.asm.ClassWriter;
 import soot.RefType;
 import soot.Scene;
 import soot.SootClass;
@@ -34,7 +34,7 @@ public class SootASMClassWriter extends ClassWriter{
 	 * top of page 45 for more information.
 	 */	
 	/* (non-Javadoc)
-	 * @see org.objectweb.asm.ClassWriter#getCommonSuperClass(java.lang.String, java.lang.String)
+	 * @see modified.org.objectweb.asm.ClassWriter#getCommonSuperClass(java.lang.String, java.lang.String)
 	 */
 	@Override
 	protected String getCommonSuperClass(String type1, String type2) {

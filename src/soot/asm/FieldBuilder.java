@@ -18,10 +18,10 @@
  */
 package soot.asm;
 
-import org.objectweb.asm.AnnotationVisitor;
-import org.objectweb.asm.Attribute;
-import org.objectweb.asm.FieldVisitor;
-import org.objectweb.asm.Opcodes;
+import modified.org.objectweb.asm.AnnotationVisitor;
+import modified.org.objectweb.asm.Attribute;
+import modified.org.objectweb.asm.FieldVisitor;
+import modified.org.objectweb.asm.Opcodes;
 import soot.SootField;
 
 /**

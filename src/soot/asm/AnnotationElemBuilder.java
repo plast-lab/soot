@@ -18,9 +18,9 @@
  */
 package soot.asm;
 
-import org.objectweb.asm.AnnotationVisitor;
-import org.objectweb.asm.Opcodes;
-import org.objectweb.asm.Type;
+import modified.org.objectweb.asm.AnnotationVisitor;
+import modified.org.objectweb.asm.Opcodes;
+import modified.org.objectweb.asm.Type;
 import soot.tagkit.*;
 
 import java.util.ArrayList;

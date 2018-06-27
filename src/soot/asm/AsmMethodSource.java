@@ -22,9 +22,9 @@ import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.HashBasedTable;
 import com.google.common.collect.Multimap;
 import com.google.common.collect.Table;
-import org.objectweb.asm.Handle;
-import org.objectweb.asm.Label;
-import org.objectweb.asm.tree.*;
+import modified.org.objectweb.asm.Handle;
+import modified.org.objectweb.asm.Label;
+import modified.org.objectweb.asm.tree.*;
 import soot.*;
 import soot.coffi.Util;
 import soot.jimple.*;
@@ -40,8 +40,8 @@ import soot.util.Chain;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
-import static org.objectweb.asm.Opcodes.*;
-import static org.objectweb.asm.tree.AbstractInsnNode.*;
+import static modified.org.objectweb.asm.Opcodes.*;
+import static modified.org.objectweb.asm.tree.AbstractInsnNode.*;
 
 /**
  * Generates Jimple bodies from bytecode.
@@ -74,10 +74,12 @@ final class AsmMethodSource implements MethodSource {
 
 	private final CastAndReturnInliner castAndReturnInliner = new CastAndReturnInliner();
 	private final Map<Label, LineNumberNode> labelToLineNodeMap = new LinkedHashMap<>();
+        private Map<AbstractInsnNode, Integer> asmOffsetMap;
+        private Map<Unit, Integer> sootOffsetMap;
 	private Label latestLabel = null;
 	private int latestLine = -1;
 
-	AsmMethodSource(String signature, int maxLocals, InsnList insns, List<LocalVariableNode> localVars, List<TryCatchBlockNode> tryCatchBlocks) {
+    AsmMethodSource(String signature, int maxLocals, InsnList insns, List<LocalVariableNode> localVars, List<TryCatchBlockNode> tryCatchBlocks, Map<AbstractInsnNode, Integer> asmOffsetMap) {
 
 
 		this.signature = signature;
@@ -85,11 +87,39 @@ final class AsmMethodSource implements MethodSource {
 		this.instructions = insns;
 		this.localVars = localVars;
 		this.tryCatchBlocks = tryCatchBlocks;
+		this.asmOffsetMap = asmOffsetMap;
+		this.sootOffsetMap = new HashMap<>();
 		for (int i = 0; i < insns.size(); i++) {
 			if (insns.get(i) instanceof LineNumberNode) {
 				labelToLineNodeMap.put(((LineNumberNode) insns.get(i)).start.getLabel(), (LineNumberNode) insns.get(i));
 			}
 		}
+	}
+
+        public boolean hasBytecodeOffsetMap() { return true; }
+        public Map<Unit, Integer> bytecodeOffsetMap() { return sootOffsetMap; }
+
+        private void setUnitOffset(Unit u, int offset) {
+	    if (u instanceof UnitContainer) {
+		    for (Unit uu : ((UnitContainer) u).units)
+			    setUnitOffset(uu, offset);
+	    }
+	    else sootOffsetMap.put(u, offset);
+	}
+
+        private void createOffsetMap() {
+	    for (Map.Entry<AbstractInsnNode, Integer> e: asmOffsetMap.entrySet()) {
+		AbstractInsnNode asmNode = e.getKey();
+		int offset = e.getValue();
+		Unit unit = units.get(asmNode);
+		if (unit == null) continue;
+		setUnitOffset(unit, offset);
+	    }
+	    // for (Unit unit: units.values()) {
+		// if (!sootOffsetMap.containsKey(unit))
+		    // System.out.println("No offset for " + unit);
+	    // }
+	    asmOffsetMap = null;
 	}
 
 	private StackFrame getFrame(AbstractInsnNode insn) {
@@ -1049,8 +1079,8 @@ final class AsmMethodSource implements MethodSource {
 			v = DoubleConstant.v((Double) val);
 		else if (val instanceof String)
 			v = StringConstant.v(val.toString());
-		else if (val instanceof org.objectweb.asm.Type)
-			v = ClassConstant.v(((org.objectweb.asm.Type) val).getDescriptor());
+		else if (val instanceof modified.org.objectweb.asm.Type)
+			v = ClassConstant.v(((modified.org.objectweb.asm.Type) val).getDescriptor());
 		else if (val instanceof Handle)
 			v = MethodHandle.v(toSootMethodRef((Handle) val), ((Handle)val).getTag());
 		else
@@ -1685,6 +1715,13 @@ final class AsmMethodSource implements MethodSource {
 		for (Local l : locals.values()){
 			jbl.add(l);
 		}
+		// These units do not correspond to any bytecode. But
+		// to make the Soot CFG generation happy, we assign
+		// them an offset of 0 as they are at the beginning of
+		// the method.
+		for (Unit u: jbu) {
+		    sootOffsetMap.put(u, 0);
+		}
 	}
 
 	private void emitTraps() {
@@ -1790,6 +1827,7 @@ final class AsmMethodSource implements MethodSource {
 			if (boxes != null) {
 				for (UnitBox box : boxes)
 					box.setUnit(end);
+
 			}
 		}
 	}
@@ -1834,6 +1872,9 @@ final class AsmMethodSource implements MethodSource {
 		emitLocals();
 		emitTraps();
 		emitUnits();
+
+		// Create bytecode offsetmap before clean up
+		createOffsetMap();
 
 		/* clean up */
 		locals = null;

@@ -1,7 +1,7 @@
 package soot;
 
-import org.objectweb.asm.*;
-import org.objectweb.asm.util.TraceClassVisitor;
+import modified.org.objectweb.asm.*;
+import modified.org.objectweb.asm.util.TraceClassVisitor;
 import soot.baf.BafBody;
 import soot.jimple.JimpleBody;
 import soot.options.Options;
@@ -420,7 +420,7 @@ public abstract class AbstractASMBackend {
     protected void generateAttributes(FieldVisitor fv, SootField f) {
         for (Tag t : f.getTags()) {
             if (t instanceof Attribute) {
-                org.objectweb.asm.Attribute a = createASMAttribute((Attribute) t);
+                modified.org.objectweb.asm.Attribute a = createASMAttribute((Attribute) t);
                 fv.visitAttribute(a);
             }
         }
@@ -434,7 +434,7 @@ public abstract class AbstractASMBackend {
     protected void generateAttributes(MethodVisitor mv, SootMethod m) {
         for (Tag t : m.getTags()) {
             if (t instanceof Attribute) {
-                org.objectweb.asm.Attribute a = createASMAttribute((Attribute) t);
+                modified.org.objectweb.asm.Attribute a = createASMAttribute((Attribute) t);
                 mv.visitAttribute(a);
             }
         }
@@ -549,7 +549,7 @@ public abstract class AbstractASMBackend {
 						val = stringElem.getValue();
 					} else if (elem instanceof AnnotationClassElem) {
 						AnnotationClassElem classElem = (AnnotationClassElem) elem;
-						val = org.objectweb.asm.Type.getType(classElem
+						val = modified.org.objectweb.asm.Type.getType(classElem
 								.getDesc());
 					}
 					if(addName){

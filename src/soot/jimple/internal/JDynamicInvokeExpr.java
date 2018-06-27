@@ -26,7 +26,7 @@
 
 package soot.jimple.internal;
 
-import org.objectweb.asm.Opcodes;
+import modified.org.objectweb.asm.Opcodes;
 import soot.*;
 import soot.baf.Baf;
 import soot.jimple.*;

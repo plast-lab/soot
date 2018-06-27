@@ -17,6 +17,7 @@ sourceSets {
     main {
         java {
             srcDir 'src'
+            srcDir 'asm/src'
         }
     }
 }
@@ -26,24 +27,26 @@ task wrapper(type: Wrapper) {
 }
 
 repositories {
-
     mavenLocal()
-
     mavenCentral()
-
-    maven {
-        url "http://centauri.di.uoa.gr:8081/artifactory/plast-public"
+    // maven {
+        // url "http://centauri.di.uoa.gr:8081/artifactory/plast-public"
+    // }
+    flatDir {
+	dirs 'libs'
     }
 }
 
 dependencies {
     compile 'org.codehaus.groovy:groovy-all:2.4.7',             // Groovy
             'org.apache.ivy:ivy:2.3.0',                         // Apache Ivy (for downloading jars from maven repos)
-            'org.ow2.asm:asm-debug-all:5.2',                    // Java Bytecode library
-            'com.google.guava:guava:18.0',                       // GSON library
+            // -- ASM is now vendored in-tree
+            // 'org.ow2.asm:asm-debug-all:5.2                   // Java Bytecode library
+            // 'ext:asm:5.2',                                      // Java Bytecode library
+            'com.google.guava:guava:18.0',                      // GSON library
             'org.apache.ant:ant:1.10.1',
-            'org.smali:dexlib2:2.2b4',                           // Dexlib2: library for reading/modifying/writing Android dex files
-            'org.smali:util:2.2b4',                              // Dexlib2 utilities
+            'org.smali:dexlib2:2.2b4',                          // Dexlib2: library for reading/modifying/writing Android dex files
+            'org.smali:util:2.2b4',                             // Dexlib2 utilities
             'org.javassist:javassist:3.21.0-GA',
             'junit:junit:4.12',
             'org.jboss:jboss-common-core:2.5.0.Final',
@@ -64,36 +67,36 @@ task fullJar(type: Jar) {
     with jar
 }
 
-publishing {
-    publications {
-        mavenJava(MavenPublication) {
-            artifactId 'sootclasses'
-            version version
-            from components.java
-        }
-    }
+// publishing {
+    // publications {
+        // mavenJava(MavenPublication) {
+            // artifactId 'sootclasses'
+            // version version
+            // from components.java
+        // }
+    // }
 
-    repositories {
-        maven {
-            credentials {
-                username artifactory_user
-                password artifactory_password
-            }
+    // repositories {
+        // maven {
+            // credentials {
+                // username artifactory_user
+                // password artifactory_password
+            // }
 
-            url "${artifactory_contextUrl}/ext-snapshot-local"
-        }
-    }
-}
+            // url "${artifactory_contextUrl}/ext-snapshot-local"
+        // }
+    // }
+// }
 
 release {
     scmAdapters = [
         net.researchgate.release.GitAdapter
-    ]    
+    ]
 
     failOnSnapshotDependencies = false
     failOnUnversionedFiles = false
     failOnCommitNeeded = false
-    
+
     git {
         requireBranch = 'develop'
         commitVersionFileOnly = true

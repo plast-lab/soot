@@ -18,7 +18,7 @@
  */
 package soot.asm;
 
-import org.objectweb.asm.ClassReader;
+import modified.org.objectweb.asm.ClassReader;
 import soot.ClassSource;
 import soot.SootClass;
 import soot.SourceLocator.FoundFile;
