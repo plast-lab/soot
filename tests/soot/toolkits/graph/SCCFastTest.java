@@ -1,9 +1,9 @@
 package soot.toolkits.graph;
 
+import java.util.List;
+
 import org.junit.Assert;
 import org.junit.Test;
-
-import java.util.List;
 
 public class SCCFastTest {
 

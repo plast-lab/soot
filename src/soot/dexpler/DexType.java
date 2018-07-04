@@ -26,7 +26,19 @@ package soot.dexpler;
 
 import org.jf.dexlib2.iface.reference.TypeReference;
 import org.jf.dexlib2.immutable.reference.ImmutableTypeReference;
-import soot.*;
+
+import soot.BooleanType;
+import soot.ByteType;
+import soot.CharType;
+import soot.DoubleType;
+import soot.FloatType;
+import soot.IntType;
+import soot.LongType;
+import soot.RefType;
+import soot.ShortType;
+import soot.Type;
+import soot.UnknownType;
+import soot.VoidType;
 
 
 /**

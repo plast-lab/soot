@@ -20,11 +20,26 @@ package soot.dava.toolkits.base.AST.transformations;
 
 import soot.BooleanType;
 import soot.Value;
-import soot.dava.internal.AST.*;
+import soot.dava.internal.AST.ASTAggregatedCondition;
+import soot.dava.internal.AST.ASTAndCondition;
+import soot.dava.internal.AST.ASTBinaryCondition;
+import soot.dava.internal.AST.ASTCondition;
+import soot.dava.internal.AST.ASTControlFlowNode;
+import soot.dava.internal.AST.ASTDoWhileNode;
+import soot.dava.internal.AST.ASTForLoopNode;
+import soot.dava.internal.AST.ASTIfElseNode;
+import soot.dava.internal.AST.ASTIfNode;
+import soot.dava.internal.AST.ASTOrCondition;
+import soot.dava.internal.AST.ASTUnaryCondition;
+import soot.dava.internal.AST.ASTWhileNode;
 import soot.dava.internal.javaRep.DIntConstant;
 import soot.dava.internal.javaRep.DNotExpr;
 import soot.dava.toolkits.base.AST.analysis.DepthFirstAdapter;
-import soot.jimple.*;
+import soot.jimple.ConditionExpr;
+import soot.jimple.DoubleConstant;
+import soot.jimple.FloatConstant;
+import soot.jimple.IntConstant;
+import soot.jimple.LongConstant;
 
 	/*
 	 * 	5 == 5  true   DONE              

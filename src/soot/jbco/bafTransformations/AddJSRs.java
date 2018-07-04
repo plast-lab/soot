@@ -19,13 +19,11 @@
 
 package soot.jbco.bafTransformations;
 
+import java.util.*;
 import soot.*;
 import soot.baf.*;
 import soot.jbco.IJbcoTransform;
-import soot.jbco.util.BodyBuilder;
-import soot.jbco.util.Rand;
-
-import java.util.*;
+import soot.jbco.util.*;
 
 /**
  * @author Michael Batchelder

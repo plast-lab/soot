@@ -18,23 +18,30 @@
  */
 package soot.jimple.toolkits.ide.icfg;
 
-import com.google.common.cache.CacheLoader;
-import com.google.common.cache.LoadingCache;
 import heros.DontSynchronize;
 import heros.InterproceduralCFG;
 import heros.SynchronizedBy;
 import heros.ThreadSafe;
 import heros.solver.IDESolver;
-import soot.*;
-import soot.jimple.toolkits.callgraph.CallGraph;
-import soot.jimple.toolkits.callgraph.Edge;
-import soot.jimple.toolkits.callgraph.EdgePredicate;
-import soot.jimple.toolkits.callgraph.Filter;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Iterator;
+
+import soot.Body;
+import soot.MethodOrMethodContext;
+import soot.PatchingChain;
+import soot.Scene;
+import soot.SootMethod;
+import soot.Unit;
+import soot.jimple.toolkits.callgraph.CallGraph;
+import soot.jimple.toolkits.callgraph.Edge;
+import soot.jimple.toolkits.callgraph.EdgePredicate;
+import soot.jimple.toolkits.callgraph.Filter;
+
+import com.google.common.cache.CacheLoader;
+import com.google.common.cache.LoadingCache;
 
 
 /**

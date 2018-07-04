@@ -19,12 +19,26 @@
 
 package soot.toolkits.exceptions;
 
-import com.google.common.cache.CacheBuilder;
-import soot.*;
-import soot.options.Options;
-import soot.singletons.Singletons;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
 
-import java.util.*;
+import soot.AnySubType;
+import soot.FastHierarchy;
+import soot.G;
+import soot.RefLikeType;
+import soot.RefType;
+import soot.Scene;
+import soot.singletons.Singletons;
+import soot.Unit;
+import soot.options.Options;
+
+import com.google.common.cache.CacheBuilder;
 
 /**
  * <p>

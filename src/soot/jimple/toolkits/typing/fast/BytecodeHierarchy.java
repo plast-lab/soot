@@ -20,9 +20,22 @@
  */
 package soot.jimple.toolkits.typing.fast;
 
-import soot.*;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Deque;
+import java.util.LinkedList;
+import java.util.ListIterator;
 
-import java.util.*;
+import soot.ArrayType;
+import soot.FloatType;
+import soot.IntType;
+import soot.IntegerType;
+import soot.NullType;
+import soot.PrimType;
+import soot.RefType;
+import soot.Scene;
+import soot.SootClass;
+import soot.Type;
 
 /**
  * @author Ben Bellamy

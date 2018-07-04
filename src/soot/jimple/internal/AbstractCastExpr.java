@@ -27,13 +27,13 @@
 package soot.jimple.internal;
 
 import soot.*;
-import soot.baf.Baf;
-import soot.grimp.PrecedenceTest;
 import soot.jimple.*;
-import soot.util.Switch;
+import soot.baf.*;
+import soot.util.*;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+
+import soot.grimp.PrecedenceTest;
 
 @SuppressWarnings("serial")
 abstract public class AbstractCastExpr implements CastExpr, ConvertToBaf

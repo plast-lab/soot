@@ -1,5 +1,7 @@
 package soot.dava.toolkits.base.AST.traversals;
 
+import java.util.List;
+
 import soot.Local;
 import soot.Value;
 import soot.dava.internal.AST.ASTMethodNode;
@@ -7,8 +9,6 @@ import soot.dava.internal.asg.AugmentedStmt;
 import soot.dava.toolkits.base.AST.analysis.DepthFirstAdapter;
 import soot.jimple.DefinitionStmt;
 import soot.jimple.Stmt;
-
-import java.util.List;
 
 /*
  * Given a statement of interest this traversal checks whether

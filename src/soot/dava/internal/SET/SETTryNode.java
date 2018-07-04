@@ -24,24 +24,14 @@
 
 package soot.dava.internal.SET;
 
-import soot.Value;
-import soot.dava.DavaBody;
-import soot.dava.internal.AST.ASTNode;
-import soot.dava.internal.AST.ASTTryNode;
-import soot.dava.internal.asg.AugmentedStmt;
-import soot.dava.internal.asg.AugmentedStmtGraph;
-import soot.dava.toolkits.base.finders.ExceptionFinder;
-import soot.dava.toolkits.base.finders.ExceptionNode;
-import soot.jimple.CaughtExceptionRef;
-import soot.jimple.GotoStmt;
-import soot.jimple.IdentityStmt;
-import soot.jimple.Stmt;
-import soot.util.IterableSet;
-
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
+import soot.*;
+import java.util.*;
+import soot.util.*;
+import soot.dava.*;
+import soot.jimple.*;
+import soot.dava.internal.asg.*;
+import soot.dava.internal.AST.*;
+import soot.dava.toolkits.base.finders.*;
 
 public class SETTryNode extends SETNode {
 	private ExceptionNode en;

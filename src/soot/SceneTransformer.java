@@ -25,8 +25,7 @@
 
 package soot;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /** An abstract class which acts on the whole Scene. */
 public abstract class SceneTransformer extends Transformer

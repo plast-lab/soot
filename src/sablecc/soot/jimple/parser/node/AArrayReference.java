@@ -2,7 +2,7 @@
 
 package sablecc.soot.jimple.parser.node;
 
-import sablecc.soot.jimple.parser.analysis.Analysis;
+import sablecc.soot.jimple.parser.analysis.*;
 
 @SuppressWarnings("nls")
 public final class AArrayReference extends PReference

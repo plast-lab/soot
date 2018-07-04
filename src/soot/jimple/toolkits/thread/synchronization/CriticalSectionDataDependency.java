@@ -1,6 +1,6 @@
 package soot.jimple.toolkits.thread.synchronization;
 
-import soot.jimple.toolkits.pointer.RWSet;
+import soot.jimple.toolkits.pointer.*;
 
 class CriticalSectionDataDependency
 {

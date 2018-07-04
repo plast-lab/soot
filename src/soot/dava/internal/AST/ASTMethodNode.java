@@ -31,19 +31,17 @@
 package soot.dava.internal.AST;
 
 import soot.*;
-import soot.dava.DavaBody;
-import soot.dava.DavaUnitPrinter;
-import soot.dava.internal.asg.AugmentedStmt;
-import soot.dava.internal.javaRep.DVariableDeclarationStmt;
-import soot.dava.toolkits.base.AST.ASTAnalysis;
-import soot.dava.toolkits.base.AST.analysis.Analysis;
-import soot.dava.toolkits.base.renamer.RemoveFullyQualifiedName;
-import soot.jimple.InstanceInvokeExpr;
-import soot.jimple.Stmt;
-import soot.util.DeterministicHashMap;
-import soot.util.IterableSet;
 
 import java.util.*;
+
+import soot.dava.*;
+import soot.util.*;
+import soot.jimple.*;
+import soot.dava.internal.javaRep.*;
+import soot.dava.internal.asg.*;
+import soot.dava.toolkits.base.AST.*;
+import soot.dava.toolkits.base.AST.analysis.*;
+import soot.dava.toolkits.base.renamer.RemoveFullyQualifiedName;
 
 /*
  * ALWAYS REMEMBER THAT THE FIRST NODE IN THE BODY OF A METHODNODE HAS TO BE A STATEMENT

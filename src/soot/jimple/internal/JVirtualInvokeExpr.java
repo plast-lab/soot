@@ -27,16 +27,12 @@
 
 package soot.jimple.internal;
 
-import soot.SootClass;
-import soot.SootMethodRef;
-import soot.Value;
-import soot.ValueBox;
-import soot.jimple.Jimple;
+import soot.*;
+import soot.jimple.*;
 import soot.options.Options;
 import soot.tagkit.SourceFileTag;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class JVirtualInvokeExpr extends AbstractVirtualInvokeExpr 
 {

@@ -1,12 +1,9 @@
 package soot.jimple.toolkits.thread.mhp.pegcallgraph;
 
-import soot.SootMethod;
-import soot.jimple.toolkits.callgraph.CallGraph;
-import soot.jimple.toolkits.callgraph.Edge;
-import soot.toolkits.graph.DirectedGraph;
-import soot.util.Chain;
-import soot.util.HashChain;
-
+import soot.toolkits.graph.*;
+import soot.jimple.toolkits.callgraph.*;
+import soot.*;
+import soot.util.*;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 

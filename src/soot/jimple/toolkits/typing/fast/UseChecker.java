@@ -20,12 +20,74 @@
  */
 package soot.jimple.toolkits.typing.fast;
 
-import soot.*;
-import soot.jimple.*;
+import java.util.Iterator;
+
+import soot.ArrayType;
+import soot.BooleanType;
+import soot.IntType;
+import soot.IntegerType;
+import soot.Local;
+import soot.NullType;
+import soot.PrimType;
+import soot.RefType;
+import soot.Scene;
+import soot.SootMethodRef;
+import soot.Type;
+import soot.Unit;
+import soot.Value;
+import soot.jimple.AbstractStmtSwitch;
+import soot.jimple.AddExpr;
+import soot.jimple.AndExpr;
+import soot.jimple.ArrayRef;
+import soot.jimple.AssignStmt;
+import soot.jimple.BinopExpr;
+import soot.jimple.BreakpointStmt;
+import soot.jimple.CastExpr;
+import soot.jimple.CmpExpr;
+import soot.jimple.CmpgExpr;
+import soot.jimple.CmplExpr;
+import soot.jimple.Constant;
+import soot.jimple.DivExpr;
+import soot.jimple.EnterMonitorStmt;
+import soot.jimple.EqExpr;
+import soot.jimple.ExitMonitorStmt;
+import soot.jimple.FieldRef;
+import soot.jimple.GeExpr;
+import soot.jimple.GotoStmt;
+import soot.jimple.GtExpr;
+import soot.jimple.IdentityStmt;
+import soot.jimple.IfStmt;
+import soot.jimple.InstanceFieldRef;
+import soot.jimple.InstanceInvokeExpr;
+import soot.jimple.InstanceOfExpr;
+import soot.jimple.InvokeExpr;
+import soot.jimple.InvokeStmt;
+import soot.jimple.JimpleBody;
+import soot.jimple.LeExpr;
+import soot.jimple.LengthExpr;
+import soot.jimple.LookupSwitchStmt;
+import soot.jimple.LtExpr;
+import soot.jimple.MulExpr;
+import soot.jimple.NeExpr;
+import soot.jimple.NegExpr;
+import soot.jimple.NewArrayExpr;
+import soot.jimple.NewMultiArrayExpr;
+import soot.jimple.NopStmt;
+import soot.jimple.NullConstant;
+import soot.jimple.OrExpr;
+import soot.jimple.RemExpr;
+import soot.jimple.ReturnStmt;
+import soot.jimple.ReturnVoidStmt;
+import soot.jimple.ShlExpr;
+import soot.jimple.ShrExpr;
+import soot.jimple.Stmt;
+import soot.jimple.SubExpr;
+import soot.jimple.TableSwitchStmt;
+import soot.jimple.ThrowStmt;
+import soot.jimple.UshrExpr;
+import soot.jimple.XorExpr;
 import soot.toolkits.scalar.LocalDefs;
 import soot.toolkits.scalar.LocalUses;
-
-import java.util.Iterator;
 
 /**
  * This checks all uses against the rules in Jimple, except some uses are not

@@ -1,12 +1,6 @@
 package soot.asm.backend;
 
-import com.sun.org.apache.bcel.internal.classfile.ClassFormatException;
-import org.junit.Test;
-import org.objectweb.asm.FieldVisitor;
-import org.objectweb.asm.MethodVisitor;
-import org.objectweb.asm.util.TraceClassVisitor;
-import soot.G;
-import soot.Main;
+import static org.junit.Assert.fail;
 
 import java.io.File;
 import java.lang.reflect.Method;
@@ -14,7 +8,15 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLClassLoader;
 
-import static org.junit.Assert.fail;
+import org.junit.Test;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.util.TraceClassVisitor;
+
+import soot.G;
+import soot.Main;
+
+import com.sun.org.apache.bcel.internal.classfile.ClassFormatException;
 
 /**
  * Test for fields that contain constant values

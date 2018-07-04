@@ -1,13 +1,13 @@
 package soot.dexpler;
 
+import java.util.Iterator;
+import java.util.Map;
+
 import soot.Body;
 import soot.BodyTransformer;
 import soot.Unit;
 import soot.jimple.GotoStmt;
 import soot.jimple.IfStmt;
-
-import java.util.Iterator;
-import java.util.Map;
 
 /**
  * Transformer for reducing goto chains. If there is a chain of jumps in the

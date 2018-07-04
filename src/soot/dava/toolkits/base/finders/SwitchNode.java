@@ -19,10 +19,9 @@
 
 package soot.dava.toolkits.base.finders;
 
-import soot.dava.internal.asg.AugmentedStmt;
-import soot.util.IterableSet;
-
 import java.util.*;
+import soot.util.*;
+import soot.dava.internal.asg.*;
 
 public class SwitchNode implements Comparable
 {

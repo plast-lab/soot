@@ -18,8 +18,11 @@
  */
 
 package soot.jimple.spark.pag;
-
-import soot.*;
+import soot.G;
+import soot.PointsToAnalysis;
+import soot.Scene;
+import soot.SootMethod;
+import soot.Type;
 import soot.toolkits.scalar.Pair;
 
 /** Represents a method parameter.

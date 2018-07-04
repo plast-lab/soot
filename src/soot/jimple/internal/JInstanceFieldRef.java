@@ -27,9 +27,8 @@
 
 package soot.jimple.internal;
 
-import soot.SootFieldRef;
-import soot.Value;
-import soot.jimple.Jimple;
+import soot.*;
+import soot.jimple.*;
 
 public class JInstanceFieldRef extends AbstractInstanceFieldRef
 {

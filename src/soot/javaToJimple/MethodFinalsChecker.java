@@ -18,12 +18,10 @@
  */
 
 package soot.javaToJimple;
+import java.util.*;
 
 import polyglot.ast.Node;
 import polyglot.util.IdentityKey;
-
-import java.util.ArrayList;
-import java.util.HashMap;
 
 public class MethodFinalsChecker extends polyglot.visit.NodeVisitor{
 

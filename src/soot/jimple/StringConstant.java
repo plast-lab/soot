@@ -29,10 +29,8 @@
 
 package soot.jimple;
 
-import soot.RefType;
-import soot.Type;
-import soot.util.StringTools;
-import soot.util.Switch;
+import soot.*;
+import soot.util.*;
 
 public class StringConstant extends Constant
 {

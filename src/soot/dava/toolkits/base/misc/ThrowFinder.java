@@ -20,20 +20,14 @@
 package soot.dava.toolkits.base.misc;
 
 import soot.*;
-import soot.jimple.Stmt;
-import soot.jimple.ThrowStmt;
-import soot.jimple.internal.JExitMonitorStmt;
-import soot.jimple.toolkits.callgraph.CallGraph;
-import soot.jimple.toolkits.callgraph.CallGraphBuilder;
-import soot.jimple.toolkits.callgraph.Edge;
 import soot.singletons.Singletons;
-import soot.util.Chain;
-import soot.util.IterableSet;
+import soot.util.*;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
+
+import soot.jimple.*;
+import soot.jimple.internal.JExitMonitorStmt;
+import soot.jimple.toolkits.callgraph.*;
 
 /*
  * Nomair A. Naeem 7th April 2006

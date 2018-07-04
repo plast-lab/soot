@@ -26,15 +26,10 @@
 
 package soot.jimple.toolkits.typing;
 
-import soot.ArrayType;
-import soot.G;
-import soot.RefType;
+import soot.*;
 import soot.options.Options;
-import soot.util.BitSetIterator;
-import soot.util.BitVector;
-
-import java.util.Iterator;
-import java.util.TreeSet;
+import soot.util.*;
+import java.util.*;
 
 /** Represents a type variable. 
  * @deprecated use {@link soot.jimple.toolkits.typing.fast.TypeResolver} instead

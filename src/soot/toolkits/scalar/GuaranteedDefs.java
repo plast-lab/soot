@@ -19,16 +19,11 @@
 
 package soot.toolkits.scalar;
 
-import soot.G;
-import soot.Local;
-import soot.Unit;
-import soot.ValueBox;
-import soot.options.Options;
-import soot.toolkits.graph.DominatorsFinder;
-import soot.toolkits.graph.MHGDominatorsFinder;
-import soot.toolkits.graph.UnitGraph;
-
 import java.util.*;
+
+import soot.*;
+import soot.options.Options;
+import soot.toolkits.graph.*;
 
 /**
  * Find all locals guaranteed to be defined at (just before) a given

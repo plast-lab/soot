@@ -1,13 +1,39 @@
 package soot.dava.toolkits.base.AST.structuredAnalysis;
 
-import soot.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+
+import soot.BooleanType;
+import soot.ByteType;
+import soot.CharType;
+import soot.DoubleType;
+import soot.FloatType;
+import soot.IntType;
+import soot.Local;
+import soot.LongType;
+import soot.PrimType;
+import soot.ShortType;
+import soot.SootField;
+import soot.Type;
+import soot.Value;
 import soot.dava.DavaFlowAnalysisException;
-import soot.dava.internal.AST.*;
+import soot.dava.internal.AST.ASTBinaryCondition;
+import soot.dava.internal.AST.ASTCondition;
+import soot.dava.internal.AST.ASTIfElseNode;
+import soot.dava.internal.AST.ASTIfNode;
+import soot.dava.internal.AST.ASTMethodNode;
+import soot.dava.internal.AST.ASTUnaryBinaryCondition;
+import soot.dava.internal.AST.ASTUnaryCondition;
 import soot.dava.internal.javaRep.DNotExpr;
 import soot.dava.toolkits.base.AST.interProcedural.ConstantFieldValueFinder;
-import soot.jimple.*;
-
-import java.util.*;
+import soot.jimple.BinopExpr;
+import soot.jimple.ConditionExpr;
+import soot.jimple.DefinitionStmt;
+import soot.jimple.FieldRef;
+import soot.jimple.Stmt;
 
 public class CP extends StructuredAnalysis {
 	/*

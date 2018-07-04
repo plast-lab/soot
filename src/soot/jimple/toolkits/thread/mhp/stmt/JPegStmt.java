@@ -32,10 +32,9 @@
 package soot.jimple.toolkits.thread.mhp.stmt;
 
 
-import soot.SootMethod;
-import soot.Unit;
-import soot.tagkit.AbstractHost;
-import soot.toolkits.graph.UnitGraph;
+import soot.tagkit.*;
+import soot.*;
+import soot.toolkits.graph.*;
 
 // *** USE AT YOUR OWN RISK ***
 // May Happen in Parallel (MHP) analysis by Lin Li.

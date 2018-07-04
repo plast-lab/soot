@@ -29,9 +29,8 @@
 
 package soot.baf.internal;
 
-import soot.baf.EnterMonitorInst;
-import soot.baf.InstSwitch;
-import soot.util.Switch;
+import soot.baf.*;
+import soot.util.*;
 
 public class BEnterMonitorInst extends AbstractInst implements EnterMonitorInst
 {

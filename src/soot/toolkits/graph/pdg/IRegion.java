@@ -19,13 +19,12 @@
 package soot.toolkits.graph.pdg;
 
 
+import java.util.List;
 import soot.SootClass;
 import soot.SootMethod;
 import soot.Unit;
 import soot.toolkits.graph.Block;
 import soot.toolkits.graph.UnitGraph;
-
-import java.util.List;
 
 /**
  * This interface represents a region of control dependence in the control flow graph.

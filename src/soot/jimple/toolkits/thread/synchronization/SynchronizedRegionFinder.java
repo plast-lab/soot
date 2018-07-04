@@ -1,19 +1,15 @@
 package soot.jimple.toolkits.thread.synchronization;
 
+import java.util.*;
+
 import soot.*;
+import soot.util.*;
 import soot.jimple.*;
 import soot.jimple.internal.JNopStmt;
-import soot.jimple.toolkits.pointer.FullObjectSet;
-import soot.jimple.toolkits.pointer.RWSet;
-import soot.jimple.toolkits.pointer.Union;
-import soot.jimple.toolkits.pointer.UnionFactory;
+import soot.jimple.toolkits.pointer.*;
 import soot.jimple.toolkits.thread.ThreadLocalObjectsAnalysis;
-import soot.toolkits.graph.ExceptionalUnitGraph;
-import soot.toolkits.graph.UnitGraph;
 import soot.toolkits.scalar.*;
-import soot.util.Chain;
-
-import java.util.*;
+import soot.toolkits.graph.*;
 
 
 /**

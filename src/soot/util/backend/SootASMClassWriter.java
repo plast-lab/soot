@@ -1,12 +1,13 @@
 package soot.util.backend;
 
+import static soot.util.backend.ASMBackendUtils.slashify;
+
 import org.objectweb.asm.ClassWriter;
+
 import soot.RefType;
 import soot.Scene;
 import soot.SootClass;
 import soot.Type;
-
-import static soot.util.backend.ASMBackendUtils.slashify;
 
 /**
  * ASM class writer with soot-specific resolution of common superclasses

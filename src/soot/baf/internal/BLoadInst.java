@@ -29,16 +29,10 @@
 
 package soot.baf.internal;
 
-import soot.Local;
-import soot.Type;
-import soot.UnitPrinter;
-import soot.ValueBox;
-import soot.baf.InstSwitch;
-import soot.baf.LoadInst;
-import soot.util.Switch;
-
-import java.util.Collections;
-import java.util.List;
+import soot.*;
+import soot.baf.*;
+import soot.util.*;
+import java.util.*;
 
 public class BLoadInst extends AbstractOpTypeInst implements LoadInst
 {

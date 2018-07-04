@@ -30,13 +30,10 @@
 
 package soot.grimp.internal;
 
-import soot.Value;
-import soot.ValueBox;
-import soot.grimp.Grimp;
-import soot.grimp.Precedence;
-import soot.jimple.DivExpr;
-import soot.jimple.SubExpr;
-import soot.jimple.internal.AbstractFloatBinopExpr;
+import soot.*;
+import soot.grimp.*;
+import soot.jimple.*;
+import soot.jimple.internal.*;
 
 abstract public class AbstractGrimpFloatBinopExpr
     extends AbstractFloatBinopExpr implements Precedence

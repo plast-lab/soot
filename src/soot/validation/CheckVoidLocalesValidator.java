@@ -1,10 +1,10 @@
 package soot.validation;
 
+import java.util.List;
+
 import soot.Body;
 import soot.Local;
 import soot.VoidType;
-
-import java.util.List;
 
 public enum CheckVoidLocalesValidator implements BodyValidator {
 	INSTANCE;	

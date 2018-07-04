@@ -19,8 +19,8 @@
 
 package soot.jimple.spark.builder;
 
-import soot.*;
 import soot.jimple.spark.pag.*;
+import soot.*;
 import soot.toolkits.scalar.Pair;
 
 /**

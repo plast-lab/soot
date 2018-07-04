@@ -19,14 +19,29 @@
 
 package soot.jimple.toolkits.annotation.nullcheck;
 
-import soot.*;
-import soot.jimple.*;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+import java.util.Map.Entry;
+
+import soot.Immediate;
+import soot.Local;
+import soot.RefLikeType;
+import soot.Unit;
+import soot.Value;
+import soot.jimple.ArrayRef;
+import soot.jimple.DefinitionStmt;
+import soot.jimple.FieldRef;
+import soot.jimple.InstanceFieldRef;
+import soot.jimple.InstanceInvokeExpr;
+import soot.jimple.InvokeExpr;
+import soot.jimple.MonitorStmt;
+import soot.jimple.Stmt;
 import soot.jimple.internal.JCastExpr;
 import soot.toolkits.graph.UnitGraph;
 import soot.toolkits.scalar.BackwardFlowAnalysis;
-
-import java.util.*;
-import java.util.Map.Entry;
 
 
 /**
@@ -226,8 +241,7 @@ public class NullnessAssumptionAnalysis  extends BackwardFlowAnalysis
 	protected Object entryInitialFlow() {
 		return new AnalysisInfo();
 	}
-
-	/**
+	/**
 	 * {@inheritDoc}
 	 */
 	protected void merge(Object in1, Object in2, Object out) {

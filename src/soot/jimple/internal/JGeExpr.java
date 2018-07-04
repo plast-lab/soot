@@ -30,12 +30,9 @@
 
 package soot.jimple.internal;
 
-import soot.Type;
-import soot.Value;
-import soot.jimple.ExprSwitch;
-import soot.jimple.GeExpr;
-import soot.jimple.Jimple;
-import soot.util.Switch;
+import soot.*;
+import soot.jimple.*;
+import soot.util.*;
 
 public class JGeExpr extends AbstractJimpleIntBinopExpr implements GeExpr
 {

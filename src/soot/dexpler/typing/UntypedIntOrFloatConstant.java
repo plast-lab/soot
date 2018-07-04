@@ -1,6 +1,14 @@
 package soot.dexpler.typing;
 
-import soot.*;
+import soot.BooleanType;
+import soot.ByteType;
+import soot.CharType;
+import soot.FloatType;
+import soot.IntType;
+import soot.RefLikeType;
+import soot.ShortType;
+import soot.Type;
+import soot.Value;
 import soot.jimple.FloatConstant;
 import soot.jimple.IntConstant;
 import soot.jimple.NullConstant;

@@ -19,17 +19,13 @@
 
 package soot.jbco.bafTransformations;
 
-import soot.*;
-import soot.baf.Baf;
-import soot.baf.IfNonNullInst;
-import soot.baf.IfNullInst;
-import soot.jbco.IJbcoTransform;
-import soot.jbco.util.BodyBuilder;
-import soot.jbco.util.Rand;
-import soot.jimple.NullConstant;
+import java.util.*;
 
-import java.util.Iterator;
-import java.util.Map;
+import soot.*;
+import soot.jbco.util.*;
+import soot.jbco.*;
+import soot.baf.*;
+import soot.jimple.NullConstant;
 /**
  * @author Michael Batchelder 
  * 

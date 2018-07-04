@@ -24,14 +24,14 @@
 
 package soot.dexpler;
 
-import soot.G;
-import soot.SootClass;
-import soot.javaToJimple.IInitialResolver.Dependencies;
-import soot.singletons.Singletons;
-
 import java.io.File;
 import java.util.Map;
 import java.util.TreeMap;
+
+import soot.G;
+import soot.singletons.Singletons;
+import soot.SootClass;
+import soot.javaToJimple.IInitialResolver.Dependencies;
 
 public class DexResolver {
 

@@ -26,9 +26,9 @@
 
 package soot.jimple.toolkits.pointer.nativemethods;
 
-import soot.SootMethod;
-import soot.jimple.toolkits.pointer.representations.ReferenceVariable;
-import soot.jimple.toolkits.pointer.util.NativeHelper;
+import soot.*;
+import soot.jimple.toolkits.pointer.representations.*;
+import soot.jimple.toolkits.pointer.util.*;
 
 public class JavaLangThrowableNative extends NativeMethodClass {
     public JavaLangThrowableNative( NativeHelper helper ) { super(helper); }

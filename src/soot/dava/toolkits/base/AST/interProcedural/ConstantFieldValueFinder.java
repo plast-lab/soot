@@ -20,21 +20,43 @@
 
 package soot.dava.toolkits.base.AST.interProcedural;
 
-import soot.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+
+import soot.BooleanType;
+import soot.ByteType;
+import soot.CharType;
+import soot.DoubleType;
+import soot.FloatType;
+import soot.IntType;
+import soot.LongType;
+import soot.PrimType;
+import soot.ShortType;
+import soot.SootClass;
+import soot.SootField;
+import soot.SootMethod;
+import soot.Type;
+
+import soot.Value;
 import soot.dava.DavaBody;
 import soot.dava.DecompilationException;
+
 import soot.dava.internal.AST.ASTNode;
 import soot.dava.toolkits.base.AST.traversals.AllDefinitionsFinder;
-import soot.jimple.*;
+import soot.jimple.DefinitionStmt;
+import soot.jimple.DoubleConstant;
+import soot.jimple.FieldRef;
+import soot.jimple.FloatConstant;
+import soot.jimple.IntConstant;
+import soot.jimple.LongConstant;
+import soot.jimple.NumericConstant;
+
 import soot.tagkit.DoubleConstantValueTag;
 import soot.tagkit.FloatConstantValueTag;
 import soot.tagkit.IntegerConstantValueTag;
 import soot.tagkit.LongConstantValueTag;
 import soot.util.Chain;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
 
 /*
  * Deemed important because of obfuscation techniques which add crazy

@@ -31,9 +31,9 @@
 
 package soot.grimp.internal;
 
-import soot.Value;
-import soot.grimp.Grimp;
-import soot.jimple.internal.AbstractNegExpr;
+import soot.*;
+import soot.grimp.*;
+import soot.jimple.internal.*;
 
 public class GNegExpr extends AbstractNegExpr
 {

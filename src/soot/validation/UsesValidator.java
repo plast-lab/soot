@@ -1,14 +1,18 @@
 package soot.validation;
 
-import soot.*;
+import java.util.Collection;
+import java.util.List;
+
+import soot.Body;
+import soot.Local;
+import soot.Unit;
+import soot.Value;
+import soot.ValueBox;
 import soot.toolkits.exceptions.PedanticThrowAnalysis;
 import soot.toolkits.exceptions.ThrowAnalysis;
 import soot.toolkits.graph.ExceptionalUnitGraph;
 import soot.toolkits.graph.UnitGraph;
 import soot.toolkits.scalar.LocalDefs;
-
-import java.util.Collection;
-import java.util.List;
 
 public enum UsesValidator implements BodyValidator {
 	INSTANCE;	

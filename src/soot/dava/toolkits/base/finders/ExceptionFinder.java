@@ -19,26 +19,17 @@
 
 package soot.dava.toolkits.base.finders;
 
-import soot.G;
-import soot.Trap;
-import soot.Unit;
-import soot.dava.Dava;
-import soot.dava.DavaBody;
-import soot.dava.RetriggerAnalysisException;
-import soot.dava.internal.SET.SETNode;
-import soot.dava.internal.SET.SETTryNode;
-import soot.dava.internal.asg.AugmentedStmt;
-import soot.dava.internal.asg.AugmentedStmtGraph;
-import soot.jimple.GotoStmt;
-import soot.jimple.Stmt;
-import soot.singletons.Singletons;
-import soot.util.IterableSet;
+import soot.*;
 
 import java.io.Serializable;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedList;
+import java.util.*;
+
+import soot.singletons.Singletons;
+import soot.util.*;
+import soot.dava.*;
+import soot.jimple.*;
+import soot.dava.internal.asg.*;
+import soot.dava.internal.SET.*;
 
 public class ExceptionFinder implements FactFinder {
 	public ExceptionFinder(Singletons.Global g) {

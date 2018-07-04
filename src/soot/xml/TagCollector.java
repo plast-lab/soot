@@ -20,12 +20,10 @@
 package soot.xml;
 
 import soot.*;
-import soot.jimple.spark.ondemand.genericutil.Predicate;
 import soot.tagkit.*;
-
-import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.*;
+import java.io.*;
+import soot.jimple.spark.ondemand.genericutil.Predicate;
 
 public class TagCollector {
 

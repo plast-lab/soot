@@ -19,7 +19,7 @@
 
 package soot.dava;
 
-import java.io.PrintWriter;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Iterator;
 

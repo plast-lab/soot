@@ -19,12 +19,15 @@
 
 package soot.util.cfgcmd;
 
-import soot.G;
-import soot.singletons.Singletons;
-
 import java.io.File;
 import java.io.FileInputStream;
-import java.util.*;
+import java.util.List;
+import java.util.LinkedList;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.StringTokenizer;
+import soot.singletons.Singletons;
+import soot.G;
 
 /**
  * <p>A {@link ClassLoader} that loads specified classes from a

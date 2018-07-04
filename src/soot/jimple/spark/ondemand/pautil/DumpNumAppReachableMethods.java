@@ -18,10 +18,15 @@
  */
 package soot.jimple.spark.ondemand.pautil;
 
-import soot.*;
-
 import java.util.Iterator;
 import java.util.Map;
+
+import soot.G;
+import soot.PackManager;
+import soot.Scene;
+import soot.SceneTransformer;
+import soot.SootMethod;
+import soot.Transform;
 
 public class DumpNumAppReachableMethods extends SceneTransformer {
 

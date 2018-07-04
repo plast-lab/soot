@@ -1,16 +1,17 @@
 package soot.toDex.instructions;
 
+import java.util.BitSet;
+import java.util.List;
+
 import org.jf.dexlib2.Opcode;
 import org.jf.dexlib2.builder.BuilderInstruction;
 import org.jf.dexlib2.builder.instruction.BuilderInstruction3rc;
 import org.jf.dexlib2.iface.reference.Reference;
 import org.jf.dexlib2.writer.builder.BuilderReference;
+
 import soot.toDex.LabelAssigner;
 import soot.toDex.Register;
 import soot.toDex.SootToDexUtils;
-
-import java.util.BitSet;
-import java.util.List;
 
 /**
  * The "3rc" instruction format: It needs three 16-bit code units, has a whole range

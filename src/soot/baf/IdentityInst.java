@@ -29,9 +29,7 @@
 
 package soot.baf;
 
-import soot.IdentityUnit;
-import soot.Value;
-import soot.ValueBox;
+import soot.*;
 
 public interface IdentityInst extends Inst, IdentityUnit  
 { 

@@ -25,7 +25,7 @@
 
 package soot.baf;
 
-import soot.Unit;
+import soot.*;
 
 public interface Inst extends Unit
 {    

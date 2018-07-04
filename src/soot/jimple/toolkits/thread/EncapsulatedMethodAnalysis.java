@@ -1,14 +1,9 @@
 package soot.jimple.toolkits.thread;
 
-import soot.IntType;
-import soot.RefLikeType;
-import soot.Type;
-import soot.jimple.FieldRef;
-import soot.jimple.StaticFieldRef;
-import soot.jimple.Stmt;
-import soot.toolkits.graph.UnitGraph;
-
-import java.util.Iterator;
+import soot.*;
+import java.util.*;
+import soot.toolkits.graph.*;
+import soot.jimple.*;
 
 // EncapsulatedMethodAnalysis written by Richard L. Halpert, 2006-12-26
 

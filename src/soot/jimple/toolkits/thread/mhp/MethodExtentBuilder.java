@@ -1,19 +1,12 @@
 package soot.jimple.toolkits.thread.mhp;
 
 
-import soot.Body;
-import soot.SootMethod;
-import soot.Value;
-import soot.jimple.InvokeExpr;
-import soot.jimple.MonitorStmt;
-import soot.jimple.Stmt;
-import soot.jimple.toolkits.callgraph.CallGraph;
+import soot.*;
+import soot.jimple.*;
+import soot.jimple.toolkits.callgraph.*;
 import soot.jimple.toolkits.thread.mhp.pegcallgraph.CheckRecursiveCalls;
 import soot.jimple.toolkits.thread.mhp.pegcallgraph.PegCallGraph;
-
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
+import java.util.*;
 
 // *** USE AT YOUR OWN RISK ***
 // May Happen in Parallel (MHP) analysis by Lin Li.

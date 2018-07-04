@@ -25,7 +25,11 @@ import soot.dava.internal.asg.AugmentedStmt;
 import soot.dava.internal.javaRep.DDecrementStmt;
 import soot.dava.internal.javaRep.DIncrementStmt;
 import soot.dava.toolkits.base.AST.analysis.DepthFirstAdapter;
-import soot.jimple.*;
+import soot.jimple.AddExpr;
+import soot.jimple.DefinitionStmt;
+import soot.jimple.IntConstant;
+import soot.jimple.Stmt;
+import soot.jimple.SubExpr;
 
 /*
  * CHANGELOG: Nomair 9th Feb (For some reason only AddExpr was being checked for i++

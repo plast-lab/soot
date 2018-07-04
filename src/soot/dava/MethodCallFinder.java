@@ -24,8 +24,29 @@
 
 package soot.dava;
 
-import soot.*;
-import soot.dava.internal.AST.*;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+
+import soot.RefType;
+import soot.Scene;
+import soot.SootClass;
+import soot.SootMethod;
+import soot.SootMethodRef;
+import soot.dava.internal.AST.ASTDoWhileNode;
+import soot.dava.internal.AST.ASTForLoopNode;
+import soot.dava.internal.AST.ASTIfElseNode;
+import soot.dava.internal.AST.ASTIfNode;
+import soot.dava.internal.AST.ASTLabeledBlockNode;
+import soot.dava.internal.AST.ASTMethodNode;
+import soot.dava.internal.AST.ASTNode;
+import soot.dava.internal.AST.ASTStatementSequenceNode;
+import soot.dava.internal.AST.ASTSwitchNode;
+import soot.dava.internal.AST.ASTSynchronizedBlockNode;
+import soot.dava.internal.AST.ASTTryNode;
+import soot.dava.internal.AST.ASTUnconditionalLoopNode;
+import soot.dava.internal.AST.ASTWhileNode;
 import soot.dava.internal.asg.AugmentedStmt;
 import soot.dava.toolkits.base.AST.analysis.DepthFirstAdapter;
 import soot.dava.toolkits.base.AST.traversals.ASTParentNodeFinder;
@@ -35,11 +56,6 @@ import soot.jimple.InvokeExpr;
 import soot.jimple.InvokeStmt;
 import soot.jimple.Stmt;
 import soot.jimple.StringConstant;
-
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
 
 public class MethodCallFinder extends DepthFirstAdapter {
 	ASTMethodNode underAnalysis;

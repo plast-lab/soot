@@ -34,6 +34,7 @@ package soot.coffi;
 import soot.Scene;
 import soot.Type;
 import soot.Value;
+import soot.jimple.Constant;
 import soot.jimple.Jimple;
 
 /** A constant pool entry of type CONSTANT_Fieldref.

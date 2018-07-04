@@ -1,19 +1,62 @@
 package soot.baf;
 
+import static soot.util.backend.ASMBackendUtils.sizeOfType;
+import static soot.util.backend.ASMBackendUtils.slashify;
+import static soot.util.backend.ASMBackendUtils.toTypeDesc;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
 import org.objectweb.asm.Handle;
 import org.objectweb.asm.Label;
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
-import soot.*;
+
+import soot.AbstractASMBackend;
+import soot.ArrayType;
+import soot.BooleanType;
+import soot.ByteType;
+import soot.CharType;
+import soot.DoubleType;
+import soot.FloatType;
+import soot.IntType;
+import soot.Local;
+import soot.LongType;
+import soot.NullType;
+import soot.RefType;
+import soot.ShortType;
+import soot.SootClass;
+import soot.SootFieldRef;
+import soot.SootMethod;
+import soot.SootMethodRef;
+import soot.StmtAddressType;
+import soot.Trap;
+import soot.Type;
+import soot.TypeSwitch;
+import soot.Unit;
+import soot.UnitBox;
+import soot.Value;
 import soot.baf.internal.BafLocal;
-import soot.jimple.*;
+import soot.jimple.CaughtExceptionRef;
+import soot.jimple.ClassConstant;
+import soot.jimple.Constant;
+import soot.jimple.ConstantSwitch;
+import soot.jimple.DoubleConstant;
+import soot.jimple.FloatConstant;
+import soot.jimple.IdentityRef;
+import soot.jimple.IntConstant;
+import soot.jimple.LongConstant;
+import soot.jimple.MethodHandle;
+import soot.jimple.NullConstant;
+import soot.jimple.ParameterRef;
+import soot.jimple.StringConstant;
+import soot.jimple.ThisRef;
 import soot.options.Options;
 import soot.tagkit.LineNumberTag;
 import soot.util.Chain;
-
-import java.util.*;
-
-import static soot.util.backend.ASMBackendUtils.*;
 
 /**
  * Concrete ASM based bytecode generation backend for the BAF intermediate

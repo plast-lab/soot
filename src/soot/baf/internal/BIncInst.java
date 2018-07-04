@@ -25,16 +25,11 @@
 
 package soot.baf.internal;
 
-import soot.Local;
-import soot.UnitPrinter;
-import soot.ValueBox;
-import soot.baf.IncInst;
-import soot.baf.InstSwitch;
-import soot.jimple.Constant;
-import soot.util.Switch;
-
-import java.util.Collections;
-import java.util.List;
+import soot.*;
+import soot.jimple.*;
+import soot.baf.*;
+import soot.util.*;
+import java.util.*;
 
 public class BIncInst extends AbstractInst implements IncInst {
 	final ValueBox localBox;

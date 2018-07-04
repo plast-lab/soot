@@ -30,6 +30,7 @@
 
 
 package soot.coffi;
+import soot.*;
 
 /** A debugging attribute, this gives the types of local variables
  * within blocks of bytecode. - for java 1.5

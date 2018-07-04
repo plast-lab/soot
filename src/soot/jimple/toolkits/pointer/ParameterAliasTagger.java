@@ -18,13 +18,10 @@
  */
 
 package soot.jimple.toolkits.pointer;
-
 import soot.*;
-import soot.jimple.IdentityStmt;
-import soot.jimple.ParameterRef;
-import soot.jimple.Stmt;
 import soot.singletons.Singletons;
-import soot.tagkit.ColorTag;
+import soot.tagkit.*;
+import soot.jimple.*;
 
 import java.util.*;
 

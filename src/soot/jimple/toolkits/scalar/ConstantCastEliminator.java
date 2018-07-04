@@ -25,11 +25,21 @@
 
 package soot.jimple.toolkits.scalar;
 
-import soot.*;
-import soot.jimple.*;
-import soot.singletons.Singletons;
-
 import java.util.Map;
+
+import soot.Body;
+import soot.BodyTransformer;
+import soot.DoubleType;
+import soot.FloatType;
+import soot.G;
+import soot.singletons.Singletons;
+import soot.Unit;
+import soot.jimple.AssignStmt;
+import soot.jimple.CastExpr;
+import soot.jimple.Constant;
+import soot.jimple.DoubleConstant;
+import soot.jimple.FloatConstant;
+import soot.jimple.IntConstant;
 
 /**
  * Transformer for removing unnecessary casts on primitive values. An assignment

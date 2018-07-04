@@ -19,6 +19,14 @@
 
 package soot.dava.internal.SET;
 
+import java.io.PrintStream;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+
 import soot.G;
 import soot.dava.DavaBody;
 import soot.dava.internal.AST.ASTNode;
@@ -28,9 +36,6 @@ import soot.dava.toolkits.base.finders.LabeledBlockFinder;
 import soot.dava.toolkits.base.finders.SequenceFinder;
 import soot.util.IterableSet;
 import soot.util.UnmodifiableIterableSet;
-
-import java.io.PrintStream;
-import java.util.*;
 
 public abstract class SETNode {
 	private IterableSet<AugmentedStmt> body;

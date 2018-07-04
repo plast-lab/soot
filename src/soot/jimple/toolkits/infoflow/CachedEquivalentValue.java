@@ -19,10 +19,10 @@
 
 package soot.jimple.toolkits.infoflow;
 
+import java.util.WeakHashMap;
+
 import soot.EquivalentValue;
 import soot.Value;
-
-import java.util.WeakHashMap;
 
 /**
  * An {@link EquivalentValue} with cached hash code and equals-relation.

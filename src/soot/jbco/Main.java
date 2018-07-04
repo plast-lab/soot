@@ -19,11 +19,11 @@
 
 package soot.jbco;
 
+import java.util.*;
+
 import soot.*;
 import soot.jbco.bafTransformations.*;
 import soot.jbco.jimpleTransformations.*;
-
-import java.util.*;
 /**
  * @author Michael Batchelder 
  * 

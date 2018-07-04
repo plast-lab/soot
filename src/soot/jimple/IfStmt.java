@@ -29,10 +29,7 @@
 
 package soot.jimple;
 
-import soot.Unit;
-import soot.UnitBox;
-import soot.Value;
-import soot.ValueBox;
+import soot.*;
 
 public interface IfStmt extends Stmt
 {

@@ -31,11 +31,9 @@
 package soot.jimple.internal;
 
 import soot.*;
-import soot.baf.Baf;
-import soot.jimple.ExprSwitch;
-import soot.jimple.Jimple;
-import soot.jimple.ShrExpr;
-import soot.util.Switch;
+import soot.jimple.*;
+import soot.baf.*;
+import soot.util.*;
 
 public class JShrExpr extends AbstractJimpleIntLongBinopExpr implements ShrExpr
 {

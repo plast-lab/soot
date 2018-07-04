@@ -18,15 +18,15 @@
  */
 
 package soot;
+import java.io.File;
 
 import polyglot.ast.Node;
+
 import soot.javaToJimple.IInitialResolver;
-import soot.javaToJimple.IInitialResolver.Dependencies;
 import soot.javaToJimple.InitialResolver;
+import soot.javaToJimple.IInitialResolver.Dependencies;
 import soot.options.Options;
 import soot.toolkits.astmetrics.ComputeASTMetrics;
-
-import java.io.File;
 
 /** A class source for resolving from .java files using javaToJimple.
  */

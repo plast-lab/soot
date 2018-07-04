@@ -30,15 +30,12 @@
 
 package soot.jimple.internal;
 
-import soot.Unit;
-import soot.UnitPrinter;
-import soot.Value;
-import soot.ValueBox;
-import soot.baf.Baf;
+import soot.*;
 import soot.jimple.*;
-import soot.util.Switch;
+import soot.baf.*;
+import soot.util.*;
 
-import java.util.List;
+import java.util.*;
 
 public class JReturnStmt extends AbstractOpStmt implements ReturnStmt
 {

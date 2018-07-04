@@ -29,10 +29,8 @@
 
 package soot.baf.internal;
 
-import soot.AbstractTrap;
-import soot.SootClass;
-import soot.Unit;
-import soot.baf.Baf;
+import soot.*;
+import soot.baf.*;
 
 public class BTrap extends AbstractTrap
 {

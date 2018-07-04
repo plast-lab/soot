@@ -3,27 +3,32 @@ package soot.jimple.toolkits.thread.mhp;
 
 import soot.*;
 import soot.jimple.*;
-import soot.jimple.internal.JIdentityStmt;
-import soot.jimple.spark.pag.AllocNode;
-import soot.jimple.spark.pag.Node;
-import soot.jimple.spark.pag.PAG;
-import soot.jimple.spark.sets.P2SetVisitor;
-import soot.jimple.spark.sets.PointsToSetInternal;
-import soot.jimple.toolkits.callgraph.CallGraph;
-import soot.jimple.toolkits.thread.mhp.stmt.*;
-import soot.tagkit.StringTag;
-import soot.toolkits.graph.CompleteUnitGraph;
-import soot.toolkits.graph.UnitGraph;
-import soot.toolkits.scalar.ArraySparseSet;
-import soot.toolkits.scalar.FlowSet;
-import soot.util.Chain;
-import soot.util.HashChain;
+import soot.jimple.toolkits.thread.mhp.stmt.BeginStmt;
+import soot.jimple.toolkits.thread.mhp.stmt.JPegStmt;
+import soot.jimple.toolkits.thread.mhp.stmt.JoinStmt;
+import soot.jimple.toolkits.thread.mhp.stmt.MonitorEntryStmt;
+import soot.jimple.toolkits.thread.mhp.stmt.MonitorExitStmt;
+import soot.jimple.toolkits.thread.mhp.stmt.NotifiedEntryStmt;
+import soot.jimple.toolkits.thread.mhp.stmt.NotifyAllStmt;
+import soot.jimple.toolkits.thread.mhp.stmt.NotifyStmt;
+import soot.jimple.toolkits.thread.mhp.stmt.OtherStmt;
+import soot.jimple.toolkits.thread.mhp.stmt.StartStmt;
+import soot.jimple.toolkits.thread.mhp.stmt.WaitStmt;
+import soot.jimple.toolkits.thread.mhp.stmt.WaitingStmt;
+import soot.toolkits.scalar.*;
+import soot.jimple.internal.*;
+import soot.jimple.spark.sets.*;
+import soot.jimple.spark.pag.*;
+import soot.toolkits.graph.*;
+import soot.jimple.toolkits.callgraph.*;
+//import soot.util.cfgcmd.*;
+import soot.util.*;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
-//import soot.util.cfgcmd.*;
 //add for add tag
+import soot.tagkit.*;
 
 
 // *** USE AT YOUR OWN RISK ***

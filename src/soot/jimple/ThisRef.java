@@ -26,14 +26,9 @@
 
 package soot.jimple;
 
-import soot.RefType;
-import soot.Type;
-import soot.UnitPrinter;
-import soot.ValueBox;
-import soot.util.Switch;
-
-import java.util.Collections;
-import java.util.List;
+import soot.*;
+import soot.util.*;
+import java.util.*;
 
 public class ThisRef implements IdentityRef
 {

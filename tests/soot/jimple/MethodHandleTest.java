@@ -1,13 +1,16 @@
 package soot.jimple;
 
 import com.google.common.io.Files;
+
 import org.junit.Ignore;
 import org.junit.Test;
+import org.objectweb.asm.*;
 import soot.G;
 import soot.Main;
 
 import java.io.File;
 import java.io.IOException;
+import java.lang.invoke.*;
 import java.util.Arrays;
 
 public class MethodHandleTest {

@@ -19,13 +19,11 @@
 
 package soot.shimple;
 
-import soot.Body;
-import soot.PointsToAnalysis;
-import soot.jimple.toolkits.callgraph.CallGraph;
-import soot.jimple.toolkits.pointer.SideEffectAnalysis;
+import soot.*;
+import soot.shimple.toolkits.graph.*;
+import soot.jimple.toolkits.callgraph.*;
+import soot.jimple.toolkits.pointer.*;
 import soot.jimple.toolkits.scalar.UnreachableCodeEliminator;
-import soot.shimple.toolkits.graph.GlobalValueNumberer;
-import soot.shimple.toolkits.graph.SimpleGlobalValueNumberer;
 import soot.toolkits.graph.*;
 
 /**

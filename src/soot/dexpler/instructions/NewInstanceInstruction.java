@@ -24,11 +24,17 @@
 
 package soot.dexpler.instructions;
 
+import static soot.dexpler.Util.dottedClassName;
+
+import java.util.HashSet;
+import java.util.Set;
+
 import org.jf.dexlib2.iface.instruction.Instruction;
 import org.jf.dexlib2.iface.instruction.OneRegisterInstruction;
 import org.jf.dexlib2.iface.instruction.ReferenceInstruction;
 import org.jf.dexlib2.iface.instruction.formats.Instruction21c;
 import org.jf.dexlib2.iface.reference.TypeReference;
+
 import soot.RefType;
 import soot.Type;
 import soot.dexpler.DexBody;
@@ -38,11 +44,6 @@ import soot.dexpler.typing.DalvikTyper;
 import soot.jimple.AssignStmt;
 import soot.jimple.Jimple;
 import soot.jimple.NewExpr;
-
-import java.util.HashSet;
-import java.util.Set;
-
-import static soot.dexpler.Util.dottedClassName;
 
 public class NewInstanceInstruction extends DexlibAbstractInstruction {
 

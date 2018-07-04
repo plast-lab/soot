@@ -1,20 +1,60 @@
 package soot;
 
-import org.objectweb.asm.*;
-import org.objectweb.asm.util.TraceClassVisitor;
-import soot.baf.BafBody;
-import soot.jimple.JimpleBody;
-import soot.options.Options;
-import soot.tagkit.*;
-import soot.tagkit.Attribute;
-import soot.util.backend.SootASMClassWriter;
+import static soot.util.backend.ASMBackendUtils.createASMAttribute;
+import static soot.util.backend.ASMBackendUtils.getDefaultValue;
+import static soot.util.backend.ASMBackendUtils.slashify;
+import static soot.util.backend.ASMBackendUtils.toTypeDesc;
+import static soot.util.backend.ASMBackendUtils.translateJavaVersion;
 
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.PrintWriter;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
 
-import static soot.util.backend.ASMBackendUtils.*;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.ClassVisitor;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.util.TraceClassVisitor;
+
+import soot.baf.BafBody;
+import soot.jimple.JimpleBody;
+import soot.options.Options;
+import soot.tagkit.AnnotationAnnotationElem;
+import soot.tagkit.AnnotationArrayElem;
+import soot.tagkit.AnnotationBooleanElem;
+import soot.tagkit.AnnotationClassElem;
+import soot.tagkit.AnnotationConstants;
+import soot.tagkit.AnnotationDefaultTag;
+import soot.tagkit.AnnotationDoubleElem;
+import soot.tagkit.AnnotationElem;
+import soot.tagkit.AnnotationEnumElem;
+import soot.tagkit.AnnotationFloatElem;
+import soot.tagkit.AnnotationIntElem;
+import soot.tagkit.AnnotationLongElem;
+import soot.tagkit.AnnotationStringElem;
+import soot.tagkit.AnnotationTag;
+import soot.tagkit.Attribute;
+import soot.tagkit.EnclosingMethodTag;
+import soot.tagkit.Host;
+import soot.tagkit.InnerClassAttribute;
+import soot.tagkit.InnerClassTag;
+import soot.tagkit.OuterClassTag;
+import soot.tagkit.SignatureTag;
+import soot.tagkit.SourceFileTag;
+import soot.tagkit.Tag;
+import soot.tagkit.VisibilityAnnotationTag;
+import soot.tagkit.VisibilityParameterAnnotationTag;
+import soot.util.backend.SootASMClassWriter;
 
 /**
  * Abstract super-class for ASM-based back-ends. Generates byte-code for

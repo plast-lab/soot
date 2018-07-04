@@ -18,12 +18,42 @@
  */
 package soot.jimple.spark.ondemand.pautil;
 
-import soot.*;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.Set;
+
+import soot.ArrayType;
+import soot.CompilationDeathException;
+import soot.G;
+import soot.PointsToAnalysis;
+import soot.RefType;
+import soot.Scene;
+import soot.SootClass;
+import soot.SootField;
+import soot.SootMethod;
+import soot.Type;
 import soot.jimple.spark.ondemand.genericutil.ArraySet;
 import soot.jimple.spark.ondemand.genericutil.ArraySetMultiMap;
 import soot.jimple.spark.ondemand.genericutil.ImmutableStack;
 import soot.jimple.spark.ondemand.genericutil.Predicate;
-import soot.jimple.spark.pag.*;
+import soot.jimple.spark.pag.AllocNode;
+import soot.jimple.spark.pag.FieldRefNode;
+import soot.jimple.spark.pag.GlobalVarNode;
+import soot.jimple.spark.pag.LocalVarNode;
+import soot.jimple.spark.pag.Node;
+import soot.jimple.spark.pag.PAG;
+import soot.jimple.spark.pag.Parm;
+import soot.jimple.spark.pag.SparkField;
+import soot.jimple.spark.pag.StringConstantNode;
+import soot.jimple.spark.pag.VarNode;
 import soot.jimple.spark.sets.DoublePointsToSet;
 import soot.jimple.spark.sets.HybridPointsToSet;
 import soot.jimple.spark.sets.P2SetVisitor;
@@ -33,12 +63,6 @@ import soot.options.Options;
 import soot.toolkits.scalar.Pair;
 import soot.util.Chain;
 import soot.util.queue.ChunkedQueue;
-
-import java.io.*;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.Set;
 
 /**
  * Utility methods for dealing with Soot.

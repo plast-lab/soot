@@ -18,6 +18,9 @@
  */
 package soot.jimple.spark.geom.geomPA;
 
+import java.io.PrintStream;
+import java.util.Set;
+
 import soot.SootMethod;
 import soot.Type;
 import soot.jimple.spark.geom.dataMgr.PtSensVisitor;
@@ -27,9 +30,6 @@ import soot.jimple.spark.pag.AllocNode;
 import soot.jimple.spark.pag.LocalVarNode;
 import soot.jimple.spark.pag.Node;
 import soot.util.Numberable;
-
-import java.io.PrintStream;
-import java.util.Set;
 
 /**
  * Pointer/object representation in geomPTA.

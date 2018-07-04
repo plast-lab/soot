@@ -30,10 +30,8 @@
 
 package soot.jimple.internal;
 
-import soot.AbstractValueBox;
-import soot.Local;
-import soot.Value;
-import soot.jimple.ConcreteRef;
+import soot.*;
+import soot.jimple.*;
 
 public class VariableBox extends AbstractValueBox
 {

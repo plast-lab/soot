@@ -24,7 +24,17 @@
  */
 
 package soot;
+import java.io.PrintStream;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
+import soot.singletons.Singletons;
 import soot.coffi.Utf8_Enumeration;
 import soot.dava.internal.SET.SETBasicBlock;
 import soot.dava.internal.SET.SETNode;
@@ -36,14 +46,8 @@ import soot.jimple.toolkits.annotation.arraycheck.Array2ndDimensionSymbol;
 import soot.jimple.toolkits.pointer.UnionFactory;
 import soot.jimple.toolkits.pointer.util.NativeHelper;
 import soot.jimple.toolkits.typing.ClassHierarchy;
-import soot.singletons.Singletons;
 import soot.toolkits.astmetrics.ClassData;
 import soot.toolkits.scalar.Pair;
-
-import java.io.PrintStream;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.util.*;
 
 /** A class to group together all the global variables in Soot. */
 public class G extends Singletons

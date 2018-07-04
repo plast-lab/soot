@@ -30,16 +30,11 @@
 
 package soot.jimple.internal;
 
-import soot.Unit;
-import soot.UnitPrinter;
-import soot.baf.Baf;
-import soot.jimple.Jimple;
-import soot.jimple.JimpleToBafContext;
-import soot.jimple.ReturnVoidStmt;
-import soot.jimple.StmtSwitch;
-import soot.util.Switch;
-
-import java.util.List;
+import soot.*;
+import soot.jimple.*;
+import soot.util.*;
+import java.util.*;
+import soot.baf.*;
 
 public class JReturnVoidStmt extends AbstractStmt implements ReturnVoidStmt
 {

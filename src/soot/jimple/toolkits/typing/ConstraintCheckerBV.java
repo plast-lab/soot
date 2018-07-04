@@ -29,10 +29,8 @@ package soot.jimple.toolkits.typing;
 import soot.*;
 import soot.jimple.*;
 
-import java.io.PrintWriter;
-import java.io.StringWriter;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
+import java.io.*;
 
 /**
  * @deprecated use {@link soot.jimple.toolkits.typing.fast.TypeResolver} instead

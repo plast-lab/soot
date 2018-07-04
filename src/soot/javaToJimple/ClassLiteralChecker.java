@@ -18,10 +18,9 @@
  */
 
 package soot.javaToJimple;
+import java.util.*;
 
 import polyglot.ast.Node;
-
-import java.util.ArrayList;
 
 public class ClassLiteralChecker extends polyglot.visit.NodeVisitor {
 

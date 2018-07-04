@@ -18,11 +18,10 @@
  */
 
 package soot.dava.internal.SET;
+import soot.*;
 
-import soot.G;
-import soot.util.IterableSet;
-
-import java.util.Iterator;
+import java.util.*;
+import soot.util.*;
 
 public class SETBasicBlock implements Comparable
 {

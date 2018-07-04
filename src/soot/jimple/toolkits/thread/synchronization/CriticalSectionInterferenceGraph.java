@@ -1,13 +1,19 @@
 package soot.jimple.toolkits.thread.synchronization;
 
-import soot.*;
-import soot.jimple.toolkits.callgraph.ReachableMethods;
-import soot.jimple.toolkits.pointer.CodeBlockRWSet;
-import soot.jimple.toolkits.thread.mhp.MhpTester;
-
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+
+import soot.Hierarchy;
+import soot.Local;
+import soot.RefLikeType;
+import soot.RefType;
+import soot.Scene;
+import soot.SootClass;
+import soot.PointsToAnalysis;
+import soot.jimple.toolkits.callgraph.ReachableMethods;
+import soot.jimple.toolkits.pointer.CodeBlockRWSet;
+import soot.jimple.toolkits.thread.mhp.MhpTester;
 
 public class CriticalSectionInterferenceGraph {
 

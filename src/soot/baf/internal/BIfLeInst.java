@@ -29,11 +29,9 @@
 
 package soot.baf.internal;
 
-import soot.Unit;
-import soot.baf.Baf;
-import soot.baf.IfLeInst;
-import soot.baf.InstSwitch;
-import soot.util.Switch;
+import soot.*;
+import soot.baf.*;
+import soot.util.*;
 
 public class BIfLeInst extends AbstractBranchInst implements IfLeInst
 {

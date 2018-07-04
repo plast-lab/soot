@@ -19,14 +19,19 @@
 
 package soot.dava.toolkits.base.renamer;
 
-import soot.*;
-import soot.dava.internal.AST.ASTMethodNode;
-import soot.util.Chain;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
+
+import soot.ArrayType;
+import soot.Local;
+import soot.RefLikeType;
+import soot.SootClass;
+import soot.SootField;
+import soot.Type;
+import soot.dava.internal.AST.ASTMethodNode;
+import soot.util.Chain;
 
 
 public class Renamer {

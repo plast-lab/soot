@@ -1,10 +1,10 @@
 package soot.dava.toolkits.base.renamer;
 
+import java.util.Iterator;
+
 import soot.ArrayType;
 import soot.Type;
 import soot.util.IterableSet;
-
-import java.util.Iterator;
 
 public class RemoveFullyQualifiedName {
 

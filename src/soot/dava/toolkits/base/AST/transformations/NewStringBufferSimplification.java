@@ -18,16 +18,16 @@
  */
 package soot.dava.toolkits.base.AST.transformations;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
 import soot.Value;
 import soot.ValueBox;
 import soot.dava.internal.javaRep.DNewInvokeExpr;
 import soot.dava.internal.javaRep.DVirtualInvokeExpr;
 import soot.dava.toolkits.base.AST.analysis.DepthFirstAdapter;
 import soot.grimp.internal.GAddExpr;
-
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
 
 /*
  * Matches the output pattern

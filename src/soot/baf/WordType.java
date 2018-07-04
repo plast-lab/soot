@@ -29,10 +29,9 @@
 
 package soot.baf;
 
-import soot.G;
-import soot.Type;
+import soot.*;
 import soot.singletons.Singletons;
-import soot.util.Switch;
+import soot.util.*;
 
 public class WordType extends Type
 {

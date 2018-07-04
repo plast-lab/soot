@@ -19,9 +19,9 @@
 
 package soot.toolkits.astmetrics;
 
+import polyglot.visit.PrettyPrinter;
 import polyglot.ast.Node;
 import polyglot.util.CodeWriter;
-import polyglot.visit.PrettyPrinter;
 
 /**
  * @author Michael Batchelder 

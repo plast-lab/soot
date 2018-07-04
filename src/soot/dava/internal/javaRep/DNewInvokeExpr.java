@@ -20,12 +20,10 @@
 
 package soot.dava.internal.javaRep;
 
-import soot.RefType;
-import soot.SootMethodRef;
-import soot.grimp.Grimp;
-import soot.grimp.internal.GNewInvokeExpr;
-
-import java.util.ArrayList;
+import soot.*;
+import java.util.*;
+import soot.grimp.*;
+import soot.grimp.internal.*;
 
 public class DNewInvokeExpr extends GNewInvokeExpr
 {

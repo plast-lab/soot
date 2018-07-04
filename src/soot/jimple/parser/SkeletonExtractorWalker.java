@@ -27,15 +27,9 @@
 
 package soot.jimple.parser;
 
-import sablecc.soot.jimple.parser.node.AFile;
-import sablecc.soot.jimple.parser.node.AMethodMember;
-import sablecc.soot.jimple.parser.node.AThrowsClause;
-import sablecc.soot.jimple.parser.node.PModifier;
 import soot.*;
-
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import sablecc.soot.jimple.parser.node.*;
+import java.util.*;
 
 /* 
    Walks a jimple AST and extracts the fields, and method signatures and produces 

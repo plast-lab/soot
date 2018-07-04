@@ -25,6 +25,17 @@
 
 package soot;
 
+import java.io.ByteArrayOutputStream;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+
 import soot.jimple.IdentityStmt;
 import soot.jimple.ParameterRef;
 import soot.jimple.ThisRef;
@@ -35,13 +46,17 @@ import soot.tagkit.Tag;
 import soot.util.Chain;
 import soot.util.EscapedWriter;
 import soot.util.HashChain;
-import soot.validation.*;
-
-import java.io.ByteArrayOutputStream;
-import java.io.OutputStreamWriter;
-import java.io.PrintWriter;
-import java.io.Serializable;
-import java.util.*;
+import soot.validation.BodyValidator;
+import soot.validation.CheckEscapingValidator;
+import soot.validation.CheckInitValidator;
+import soot.validation.CheckTypesValidator;
+import soot.validation.CheckVoidLocalesValidator;
+import soot.validation.LocalsValidator;
+import soot.validation.TrapsValidator;
+import soot.validation.UnitBoxesValidator;
+import soot.validation.UsesValidator;
+import soot.validation.ValidationException;
+import soot.validation.ValueBoxesValidator;
 
 
 /**

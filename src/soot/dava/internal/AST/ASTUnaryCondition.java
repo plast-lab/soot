@@ -19,10 +19,9 @@
 
 package soot.dava.internal.AST;
 
-import soot.UnitPrinter;
-import soot.Value;
-import soot.dava.internal.javaRep.DNotExpr;
-import soot.dava.toolkits.base.AST.analysis.Analysis;
+import soot.*;
+import soot.dava.internal.javaRep.*;
+import soot.dava.toolkits.base.AST.analysis.*;
 
 public class ASTUnaryCondition extends ASTUnaryBinaryCondition{
       Value value;

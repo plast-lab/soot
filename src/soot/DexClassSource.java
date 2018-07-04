@@ -19,11 +19,12 @@ package soot;
  */
 
 
+
+import java.io.File;
+
 import soot.dexpler.DexResolver;
 import soot.javaToJimple.IInitialResolver.Dependencies;
 import soot.options.Options;
-
-import java.io.File;
 
 /**
  * Responsible for resolving a single class from a dex source format. 

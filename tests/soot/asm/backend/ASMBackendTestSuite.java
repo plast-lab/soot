@@ -2,6 +2,7 @@ package soot.asm.backend;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
+
 import soot.baf.ASMBackendMockingTest;
 import soot.util.backend.SootASMClassWriterTest;
 

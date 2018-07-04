@@ -2,19 +2,14 @@
 
 package sablecc.soot.jimple.parser.parser;
 
-import sablecc.soot.jimple.parser.analysis.Analysis;
-import sablecc.soot.jimple.parser.analysis.AnalysisAdapter;
-import sablecc.soot.jimple.parser.lexer.Lexer;
-import sablecc.soot.jimple.parser.lexer.LexerException;
+import sablecc.soot.jimple.parser.lexer.*;
 import sablecc.soot.jimple.parser.node.*;
+import sablecc.soot.jimple.parser.analysis.*;
+import java.util.*;
 
-import java.io.BufferedInputStream;
 import java.io.DataInputStream;
+import java.io.BufferedInputStream;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.ListIterator;
 
 @SuppressWarnings("nls")
 public class Parser

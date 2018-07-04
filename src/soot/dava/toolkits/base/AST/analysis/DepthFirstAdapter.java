@@ -30,16 +30,11 @@
 package soot.dava.toolkits.base.AST.analysis;
 
 import soot.*;
-import soot.dava.internal.AST.*;
-import soot.dava.internal.asg.AugmentedStmt;
-import soot.dava.internal.javaRep.DInstanceFieldRef;
-import soot.dava.internal.javaRep.DThisRef;
-import soot.dava.internal.javaRep.DVariableDeclarationStmt;
 import soot.jimple.*;
-
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
+import soot.dava.internal.AST.*;
+import soot.dava.internal.asg.*;
+import java.util.*;
+import soot.dava.internal.javaRep.*;
 /*
  * CHANGE LOG: 18th MArch 2006: Need a reference to the ValueBox holding a BinOp for SimplifyExpressions
  *              Need to create a level of indirection i.e. instead of retrieving Values e.g. from stmts retrieve the valueBox

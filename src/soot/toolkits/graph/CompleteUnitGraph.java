@@ -26,6 +26,7 @@
 package soot.toolkits.graph;
 
 import soot.Body;
+import soot.toolkits.graph.ExceptionalUnitGraph;
 import soot.toolkits.exceptions.PedanticThrowAnalysis;
 
 /**

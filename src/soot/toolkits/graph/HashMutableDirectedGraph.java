@@ -27,9 +27,9 @@
 package soot.toolkits.graph;
 
 
-import soot.G;
-
 import java.util.*;
+
+import soot.*;
 
 /**
  *   HashMap based implementation of a MutableBlockGraph.

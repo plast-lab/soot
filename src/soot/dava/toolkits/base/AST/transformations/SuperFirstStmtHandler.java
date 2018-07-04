@@ -114,30 +114,18 @@
 
 package soot.dava.toolkits.base.AST.transformations;
 
-import soot.*;
-import soot.dava.CorruptASTException;
-import soot.dava.Dava;
-import soot.dava.DavaBody;
-import soot.dava.DecompilationException;
-import soot.dava.internal.AST.ASTMethodNode;
-import soot.dava.internal.AST.ASTNode;
-import soot.dava.internal.AST.ASTStatementSequenceNode;
-import soot.dava.internal.asg.AugmentedStmt;
-import soot.dava.internal.javaRep.*;
-import soot.dava.toolkits.base.AST.analysis.DepthFirstAdapter;
-import soot.dava.toolkits.base.AST.traversals.ASTParentNodeFinder;
-import soot.dava.toolkits.base.AST.traversals.ASTUsesAndDefs;
-import soot.dava.toolkits.base.AST.traversals.AllDefinitionsFinder;
-import soot.grimp.internal.GAssignStmt;
-import soot.grimp.internal.GCastExpr;
-import soot.grimp.internal.GInvokeStmt;
-import soot.grimp.internal.GReturnStmt;
-import soot.jimple.DefinitionStmt;
-import soot.jimple.InstanceInvokeExpr;
-import soot.jimple.Stmt;
-import soot.jimple.internal.JimpleLocal;
-
 import java.util.*;
+
+import soot.*;
+import soot.jimple.*;
+import soot.jimple.internal.*;
+import soot.dava.*;
+import soot.grimp.internal.*;
+import soot.dava.internal.AST.*;
+import soot.dava.internal.asg.*;
+import soot.dava.internal.javaRep.*;
+import soot.dava.toolkits.base.AST.analysis.*;
+import soot.dava.toolkits.base.AST.traversals.*;
 
 public class SuperFirstStmtHandler extends DepthFirstAdapter {
 

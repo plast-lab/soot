@@ -18,14 +18,8 @@
  */
 
 package soot.jimple.toolkits.callgraph;
-
-import soot.MethodOrMethodContext;
-import soot.Unit;
-
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
+import soot.*;
+import java.util.*;
 
 /** Extends a TargetsOfMethod or TargetsOfUnit to include edges
  * transitively reachable from any target methods.

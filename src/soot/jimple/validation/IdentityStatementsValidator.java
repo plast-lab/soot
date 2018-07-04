@@ -1,5 +1,7 @@
 package soot.jimple.validation;
 
+import java.util.List;
+
 import soot.Body;
 import soot.SootMethod;
 import soot.Unit;
@@ -9,8 +11,6 @@ import soot.jimple.ThisRef;
 import soot.util.Chain;
 import soot.validation.BodyValidator;
 import soot.validation.ValidationException;
-
-import java.util.List;
 
 public enum IdentityStatementsValidator implements BodyValidator {
 	INSTANCE;	

@@ -18,16 +18,12 @@
  */
 
 package soot.jimple.spark.sets;
-
-import soot.G;
-import soot.PointsToSet;
-import soot.Type;
+import soot.*;
 import soot.jimple.ClassConstant;
 import soot.jimple.spark.pag.Node;
 import soot.singletons.Singletons;
 
-import java.util.Collections;
-import java.util.Set;
+import java.util.*;
 
 /** Implementation of an empty, immutable points-to set.
  * @author Ondrej Lhotak

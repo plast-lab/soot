@@ -29,9 +29,8 @@
 
 package soot.jimple;
 
-import soot.Unit;
-import soot.UnitPrinter;
-import soot.jimple.internal.AbstractStmt;
+import soot.*;
+import soot.jimple.internal.*;
 
 public class PlaceholderStmt extends AbstractStmt
 {

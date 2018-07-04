@@ -24,11 +24,15 @@
 
 package soot.dexpler.instructions;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import org.jf.dexlib2.iface.instruction.Instruction;
 import org.jf.dexlib2.iface.instruction.OneRegisterInstruction;
 import org.jf.dexlib2.iface.instruction.ReferenceInstruction;
 import org.jf.dexlib2.iface.instruction.formats.Instruction21c;
 import org.jf.dexlib2.iface.reference.TypeReference;
+
 import soot.Type;
 import soot.dexpler.DexBody;
 import soot.dexpler.DexType;
@@ -38,9 +42,6 @@ import soot.jimple.AssignStmt;
 import soot.jimple.ClassConstant;
 import soot.jimple.Constant;
 import soot.jimple.Jimple;
-
-import java.util.HashSet;
-import java.util.Set;
 
 public class ConstClassInstruction extends DexlibAbstractInstruction {
 

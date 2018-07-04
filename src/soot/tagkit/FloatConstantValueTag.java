@@ -25,6 +25,7 @@
 
 package soot.tagkit;
 
+import soot.jimple.Constant;
 import soot.jimple.FloatConstant;
 
 public class FloatConstantValueTag extends ConstantValueTag {

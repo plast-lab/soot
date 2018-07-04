@@ -19,12 +19,22 @@
 
 package soot.jimple.toolkits.reflection;
 
-import soot.*;
-import soot.options.Options;
-import soot.rtlib.tamiflex.*;
-
 import java.util.ArrayList;
 import java.util.Arrays;
+
+import soot.CompilationDeathException;
+import soot.G;
+import soot.PackManager;
+import soot.Scene;
+import soot.SootClass;
+import soot.Transform;
+import soot.options.Options;
+import soot.rtlib.tamiflex.DefaultHandler;
+import soot.rtlib.tamiflex.IUnexpectedReflectiveCallHandler;
+import soot.rtlib.tamiflex.OpaquePredicate;
+import soot.rtlib.tamiflex.ReflectiveCalls;
+import soot.rtlib.tamiflex.SootSig;
+import soot.rtlib.tamiflex.UnexpectedReflectiveCall;
 
 
 public class ReflInliner {

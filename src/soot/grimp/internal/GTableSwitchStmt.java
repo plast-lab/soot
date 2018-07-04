@@ -30,14 +30,11 @@
 
 package soot.grimp.internal;
 
-import soot.Unit;
-import soot.UnitBox;
-import soot.Value;
-import soot.grimp.Grimp;
-import soot.jimple.Stmt;
-import soot.jimple.internal.JTableSwitchStmt;
-
-import java.util.List;
+import soot.*;
+import soot.grimp.*;
+import soot.jimple.internal.*;
+import soot.jimple.*;
+import java.util.*;
 
 public class GTableSwitchStmt extends JTableSwitchStmt
 {

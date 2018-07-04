@@ -19,12 +19,11 @@
 
 package soot.javaToJimple.jj.ast;
 
-import polyglot.ast.Expr;
-import polyglot.ast.Local;
-import polyglot.ext.jl.ast.LocalAssign_c;
-import polyglot.types.Type;
-import polyglot.util.Position;
-import polyglot.visit.AscriptionVisitor;
+import polyglot.ast.*;
+import polyglot.visit.*;
+import polyglot.ext.jl.ast.*;
+import polyglot.types.*;
+import polyglot.util.*;
 
 public class JjLocalAssign_c extends LocalAssign_c {
 

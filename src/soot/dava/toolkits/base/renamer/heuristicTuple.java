@@ -19,10 +19,7 @@
 
 package soot.dava.toolkits.base.renamer;
 
-import java.util.BitSet;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Vector;
+import java.util.*;
 
 public class heuristicTuple{
     BitSet heuristics;

@@ -29,9 +29,8 @@
 
 package soot.jimple;
 
-import soot.LongType;
-import soot.Type;
-import soot.util.Switch;
+import soot.*;
+import soot.util.*;
 
 public class LongConstant extends ArithmeticConstant
 {

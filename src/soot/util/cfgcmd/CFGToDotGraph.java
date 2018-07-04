@@ -19,16 +19,22 @@
 
 package soot.util.cfgcmd;
 
-import soot.Body;
-import soot.BriefUnitPrinter;
-import soot.LabeledUnitPrinter;
-import soot.Unit;
-import soot.toolkits.exceptions.ThrowableSet;
-import soot.toolkits.graph.*;
-import soot.toolkits.graph.ExceptionalGraph.ExceptionDest;
-import soot.util.dot.*;
-
 import java.util.*;
+
+import soot.*;
+import soot.toolkits.exceptions.ThrowableSet;
+import soot.toolkits.graph.DirectedGraph;
+import soot.toolkits.graph.BlockGraph;
+import soot.toolkits.graph.ExceptionalGraph;
+import soot.toolkits.graph.Block;
+import soot.toolkits.graph.DominatorNode;
+import soot.toolkits.graph.ExceptionalGraph.ExceptionDest;
+import soot.toolkits.graph.UnitGraph;
+import soot.util.dot.DotGraph;
+import soot.util.dot.DotGraphAttribute;
+import soot.util.dot.DotGraphConstants;
+import soot.util.dot.DotGraphEdge;
+import soot.util.dot.DotGraphNode;
 
 
 /**

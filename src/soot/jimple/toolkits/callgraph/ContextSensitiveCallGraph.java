@@ -18,12 +18,8 @@
  */
 
 package soot.jimple.toolkits.callgraph;
-
-import soot.Context;
-import soot.SootMethod;
-import soot.Unit;
-
-import java.util.Iterator;
+import soot.*;
+import java.util.*;
 
 /** Represents a context-sensitive call graph for querying by client analyses.
  * @author Ondrej Lhotak

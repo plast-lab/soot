@@ -24,12 +24,11 @@
  */
 
 package soot.jimple.toolkits.annotation.arraycheck;
-
+import soot.options.Options;
 import soot.*;
 import soot.jimple.*;
-import soot.options.Options;
 import soot.singletons.Singletons;
-import soot.toolkits.scalar.LocalDefs;
+import soot.toolkits.scalar.*;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;

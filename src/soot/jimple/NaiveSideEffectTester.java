@@ -27,8 +27,7 @@
 package soot.jimple;
 
 import soot.*;
-
-import java.util.Iterator;
+import java.util.*;
 
 /** Provides naive side effect information. 
  * Relies on no context information; instead, does the least 

@@ -24,11 +24,10 @@
  */
 
 package soot.toolkits.graph;
-
-import soot.G;
 import soot.options.Options;
-import soot.util.StationaryArrayList;
 
+import soot.*;
+import soot.util.*;
 import java.util.*;
 
 

@@ -19,17 +19,18 @@
 
 package soot.jbco.bafTransformations;
 
+import java.util.*;
+
 import soot.*;
 import soot.baf.*;
 import soot.baf.internal.AbstractOpTypeInst;
 import soot.jbco.IJbcoTransform;
-import soot.jimple.*;
+import soot.jimple.DoubleConstant;
+import soot.jimple.FloatConstant;
+import soot.jimple.IntConstant;
+import soot.jimple.LongConstant;
+import soot.jimple.NullConstant;
 import soot.toolkits.scalar.GuaranteedDefs;
-
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
 
 /**
  * @author Michael Batchelder 

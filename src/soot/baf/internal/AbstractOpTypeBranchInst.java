@@ -30,7 +30,7 @@
 package soot.baf.internal;
 
 import soot.*;
-import soot.baf.Baf;
+import soot.baf.*;
 
 public abstract class AbstractOpTypeBranchInst extends AbstractBranchInst
 {

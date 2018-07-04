@@ -26,9 +26,9 @@
 package soot;
 
 import soot.singletons.Singletons;
-import soot.util.Switch;
+import soot.util.*;
 
-import java.util.LinkedList;
+import java.util.*;
 
 /**
  * A class that models Java's reference types. RefTypes are parametrized by a

@@ -19,15 +19,11 @@
 
 package soot.dava.internal.AST;
 
-import soot.Unit;
-import soot.UnitPrinter;
-import soot.dava.internal.SET.SETNodeLabel;
-import soot.dava.internal.asg.AugmentedStmt;
-import soot.dava.toolkits.base.AST.analysis.Analysis;
-
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
+import soot.*;
+import soot.dava.internal.SET.*;
+import soot.dava.internal.asg.*;
+import soot.dava.toolkits.base.AST.analysis.*;
 
 /*
  Will contain the For loop Construct

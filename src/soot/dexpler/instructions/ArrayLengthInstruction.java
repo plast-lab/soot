@@ -27,6 +27,7 @@ package soot.dexpler.instructions;
 import org.jf.dexlib2.iface.instruction.Instruction;
 import org.jf.dexlib2.iface.instruction.TwoRegisterInstruction;
 import org.jf.dexlib2.iface.instruction.formats.Instruction12x;
+
 import soot.IntType;
 import soot.Local;
 import soot.dexpler.DexBody;

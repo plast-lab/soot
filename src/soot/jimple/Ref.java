@@ -30,7 +30,7 @@
 
 package soot.jimple;
 
-import soot.Value;
+import soot.*;
 
 public interface Ref extends Value
 {

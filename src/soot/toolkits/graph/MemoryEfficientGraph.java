@@ -27,7 +27,7 @@
 package soot.toolkits.graph;
 
 
-import java.util.HashMap;
+import java.util.*;
 
 
 

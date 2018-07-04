@@ -19,6 +19,10 @@
 
 package soot.jimple.validation;
 
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 import soot.Body;
 import soot.Trap;
 import soot.Unit;
@@ -26,10 +30,6 @@ import soot.jimple.CaughtExceptionRef;
 import soot.jimple.IdentityStmt;
 import soot.validation.BodyValidator;
 import soot.validation.ValidationException;
-
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
 
 /**
  * This validator checks whether the jimple traps are correct.

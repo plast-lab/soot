@@ -1,15 +1,6 @@
 
 package jastadd.soot.JastAddJ;
-
-import soot.SootClass;
-import soot.SootResolver;
-import soot.tagkit.SourceFileTag;
-
-import java.io.File;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
+import java.util.HashSet;import java.util.LinkedHashSet;import java.io.File;import java.util.*;import jastadd.beaver.*;import java.util.ArrayList;import java.util.zip.*;import java.io.*;import java.io.FileNotFoundException;import java.util.Collection;import soot.*;import soot.util.*;import soot.jimple.*;import soot.coffi.ClassFile;import soot.coffi.method_info;import soot.coffi.CONSTANT_Utf8_info;import soot.tagkit.SourceFileTag;import soot.coffi.CoffiMethodSource;
 
 
 public class InterfaceDecl extends ReferenceType implements Cloneable {

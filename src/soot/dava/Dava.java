@@ -21,12 +21,24 @@
 package soot.dava;
 
 
-import soot.*;
-import soot.jimple.Jimple;
-import soot.singletons.Singletons;
-import soot.util.IterableSet;
+import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.io.PrintStream;
+import java.io.UnsupportedEncodingException;
+import java.io.Writer;
 
-import java.io.*;
+import soot.Body;
+import soot.CompilationDeathException;
+import soot.G;
+import soot.Local;
+import soot.singletons.Singletons;
+import soot.SootMethod;
+import soot.Type;
+import soot.jimple.Jimple;
+import soot.util.IterableSet;
 
 
 

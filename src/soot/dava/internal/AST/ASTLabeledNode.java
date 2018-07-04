@@ -20,9 +20,9 @@
 
 package soot.dava.internal.AST;
 
-import soot.UnitPrinter;
-import soot.dava.internal.SET.SETNodeLabel;
-import soot.dava.toolkits.base.AST.ASTAnalysis;
+import soot.*;
+import soot.dava.internal.SET.*;
+import soot.dava.toolkits.base.AST.*;
 
 public abstract class ASTLabeledNode extends ASTNode
 {

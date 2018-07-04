@@ -29,8 +29,7 @@
 
 package soot.jimple;
 
-import soot.Value;
-import soot.ValueBox;
+import soot.*;
 
 public interface MonitorStmt extends Stmt
 {

@@ -19,10 +19,10 @@
 package soot.toolkits.graph.pdg;
 
 
-import soot.toolkits.graph.Block;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import soot.toolkits.graph.Block;
 
 
 /**

@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class FinalFieldTest {
 
     private final LinkedList attributes = new LinkedList(new MyAttributeColl());

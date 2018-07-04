@@ -25,7 +25,19 @@
 
 package soot.tools;
 
-import soot.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import soot.Body;
+import soot.BodyTransformer;
+import soot.G;
+import soot.PackManager;
+import soot.PhaseOptions;
+import soot.SootMethod;
+import soot.Transform;
+import soot.Unit;
 import soot.jimple.JimpleBody;
 import soot.options.Options;
 import soot.toolkits.graph.DirectedGraph;
@@ -34,11 +46,6 @@ import soot.util.cfgcmd.CFGGraphType;
 import soot.util.cfgcmd.CFGIntermediateRep;
 import soot.util.cfgcmd.CFGToDotGraph;
 import soot.util.dot.DotGraph;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 /**
  * A utility class for generating dot graph file for a control flow graph

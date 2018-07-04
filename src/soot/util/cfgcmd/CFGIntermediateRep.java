@@ -20,9 +20,9 @@
 package soot.util.cfgcmd;
 
 import soot.Body;
+import soot.jimple.JimpleBody;
 import soot.baf.Baf;
 import soot.grimp.Grimp;
-import soot.jimple.JimpleBody;
 import soot.shimple.Shimple;
 
 /**

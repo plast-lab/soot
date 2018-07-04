@@ -19,14 +19,11 @@
 
 package soot.javaToJimple.jj.ast;
 
-import polyglot.ast.Expr;
-import polyglot.ext.jl.ast.Return_c;
-import polyglot.types.CodeInstance;
-import polyglot.types.Context;
-import polyglot.types.MethodInstance;
-import polyglot.types.Type;
-import polyglot.util.Position;
-import polyglot.visit.AscriptionVisitor;
+import polyglot.ast.*;
+import polyglot.types.*;
+import polyglot.visit.*;
+import polyglot.ext.jl.ast.*;
+import polyglot.util.*;
 
 public class JjReturn_c extends Return_c {
 

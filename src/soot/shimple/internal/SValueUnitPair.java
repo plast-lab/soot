@@ -19,8 +19,7 @@
 
 package soot.shimple.internal;
 
-import soot.Unit;
-import soot.Value;
+import soot.*;
 import soot.toolkits.scalar.ValueUnitPair;
 
 /**

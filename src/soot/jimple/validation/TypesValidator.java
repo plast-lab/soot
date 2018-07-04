@@ -1,13 +1,13 @@
 package soot.jimple.validation;
 
+import java.util.List;
+
 import soot.Body;
 import soot.Local;
 import soot.SootMethod;
 import soot.Type;
 import soot.validation.BodyValidator;
 import soot.validation.ValidationException;
-
-import java.util.List;
 
 /**
  * Checks whether the types used for locals, method parameters, and method

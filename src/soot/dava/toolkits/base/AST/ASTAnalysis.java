@@ -26,9 +26,9 @@
 
 package soot.dava.toolkits.base.AST;
 
-import soot.Value;
-import soot.dava.internal.AST.ASTNode;
+import soot.*;
 import soot.jimple.*;
+import soot.dava.internal.AST.*;
 
 public abstract class ASTAnalysis
 {

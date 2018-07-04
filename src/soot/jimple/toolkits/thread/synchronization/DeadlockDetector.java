@@ -1,14 +1,25 @@
 package soot.jimple.toolkits.thread.synchronization;
 
-import soot.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+import java.util.Map;
+import java.util.Objects;
+
+import soot.EquivalentValue;
+import soot.G;
+import soot.MethodOrMethodContext;
+import soot.Scene;
+import soot.Unit;
+import soot.Value;
 import soot.jimple.spark.pag.PAG;
 import soot.jimple.spark.sets.HashPointsToSet;
 import soot.jimple.spark.sets.PointsToSetInternal;
 import soot.jimple.toolkits.callgraph.Filter;
 import soot.jimple.toolkits.callgraph.TransitiveTargets;
 import soot.toolkits.graph.*;
-
-import java.util.*;
 
 public class DeadlockDetector {
 

@@ -1,11 +1,13 @@
 package soot.dava.toolkits.base.AST.structuredAnalysis;
 
-import soot.dava.DecompilationException;
-import soot.toolkits.scalar.FlowSet;
-
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.List;
+
+import soot.dava.DecompilationException;
+import soot.dava.toolkits.base.AST.structuredAnalysis.CPVariable;
+import soot.dava.toolkits.base.AST.structuredAnalysis.CPTuple;
+import soot.toolkits.scalar.FlowSet;
 
 /*
  * Really the only reason for needing a specialized flow set is that

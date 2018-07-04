@@ -20,11 +20,15 @@
 package soot.dava;
 
 
-import soot.*;
+import soot.Body;
+import soot.G;
+import soot.Modifier;
+import soot.singletons.Singletons;
+import soot.SootClass;
+import soot.SootMethod;
 import soot.dava.internal.AST.ASTMethodNode;
 import soot.dava.internal.AST.ASTNode;
 import soot.dava.internal.AST.ASTStatementSequenceNode;
-import soot.singletons.Singletons;
 import soot.util.Chain;
 
 

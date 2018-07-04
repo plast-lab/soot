@@ -24,24 +24,16 @@
  */
 
 package soot.jimple.toolkits.annotation.arraycheck;
+import soot.options.Options;
 
 import soot.*;
-import soot.jimple.ArrayRef;
-import soot.jimple.IntConstant;
-import soot.jimple.Jimple;
-import soot.jimple.Stmt;
-import soot.jimple.toolkits.annotation.tags.ArrayCheckTag;
-import soot.options.ABCOptions;
-import soot.options.Options;
+import soot.jimple.*;
 import soot.singletons.Singletons;
-import soot.tagkit.ColorTag;
-import soot.tagkit.KeyTag;
-import soot.tagkit.Tag;
-import soot.util.Chain;
-
-import java.util.Date;
-import java.util.Iterator;
-import java.util.Map;
+import soot.util.*;
+import soot.tagkit.*;
+import soot.jimple.toolkits.annotation.tags.*;
+import java.util.*;
+import soot.options.ABCOptions;
 
 public class ArrayBoundsChecker extends BodyTransformer
 {

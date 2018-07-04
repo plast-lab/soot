@@ -19,16 +19,11 @@
 
 package soot.jbco.jimpleTransformations;
 
+import java.util.*;
 import soot.*;
 import soot.jbco.IJbcoTransform;
-import soot.jbco.util.BodyBuilder;
-import soot.jbco.util.Rand;
-import soot.jimple.InvokeExpr;
-
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Vector;
+import soot.jbco.util.*;
+import soot.jimple.*;
 
 /**
  * @author Michael Batchelder

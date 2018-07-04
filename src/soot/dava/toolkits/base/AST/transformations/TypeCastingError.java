@@ -1,6 +1,15 @@
 package soot.dava.toolkits.base.AST.transformations;
 
-import soot.*;
+import soot.ByteType;
+import soot.DoubleType;
+import soot.FloatType;
+import soot.IntType;
+import soot.LongType;
+import soot.PrimType;
+import soot.ShortType;
+import soot.Type;
+import soot.Value;
+import soot.ValueBox;
 import soot.dava.internal.AST.ASTStatementSequenceNode;
 import soot.dava.internal.asg.AugmentedStmt;
 import soot.dava.toolkits.base.AST.analysis.DepthFirstAdapter;

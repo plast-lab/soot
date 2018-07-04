@@ -18,15 +18,6 @@
  */
 package soot.jimple.spark.ondemand.pautil;
 
-import soot.G;
-import soot.SootMethod;
-import soot.jimple.InvokeExpr;
-import soot.jimple.spark.ondemand.genericutil.ArraySet;
-import soot.jimple.spark.ondemand.genericutil.ArraySetMultiMap;
-import soot.jimple.spark.pag.*;
-import soot.toolkits.scalar.Pair;
-import soot.util.HashMultiMap;
-
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -34,6 +25,19 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
+
+import soot.G;
+import soot.SootMethod;
+import soot.jimple.InvokeExpr;
+import soot.jimple.spark.ondemand.genericutil.ArraySet;
+import soot.jimple.spark.ondemand.genericutil.ArraySetMultiMap;
+import soot.jimple.spark.pag.GlobalVarNode;
+import soot.jimple.spark.pag.LocalVarNode;
+import soot.jimple.spark.pag.Node;
+import soot.jimple.spark.pag.PAG;
+import soot.jimple.spark.pag.VarNode;
+import soot.toolkits.scalar.Pair;
+import soot.util.HashMultiMap;
 
 /**
  * Information for a context-sensitive analysis, eg. for call sites

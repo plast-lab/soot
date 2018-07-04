@@ -23,14 +23,26 @@ import heros.FlowFunction;
 import heros.FlowFunctions;
 import heros.InterproceduralCFG;
 import heros.flowfunc.Identity;
-import soot.*;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import soot.Local;
+import soot.NullType;
+import soot.Scene;
+import soot.SootMethod;
+import soot.Unit;
+import soot.Value;
+import soot.ValueBox;
 import soot.jimple.InvokeExpr;
 import soot.jimple.ReturnStmt;
 import soot.jimple.Stmt;
 import soot.jimple.internal.JimpleLocal;
 import soot.jimple.toolkits.ide.DefaultJimpleIFDSTabulationProblem;
-
-import java.util.*;
 
 public class IFDSLiveVariables extends DefaultJimpleIFDSTabulationProblem<Value,InterproceduralCFG<Unit, SootMethod>> {
 	public IFDSLiveVariables(InterproceduralCFG<Unit, SootMethod> icfg) {

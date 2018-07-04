@@ -19,10 +19,17 @@
 
 package soot.jimple.toolkits.pointer;
 
-import soot.*;
+import soot.Local;
+import soot.PointsToAnalysis;
+import soot.PointsToSet;
+import soot.RefLikeType;
+import soot.Scene;
+import soot.SootMethod;
 import soot.jimple.Stmt;
 import soot.jimple.spark.sets.EqualsSupportingPointsToSet;
 import soot.jimple.spark.sets.PointsToSetEqualsWrapper;
+import soot.jimple.toolkits.pointer.LocalMustAliasAnalysis;
+import soot.jimple.toolkits.pointer.LocalMustNotAliasAnalysis;
 
 /**
  * An instance key is a static representative of a runtime object.

@@ -19,13 +19,9 @@
 
 package soot.dava.internal.javaRep;
 
-import soot.ArrayType;
-import soot.Type;
-import soot.UnitPrinter;
-import soot.Value;
-import soot.grimp.Grimp;
-import soot.grimp.Precedence;
-import soot.jimple.internal.AbstractNewArrayExpr;
+import soot.*;
+import soot.grimp.*;
+import soot.jimple.internal.*;
 
 public class DNewArrayExpr extends AbstractNewArrayExpr implements Precedence
 {

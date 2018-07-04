@@ -30,13 +30,10 @@
 
 package soot.jimple.internal;
 
-import soot.ArrayType;
-import soot.Value;
-import soot.ValueBox;
-import soot.jimple.Jimple;
+import soot.*;
+import soot.jimple.*;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class JNewMultiArrayExpr extends AbstractNewMultiArrayExpr
 {

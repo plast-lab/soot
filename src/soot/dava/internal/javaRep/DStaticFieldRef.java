@@ -20,9 +20,8 @@
 
 package soot.dava.internal.javaRep;
 
-import soot.SootFieldRef;
-import soot.UnitPrinter;
-import soot.jimple.StaticFieldRef;
+import soot.*;
+import soot.jimple.*;
 
 public class DStaticFieldRef extends StaticFieldRef 
 {

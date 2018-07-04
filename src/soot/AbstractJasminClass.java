@@ -31,6 +31,14 @@
 
 
 package soot;
+import java.io.File;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
 
 import soot.baf.DoubleWordType;
 import soot.jimple.DoubleConstant;
@@ -38,13 +46,36 @@ import soot.jimple.FloatConstant;
 import soot.jimple.IdentityStmt;
 import soot.jimple.Stmt;
 import soot.options.Options;
-import soot.tagkit.*;
+import soot.tagkit.AnnotationAnnotationElem;
+import soot.tagkit.AnnotationArrayElem;
+import soot.tagkit.AnnotationBooleanElem;
+import soot.tagkit.AnnotationClassElem;
+import soot.tagkit.AnnotationConstants;
+import soot.tagkit.AnnotationDefaultTag;
+import soot.tagkit.AnnotationDoubleElem;
+import soot.tagkit.AnnotationElem;
+import soot.tagkit.AnnotationEnumElem;
+import soot.tagkit.AnnotationFloatElem;
+import soot.tagkit.AnnotationIntElem;
+import soot.tagkit.AnnotationLongElem;
+import soot.tagkit.AnnotationStringElem;
+import soot.tagkit.AnnotationTag;
+import soot.tagkit.Attribute;
 import soot.tagkit.Base64;
+import soot.tagkit.DoubleConstantValueTag;
+import soot.tagkit.EnclosingMethodTag;
+import soot.tagkit.FloatConstantValueTag;
+import soot.tagkit.InnerClassAttribute;
+import soot.tagkit.InnerClassTag;
+import soot.tagkit.IntegerConstantValueTag;
+import soot.tagkit.LongConstantValueTag;
+import soot.tagkit.SignatureTag;
+import soot.tagkit.SourceFileTag;
+import soot.tagkit.StringConstantValueTag;
+import soot.tagkit.Tag;
+import soot.tagkit.VisibilityAnnotationTag;
+import soot.tagkit.VisibilityParameterAnnotationTag;
 import soot.toolkits.graph.Block;
-
-import java.io.File;
-import java.io.PrintWriter;
-import java.util.*;
 
 public abstract class AbstractJasminClass
 {

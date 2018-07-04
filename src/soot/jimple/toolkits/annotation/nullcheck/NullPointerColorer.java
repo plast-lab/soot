@@ -20,17 +20,12 @@
 package soot.jimple.toolkits.annotation.nullcheck;
 
 import soot.*;
-import soot.jimple.Stmt;
 import soot.singletons.Singletons;
-import soot.tagkit.ColorTag;
-import soot.tagkit.KeyTag;
-import soot.tagkit.StringTag;
-import soot.tagkit.Tag;
-import soot.toolkits.graph.ExceptionalUnitGraph;
-import soot.toolkits.scalar.FlowSet;
-
-import java.util.Iterator;
-import java.util.Map;
+import soot.tagkit.*;
+import soot.toolkits.graph.*;
+import java.util.*;
+import soot.toolkits.scalar.*;
+import soot.jimple.*;
 
 public class NullPointerColorer extends BodyTransformer {
 

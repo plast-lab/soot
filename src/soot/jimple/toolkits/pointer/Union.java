@@ -18,11 +18,10 @@
  */
 
 package soot.jimple.toolkits.pointer;
+import java.util.Set;
 
 import soot.PointsToSet;
 import soot.jimple.ClassConstant;
-
-import java.util.Set;
 
 /** A generic interface to some set of runtime objects computed by a pointer analysis. */
 public abstract class Union implements PointsToSet {

@@ -25,12 +25,12 @@
 
 
 package soot.coffi;
-
-import soot.G;
-import soot.Value;
+import soot.*;
 import soot.jimple.StringConstant;
 
 import java.io.*;
+
+import javax.naming.OperationNotSupportedException;
 
 /** A constant pool entry of type CONSTANT_Utf8; note this is <b>not</b>
  * multithread safe.  It is, however, immutable.

@@ -1,11 +1,32 @@
 package soot.toDex;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import org.jf.dexlib2.Opcode;
-import soot.*;
+
+import soot.ArrayType;
+import soot.BooleanType;
+import soot.ByteType;
+import soot.CharType;
+import soot.DoubleType;
+import soot.FloatType;
+import soot.IntType;
+import soot.LongType;
+import soot.Modifier;
+import soot.RefLikeType;
+import soot.RefType;
+import soot.ShortType;
+import soot.SootMethod;
+import soot.Type;
+import soot.Unit;
+import soot.Value;
+import soot.VoidType;
 import soot.jimple.InvokeExpr;
 import soot.jimple.Stmt;
-
-import java.util.*;
 
 /**
  * Utility class for the conversion from soot to dex.

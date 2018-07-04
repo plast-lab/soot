@@ -29,13 +29,9 @@
 
 package soot.baf.internal;
 
-import soot.AbstractJasminClass;
-import soot.Type;
-import soot.Unit;
-import soot.baf.Baf;
-import soot.baf.IfCmpGtInst;
-import soot.baf.InstSwitch;
-import soot.util.Switch;
+import soot.*;
+import soot.baf.*;
+import soot.util.*;
 
 public class BIfCmpGtInst extends AbstractOpTypeBranchInst 
                           implements IfCmpGtInst

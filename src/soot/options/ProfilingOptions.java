@@ -21,8 +21,7 @@
 /* THIS FILE IS AUTO-GENERATED FROM soot_options.xml. DO NOT MODIFY. */
 
 package soot.options;
-
-import java.util.Map;
+import java.util.*;
 
 /** Option parser for Profiling Generator. */
 public class ProfilingOptions

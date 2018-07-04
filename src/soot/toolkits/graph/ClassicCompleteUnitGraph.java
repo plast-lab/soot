@@ -20,14 +20,9 @@
 
 package soot.toolkits.graph;
 
-import soot.Body;
-import soot.Trap;
-import soot.Unit;
+import soot.*;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 
 /**

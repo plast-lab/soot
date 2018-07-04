@@ -1,18 +1,23 @@
 package soot.dexpler;
 
+import java.util.Iterator;
+
 import org.jf.dexlib2.iface.ClassDef;
 import org.jf.dexlib2.iface.DexFile;
 import org.jf.dexlib2.iface.Field;
 import org.jf.dexlib2.iface.Method;
-import soot.*;
+
+import soot.Modifier;
+import soot.SootClass;
+import soot.SootField;
+import soot.SootMethod;
+import soot.SootResolver;
 import soot.javaToJimple.IInitialResolver.Dependencies;
 import soot.options.Options;
 import soot.tagkit.InnerClassAttribute;
 import soot.tagkit.InnerClassTag;
 import soot.tagkit.SourceFileTag;
 import soot.tagkit.Tag;
-
-import java.util.Iterator;
 
 /**
  * Class for loading methods from dex files

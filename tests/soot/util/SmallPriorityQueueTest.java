@@ -1,13 +1,13 @@
 package soot.util;
 
-import org.junit.Test;
+import static org.junit.Assert.*;
 
 import java.util.ConcurrentModificationException;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 import java.util.Queue;
 
-import static org.junit.Assert.*;
+import org.junit.Test;
 
 public class SmallPriorityQueueTest {
 

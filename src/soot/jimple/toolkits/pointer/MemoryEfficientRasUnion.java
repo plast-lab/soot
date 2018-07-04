@@ -19,11 +19,9 @@
 
 package soot.jimple.toolkits.pointer;
 
-import soot.PointsToSet;
+import soot.*;
 
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class MemoryEfficientRasUnion extends Union {
 	HashSet<PointsToSet> subsets;

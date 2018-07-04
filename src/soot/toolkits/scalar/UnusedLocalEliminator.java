@@ -25,13 +25,11 @@
 
 package soot.toolkits.scalar;
 
-import soot.*;
 import soot.options.Options;
+import soot.*;
 import soot.singletons.Singletons;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * A BodyTransformer that removes all unused local variables from a given Body.

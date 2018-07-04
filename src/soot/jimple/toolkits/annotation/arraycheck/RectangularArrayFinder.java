@@ -24,17 +24,14 @@
  */
 
 package soot.jimple.toolkits.annotation.arraycheck;
+import soot.options.Options;
 
 import soot.*;
-import soot.jimple.*;
-import soot.jimple.internal.JArrayRef;
-import soot.jimple.internal.JNewMultiArrayExpr;
-import soot.jimple.toolkits.callgraph.CallGraph;
-import soot.jimple.toolkits.callgraph.Targets;
-import soot.options.Options;
 import soot.singletons.Singletons;
-import soot.util.Chain;
-
+import soot.util.*;
+import soot.jimple.*;
+import soot.jimple.internal.*;
+import soot.jimple.toolkits.callgraph.*;
 import java.util.*;
 
 /** Interprocedural analysis to identify rectangular multi-dimension array

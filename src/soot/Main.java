@@ -25,16 +25,24 @@
 
 package soot;
 
-import com.google.common.base.Joiner;
+import static java.net.URLEncoder.encode;
+
+import java.io.ByteArrayOutputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.io.PrintStream;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
+import java.util.Date;
+
 import soot.options.CGOptions;
 import soot.options.Options;
 import soot.singletons.Singletons;
 import soot.toolkits.astmetrics.ClassData;
 
-import java.io.*;
-import java.util.Date;
-
-import static java.net.URLEncoder.encode;
+import com.google.common.base.Joiner;
 
 /** Main class for Soot; provides Soot's command-line user interface. */
 public class Main {

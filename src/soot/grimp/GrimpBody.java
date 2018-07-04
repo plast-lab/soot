@@ -25,16 +25,12 @@
 
 
 package soot.grimp;
+import soot.options.Options;
 
 import soot.*;
 import soot.jimple.*;
-import soot.jimple.internal.StmtBox;
-import soot.options.Options;
-
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
+import soot.jimple.internal.*;
+import java.util.*;
 
 /** Implementation of the Body class for the Grimp IR. */
 public class GrimpBody extends StmtBody

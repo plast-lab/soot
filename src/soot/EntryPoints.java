@@ -18,13 +18,9 @@
  */
 
 package soot;
-
 import soot.singletons.Singletons;
-import soot.util.NumberedString;
-
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import soot.util.*;
+import java.util.*;
 
 /**
  * Returns the various potential entry points of a Java program.

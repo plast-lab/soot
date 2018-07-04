@@ -18,16 +18,15 @@
 
 package soot.jbco.bafTransformations;
 
-import soot.*;
-import soot.baf.*;
-import soot.jbco.IJbcoTransform;
-import soot.jbco.jimpleTransformations.FieldRenamer;
-import soot.jbco.util.Rand;
-import soot.jimple.IntConstant;
-import soot.jimple.NullConstant;
-import soot.toolkits.graph.BriefUnitGraph;
-
 import java.util.*;
+
+import soot.*;
+import soot.jbco.IJbcoTransform;
+import soot.jbco.util.Rand;
+import soot.jbco.jimpleTransformations.*;
+import soot.jimple.*;
+import soot.toolkits.graph.BriefUnitGraph;
+import soot.baf.*;
 
 public class TryCatchCombiner extends BodyTransformer implements IJbcoTransform {
 

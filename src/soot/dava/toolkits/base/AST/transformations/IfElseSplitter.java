@@ -1,8 +1,17 @@
 package soot.dava.toolkits.base.AST.transformations;
 
+import java.util.Iterator;
+import java.util.List;
+
 import soot.G;
 import soot.dava.DecompilationException;
-import soot.dava.internal.AST.*;
+import soot.dava.internal.AST.ASTCondition;
+import soot.dava.internal.AST.ASTIfElseNode;
+import soot.dava.internal.AST.ASTIfNode;
+import soot.dava.internal.AST.ASTMethodNode;
+import soot.dava.internal.AST.ASTNode;
+import soot.dava.internal.AST.ASTStatementSequenceNode;
+import soot.dava.internal.AST.ASTTryNode;
 import soot.dava.internal.SET.SETNodeLabel;
 import soot.dava.internal.asg.AugmentedStmt;
 import soot.dava.internal.javaRep.DAbruptStmt;
@@ -11,9 +20,6 @@ import soot.dava.toolkits.base.AST.traversals.ASTParentNodeFinder;
 import soot.jimple.ReturnStmt;
 import soot.jimple.ReturnVoidStmt;
 import soot.jimple.Stmt;
-
-import java.util.Iterator;
-import java.util.List;
 
 /*
  *  look for patterns of the form

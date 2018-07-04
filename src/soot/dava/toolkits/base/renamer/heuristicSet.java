@@ -19,11 +19,8 @@
 
 package soot.dava.toolkits.base.renamer;
 
-import soot.Local;
-
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
+import soot.*;
 
 public class heuristicSet {
 	HashMap<Local, heuristicTuple> set;

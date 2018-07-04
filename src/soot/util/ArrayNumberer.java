@@ -18,10 +18,7 @@
  */
 
 package soot.util;
-
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
+import java.util.*;
 
 /** A class that numbers objects, so they can be placed in bitsets.
  *

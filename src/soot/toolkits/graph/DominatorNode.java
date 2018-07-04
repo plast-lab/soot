@@ -19,8 +19,7 @@
 
 package soot.toolkits.graph;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  * Represents a dominator node in DominatorTree.  Usually you should

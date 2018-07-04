@@ -25,12 +25,10 @@
 
 package soot.jimple.toolkits.scalar.pre;
 
-import soot.EquivalentValue;
-import soot.Unit;
-import soot.toolkits.graph.DirectedGraph;
+import soot.*;
 import soot.toolkits.scalar.*;
-
-import java.util.Map;
+import soot.toolkits.graph.*;
+import java.util.*;
 
 /**
  * Performs a Not-Isolated-analysis on the given graph, which is basically the

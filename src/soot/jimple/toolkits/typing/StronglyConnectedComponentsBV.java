@@ -26,14 +26,10 @@
 
 package soot.jimple.toolkits.typing;
 
-import soot.G;
-import soot.util.BitSetIterator;
-import soot.util.BitVector;
+import soot.*;
+import soot.util.*;
 
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 /**
  * @deprecated use {@link soot.jimple.toolkits.typing.fast.TypeResolver} instead
  */

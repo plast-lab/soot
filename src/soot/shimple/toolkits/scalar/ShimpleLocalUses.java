@@ -20,9 +20,8 @@
 package soot.shimple.toolkits.scalar;
 
 import soot.*;
-import soot.shimple.ShimpleBody;
-import soot.toolkits.scalar.LocalUses;
-import soot.toolkits.scalar.UnitValueBoxPair;
+import soot.shimple.*;
+import soot.toolkits.scalar.*;
 
 import java.util.*;
 

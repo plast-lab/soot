@@ -1,13 +1,17 @@
 package soot.asm;
 
-import soot.*;
+import java.util.Iterator;
+import java.util.Map;
+
+import soot.Body;
+import soot.BodyTransformer;
+import soot.Trap;
+import soot.Unit;
+import soot.UnitBox;
 import soot.jimple.AssignStmt;
 import soot.jimple.CastExpr;
 import soot.jimple.GotoStmt;
 import soot.jimple.ReturnStmt;
-
-import java.util.Iterator;
-import java.util.Map;
 
 /**
  * Transformers that inlines returns that cast and return an object. We take

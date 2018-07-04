@@ -1,18 +1,13 @@
 package soot.jimple.toolkits.thread.mhp;
 
-import soot.Body;
-import soot.Scene;
-import soot.SootClass;
-import soot.SootMethod;
-import soot.jimple.Stmt;
-import soot.jimple.spark.pag.AllocNode;
-import soot.jimple.spark.pag.PAG;
-import soot.jimple.toolkits.callgraph.CallGraph;
-import soot.jimple.toolkits.callgraph.Edge;
-import soot.toolkits.graph.ExceptionalUnitGraph;
-
+import soot.*;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
+
+import soot.toolkits.graph.*;
+import soot.jimple.toolkits.callgraph.*;
+import soot.jimple.*;
+import soot.jimple.spark.pag.*;
 
 // StartJoinFinder written by Richard L. Halpert, 2006-12-04
 // This can be used as an alternative to PegGraph and PegChain

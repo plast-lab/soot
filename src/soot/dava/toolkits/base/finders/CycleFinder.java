@@ -25,27 +25,21 @@
  */
 package soot.dava.toolkits.base.finders;
 
-import soot.G;
-import soot.Local;
-import soot.Unit;
-import soot.dava.Dava;
-import soot.dava.DavaBody;
-import soot.dava.RetriggerAnalysisException;
-import soot.dava.internal.SET.*;
-import soot.dava.internal.asg.AugmentedStmt;
-import soot.dava.internal.asg.AugmentedStmtGraph;
-import soot.dava.internal.javaRep.DIntConstant;
-import soot.dava.toolkits.base.misc.ConditionFlipper;
-import soot.grimp.internal.GAssignStmt;
-import soot.grimp.internal.GTableSwitchStmt;
-import soot.jimple.*;
-import soot.jimple.internal.JGotoStmt;
-import soot.singletons.Singletons;
-import soot.toolkits.graph.StronglyConnectedComponentsFast;
-import soot.util.IterableSet;
-import soot.util.StationaryArrayList;
+import soot.*;
 
 import java.util.*;
+
+import soot.dava.*;
+import soot.singletons.Singletons;
+import soot.util.*;
+import soot.jimple.*;
+import soot.grimp.internal.*;
+import soot.toolkits.graph.*;
+import soot.jimple.internal.*;
+import soot.dava.internal.asg.*;
+import soot.dava.internal.SET.*;
+import soot.dava.internal.javaRep.*;
+import soot.dava.toolkits.base.misc.*;
 
 public class CycleFinder implements FactFinder {
 	public CycleFinder(Singletons.Global g) {

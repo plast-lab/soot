@@ -18,12 +18,9 @@
  */
 
 package soot.javaToJimple;
-
 import polyglot.frontend.*;
-
-import java.io.File;
-import java.io.IOException;
 import java.util.*;
+import java.io.*;
 
 public class JavaToJimple {
 	

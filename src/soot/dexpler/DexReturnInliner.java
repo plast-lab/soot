@@ -24,16 +24,20 @@
 
 package soot.dexpler;
 
-import soot.Body;
-import soot.Trap;
-import soot.Unit;
-import soot.UnitBox;
-import soot.jimple.*;
-
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
+
+import soot.Body;
+import soot.Trap;
+import soot.Unit;
+import soot.UnitBox;
+import soot.jimple.GotoStmt;
+import soot.jimple.IfStmt;
+import soot.jimple.ReturnStmt;
+import soot.jimple.ReturnVoidStmt;
+import soot.jimple.Stmt;
 
 /**
  * BodyTransformer to inline jumps to return statements. Take the following code:

@@ -49,12 +49,9 @@
 
 package soot.jimple.toolkits.annotation.nullcheck;
 
-import soot.EquivalentValue;
-import soot.Unit;
-import soot.Value;
-import soot.toolkits.graph.ExceptionalUnitGraph;
-import soot.toolkits.scalar.FlowSet;
-
+import soot.*;
+import soot.toolkits.graph.*;
+import soot.toolkits.scalar.*;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 

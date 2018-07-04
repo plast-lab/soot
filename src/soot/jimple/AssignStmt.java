@@ -29,7 +29,7 @@
 
 package soot.jimple;
 
-import soot.Value;
+import soot.*;
 
 public interface AssignStmt extends DefinitionStmt
 {

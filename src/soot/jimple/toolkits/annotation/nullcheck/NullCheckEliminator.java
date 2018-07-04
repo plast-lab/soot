@@ -19,13 +19,23 @@
 
 package soot.jimple.toolkits.annotation.nullcheck;
 
-import soot.*;
-import soot.jimple.*;
+import java.util.Map;
+
+import soot.Body;
+import soot.BodyTransformer;
+import soot.Immediate;
+import soot.Unit;
+import soot.Value;
+import soot.jimple.BinopExpr;
+import soot.jimple.EqExpr;
+import soot.jimple.IfStmt;
+import soot.jimple.Jimple;
+import soot.jimple.NeExpr;
+import soot.jimple.NullConstant;
+import soot.jimple.Stmt;
 import soot.toolkits.graph.ExceptionalUnitGraph;
 import soot.toolkits.graph.UnitGraph;
 import soot.util.Chain;
-
-import java.util.Map;
 
 public class NullCheckEliminator extends BodyTransformer {
 

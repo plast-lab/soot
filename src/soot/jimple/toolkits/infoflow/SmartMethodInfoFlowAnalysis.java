@@ -1,14 +1,11 @@
 package soot.jimple.toolkits.infoflow;
 
 import soot.*;
-import soot.jimple.*;
-import soot.jimple.internal.JCaughtExceptionRef;
-import soot.toolkits.graph.HashMutableDirectedGraph;
-import soot.toolkits.graph.MemoryEfficientGraph;
-import soot.toolkits.graph.MutableDirectedGraph;
-import soot.toolkits.graph.UnitGraph;
 
 import java.util.*;
+import soot.toolkits.graph.*;
+import soot.jimple.internal.*;
+import soot.jimple.*;
 
 // SimpleMethodInfoFlowAnalysis written by Richard L. Halpert, 2007-02-25
 // Constructs a data flow table for the given method.  Ignores indirect flow.

@@ -31,16 +31,21 @@
 
 package soot.grimp.internal;
 
-import soot.*;
+import java.util.ArrayList;
+import java.util.List;
+
+import soot.RefType;
+import soot.SootMethodRef;
+import soot.Type;
+import soot.UnitPrinter;
+import soot.Value;
+import soot.ValueBox;
 import soot.grimp.Grimp;
 import soot.grimp.GrimpValueSwitch;
 import soot.grimp.NewInvokeExpr;
 import soot.grimp.Precedence;
 import soot.jimple.internal.AbstractInvokeExpr;
 import soot.util.Switch;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class GNewInvokeExpr extends AbstractInvokeExpr
     implements NewInvokeExpr, Precedence

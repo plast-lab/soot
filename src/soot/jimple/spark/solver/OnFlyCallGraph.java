@@ -18,14 +18,30 @@
  */
 
 package soot.jimple.spark.solver;
-
-import soot.*;
+import soot.Context;
+import soot.Local;
+import soot.MethodOrMethodContext;
+import soot.Scene;
+import soot.Type;
 import soot.jimple.IntConstant;
 import soot.jimple.NewArrayExpr;
-import soot.jimple.spark.pag.*;
+import soot.jimple.spark.pag.AllocDotField;
+import soot.jimple.spark.pag.AllocNode;
+import soot.jimple.spark.pag.ArrayElement;
+import soot.jimple.spark.pag.MethodPAG;
+import soot.jimple.spark.pag.NewInstanceNode;
+import soot.jimple.spark.pag.Node;
+import soot.jimple.spark.pag.PAG;
+import soot.jimple.spark.pag.StringConstantNode;
+import soot.jimple.spark.pag.VarNode;
 import soot.jimple.spark.sets.P2SetVisitor;
 import soot.jimple.spark.sets.PointsToSetInternal;
-import soot.jimple.toolkits.callgraph.*;
+import soot.jimple.toolkits.callgraph.CallGraph;
+import soot.jimple.toolkits.callgraph.CallGraphBuilder;
+import soot.jimple.toolkits.callgraph.ContextManager;
+import soot.jimple.toolkits.callgraph.Edge;
+import soot.jimple.toolkits.callgraph.OnFlyCallGraphBuilder;
+import soot.jimple.toolkits.callgraph.ReachableMethods;
 import soot.util.queue.QueueReader;
 
 

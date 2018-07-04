@@ -20,10 +20,9 @@
 package soot.jimple.toolkits.callgraph;
 
 import soot.*;
-import soot.options.CGOptions;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+import soot.options.CGOptions;
 
 /** A radio pack implementation for the call graph pack that calls the
  * intra-procedural clinit eliminator after the call graph has been built. */

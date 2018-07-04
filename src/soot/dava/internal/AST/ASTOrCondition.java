@@ -19,9 +19,9 @@
 
 package soot.dava.internal.AST;
 
-import soot.UnitPrinter;
-import soot.dava.DavaUnitPrinter;
-import soot.dava.toolkits.base.AST.analysis.Analysis;
+import soot.*;
+import soot.dava.*;
+import soot.dava.toolkits.base.AST.analysis.*;
 
 public class ASTOrCondition extends ASTAggregatedCondition{
     public ASTOrCondition(ASTCondition left, ASTCondition right){

@@ -19,8 +19,8 @@
 
 package soot.util.cfgcmd;
 
-import soot.CompilationDeathException;
 import soot.G;
+import soot.CompilationDeathException;
 
 /**
  * A class used by CFG utilities that need to match different option

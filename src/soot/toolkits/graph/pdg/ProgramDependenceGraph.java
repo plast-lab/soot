@@ -19,10 +19,10 @@
 package soot.toolkits.graph.pdg;
 
 
-import soot.toolkits.graph.BlockGraph;
-import soot.toolkits.graph.MutableEdgeLabelledDirectedGraph;
-
 import java.util.List;
+
+import soot.toolkits.graph.MutableEdgeLabelledDirectedGraph;
+import soot.toolkits.graph.BlockGraph;
 
 
 /**

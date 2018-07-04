@@ -31,7 +31,13 @@
 
 package soot.coffi;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import soot.Scene;
+import soot.Type;
 import soot.Value;
+import soot.jimple.Jimple;
 
 /** A constant pool entry of type CONSTANT_InterfaceMethodref
  * @see cp_info

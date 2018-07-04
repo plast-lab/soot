@@ -18,11 +18,7 @@
  */
 
 package soot;
-
-import soot.jimple.CaughtExceptionRef;
-import soot.jimple.IdentityRef;
-import soot.jimple.ParameterRef;
-import soot.jimple.ThisRef;
+import soot.jimple.*;
 
 /**
 * UnitPrinter implementation for normal (full) Jimple, Grimp, and Baf

@@ -30,7 +30,7 @@
 package soot.jimple;
 
 
-import soot.IdentityUnit;
+import soot.*;
 
 public interface IdentityStmt extends DefinitionStmt, IdentityUnit 
 {

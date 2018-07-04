@@ -28,12 +28,8 @@ package soot.jimple.toolkits.typing;
 
 import soot.*;
 import soot.options.Options;
-import soot.util.BitVector;
-
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
+import soot.util.*;
+import java.util.*;
 
 /**
  * Each instance of this class represents one type in the class hierarchy (or basic types).

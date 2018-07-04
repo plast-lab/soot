@@ -18,13 +18,13 @@
  */
 package soot.jimple.spark.ondemand;
 
+import java.util.Set;
+
 import soot.PointsToSet;
 import soot.Type;
 import soot.jimple.ClassConstant;
 import soot.jimple.spark.sets.EqualsSupportingPointsToSet;
 import soot.jimple.spark.sets.PointsToSetInternal;
-
-import java.util.Set;
 
 public class WrappedPointsToSet implements EqualsSupportingPointsToSet {
   

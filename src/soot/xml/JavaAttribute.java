@@ -19,11 +19,20 @@
 
 package soot.xml;
 
-import soot.tagkit.*;
-
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Iterator;
+
+import soot.tagkit.ColorTag;
+import soot.tagkit.Host;
+import soot.tagkit.JimpleLineNumberTag;
+import soot.tagkit.LineNumberTag;
+import soot.tagkit.LinkTag;
+import soot.tagkit.PositionTag;
+import soot.tagkit.SourceLnPosTag;
+import soot.tagkit.SourcePositionTag;
+import soot.tagkit.StringTag;
+import soot.tagkit.Tag;
 
 public class JavaAttribute {
 

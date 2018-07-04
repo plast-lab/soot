@@ -19,10 +19,20 @@
 
 package soot.dava.toolkits.base.AST.traversals;
 
-import soot.dava.internal.AST.*;
-import soot.dava.toolkits.base.AST.analysis.DepthFirstAdapter;
-
 import java.util.HashMap;
+
+import soot.dava.internal.AST.ASTDoWhileNode;
+import soot.dava.internal.AST.ASTForLoopNode;
+import soot.dava.internal.AST.ASTIfElseNode;
+import soot.dava.internal.AST.ASTIfNode;
+import soot.dava.internal.AST.ASTLabeledBlockNode;
+import soot.dava.internal.AST.ASTLabeledNode;
+import soot.dava.internal.AST.ASTSwitchNode;
+import soot.dava.internal.AST.ASTSynchronizedBlockNode;
+import soot.dava.internal.AST.ASTTryNode;
+import soot.dava.internal.AST.ASTUnconditionalLoopNode;
+import soot.dava.internal.AST.ASTWhileNode;
+import soot.dava.toolkits.base.AST.analysis.DepthFirstAdapter;
 
 /*
  * For each labeled node make a mapping of the label (a string)

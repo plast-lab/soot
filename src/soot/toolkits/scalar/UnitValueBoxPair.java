@@ -30,8 +30,7 @@
 
 package soot.toolkits.scalar;
 
-import soot.Unit;
-import soot.ValueBox;
+import soot.*;
 
 
 

@@ -19,8 +19,7 @@
 
 package soot.toolkits.graph;
 
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 /**
  * A reversible version of HashMutableDirectedGraph

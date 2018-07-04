@@ -18,6 +18,10 @@
  */
 package soot.jimple.toolkits.pointer;
 
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
+
 import soot.Body;
 import soot.Unit;
 import soot.Value;
@@ -26,10 +30,6 @@ import soot.jimple.Constant;
 import soot.jimple.DefinitionStmt;
 import soot.toolkits.graph.UnitGraph;
 import soot.toolkits.scalar.ForwardFlowAnalysis;
-
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Set;
 
 /**
  * Conducts a method-local, equality-based may-alias analysis.

@@ -20,10 +20,8 @@
  */
 package soot.jimple.toolkits.typing.fast;
 
+import java.util.*;
 import soot.*;
-
-import java.util.Collection;
-import java.util.Collections;
 
 /**
  * @author Ben Bellamy

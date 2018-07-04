@@ -18,13 +18,13 @@
  */
 package soot.jimple.toolkits.annotation.logic;
 
-import soot.Unit;
-import soot.jimple.Stmt;
-import soot.toolkits.graph.UnitGraph;
-
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
+
+import soot.Unit;
+import soot.jimple.Stmt;
+import soot.toolkits.graph.UnitGraph;
 
 /**
  * A (natural) loop in Jimple. A back-edge (t,h) is a control-flog edge for which

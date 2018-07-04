@@ -26,8 +26,7 @@
  */
 
 package soot.jimple.toolkits.annotation.purity;
-
-import soot.SootMethod;
+import soot.*;
 
 /**
  * Allows specifying which SootMethod you want to analyse in a

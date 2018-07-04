@@ -29,12 +29,8 @@
 
 package soot.jimple;
 
-import soot.Unit;
-import soot.UnitBox;
-import soot.Value;
-import soot.ValueBox;
-
-import java.util.List;
+import soot.*;
+import java.util.*;
 
 public interface SwitchStmt extends Stmt
 {

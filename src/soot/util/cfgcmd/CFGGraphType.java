@@ -19,13 +19,24 @@
 
 package soot.util.cfgcmd;
 
-import soot.Body;
-import soot.G;
-import soot.toolkits.graph.*;
-import soot.util.dot.DotGraph;
-
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
+import soot.G;
+import soot.Body;
+import soot.toolkits.graph.DirectedGraph;
+import soot.toolkits.graph.BriefUnitGraph;
+import soot.toolkits.graph.ExceptionalUnitGraph;
+import soot.toolkits.graph.CompleteUnitGraph;
+import soot.toolkits.graph.TrapUnitGraph;
+import soot.toolkits.graph.ClassicCompleteBlockGraph;
+import soot.toolkits.graph.ClassicCompleteUnitGraph;
+import soot.toolkits.graph.BriefBlockGraph;
+import soot.toolkits.graph.ExceptionalBlockGraph;
+import soot.toolkits.graph.CompleteBlockGraph;
+import soot.toolkits.graph.ArrayRefBlockGraph;
+import soot.toolkits.graph.ZonedBlockGraph;
+import soot.util.cfgcmd.CFGToDotGraph;
+import soot.util.dot.DotGraph;
 
 /**
  * An enumeration type for representing the varieties of control

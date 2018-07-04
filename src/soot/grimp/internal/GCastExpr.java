@@ -30,11 +30,9 @@
 
 package soot.grimp.internal;
 
-import soot.Type;
-import soot.Value;
-import soot.grimp.Grimp;
-import soot.grimp.Precedence;
-import soot.jimple.internal.AbstractCastExpr;
+import soot.*;
+import soot.grimp.*;
+import soot.jimple.internal.*;
 
 public class GCastExpr extends AbstractCastExpr implements Precedence
 {

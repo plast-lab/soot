@@ -19,7 +19,7 @@
 
 package soot.javaToJimple;
 
-import java.util.Iterator;
+import java.util.*;
 public class PrivateFieldAccMethodSource implements soot.MethodSource {
 
     private final soot.Type fieldType;

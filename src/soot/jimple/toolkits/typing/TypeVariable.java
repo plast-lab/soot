@@ -26,12 +26,9 @@
 
 package soot.jimple.toolkits.typing;
 
-import soot.ArrayType;
-import soot.G;
-import soot.RefType;
+import soot.*;
 import soot.options.Options;
-import soot.util.BitVector;
-
+import soot.util.*;
 import java.util.*;
 
 /** Represents a type variable. **/

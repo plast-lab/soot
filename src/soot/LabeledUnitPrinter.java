@@ -18,14 +18,10 @@
  */
 
 package soot;
+import soot.jimple.*;
+import soot.util.*;
 
-import soot.jimple.IdentityRef;
-import soot.util.Chain;
-
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 /**
 * UnitPrinter implementation for representations that have labelled stmts,

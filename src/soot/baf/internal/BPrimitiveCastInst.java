@@ -30,9 +30,8 @@
 package soot.baf.internal;
 
 import soot.*;
-import soot.baf.InstSwitch;
-import soot.baf.PrimitiveCastInst;
-import soot.util.Switch;
+import soot.baf.*;
+import soot.util.*;
 
 public class BPrimitiveCastInst extends AbstractInst 
                             implements PrimitiveCastInst

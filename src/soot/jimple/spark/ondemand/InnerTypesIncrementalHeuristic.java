@@ -18,6 +18,10 @@
  */
 package soot.jimple.spark.ondemand;
 
+import java.util.HashSet;
+import java.util.Set;
+
+
 import soot.RefType;
 import soot.Scene;
 import soot.SootField;
@@ -26,9 +30,6 @@ import soot.jimple.spark.ondemand.genericutil.Util;
 import soot.jimple.spark.ondemand.pautil.SootUtil;
 import soot.jimple.spark.pag.ArrayElement;
 import soot.jimple.spark.pag.SparkField;
-
-import java.util.HashSet;
-import java.util.Set;
 
 public class InnerTypesIncrementalHeuristic implements FieldCheckHeuristic {
 

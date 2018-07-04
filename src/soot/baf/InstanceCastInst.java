@@ -25,7 +25,7 @@
 
 package soot.baf;
 
-import soot.Type;
+import soot.*;
 
 public interface InstanceCastInst extends Inst
 {

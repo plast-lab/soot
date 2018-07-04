@@ -18,16 +18,25 @@
  */
 
 package soot.javaToJimple;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
 
 import polyglot.ast.Block;
 import polyglot.ast.FieldDecl;
 import polyglot.ast.Node;
 import polyglot.types.Type;
 import polyglot.util.IdentityKey;
-import soot.*;
+import soot.G;
+import soot.RefType;
+import soot.Scene;
+import soot.SootClass;
+import soot.SootField;
+import soot.SootMethod;
 import soot.options.Options;
-
-import java.util.*;
 
 public class ClassResolver {
 

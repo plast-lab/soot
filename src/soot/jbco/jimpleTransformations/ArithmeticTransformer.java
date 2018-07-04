@@ -19,12 +19,13 @@
 
 package soot.jbco.jimpleTransformations;
 
-import soot.*;
-import soot.jbco.IJbcoTransform;
-import soot.jbco.util.Rand;
-import soot.jimple.*;
-
 import java.util.*;
+
+import soot.*;
+import soot.jbco.*;
+import soot.jimple.*;
+import soot.BodyTransformer;
+import soot.jbco.util.*;
 
 
 /**

@@ -29,7 +29,7 @@
 
 package soot;
 
-import soot.util.Switch;
+import soot.util.*;
 
 
 @SuppressWarnings("serial")

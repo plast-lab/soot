@@ -20,12 +20,9 @@ package soot.jimple.toolkits.thread.synchronization;
 
 import soot.*;
 import soot.jimple.*;
-import soot.jimple.toolkits.callgraph.CallGraph;
-import soot.jimple.toolkits.callgraph.Filter;
-import soot.jimple.toolkits.callgraph.TransitiveTargets;
+import soot.jimple.toolkits.callgraph.*;
 import soot.jimple.toolkits.pointer.*;
-import soot.jimple.toolkits.thread.EncapsulatedObjectAnalysis;
-import soot.jimple.toolkits.thread.ThreadLocalObjectsAnalysis;
+import soot.jimple.toolkits.thread.*;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;

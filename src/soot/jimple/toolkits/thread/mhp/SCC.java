@@ -1,8 +1,7 @@
 
 package soot.jimple.toolkits.thread.mhp;
 
-import soot.toolkits.graph.DirectedGraph;
-
+import soot.toolkits.graph.*;
 import java.util.*;
 
 // *** USE AT YOUR OWN RISK ***

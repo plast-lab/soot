@@ -24,8 +24,7 @@
  */
 
 package soot.tagkit;
-
-import java.util.ArrayList;
+import java.util.*;
 
 /** Represents a tag that just has a string to be printed with the code.
  */

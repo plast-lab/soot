@@ -25,13 +25,11 @@
 
 package soot.toolkits.graph;
 
-import soot.Body;
-import soot.Trap;
-import soot.Unit;
+import java.util.*;
+
+import soot.*;
 import soot.jimple.NopStmt;
 import soot.util.Chain;
-
-import java.util.*;
 
 /**
  * <p>

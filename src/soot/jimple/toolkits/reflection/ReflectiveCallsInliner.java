@@ -19,21 +19,72 @@
 
 package soot.jimple.toolkits.reflection;
 
-import soot.*;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import soot.ArrayType;
+import soot.Body;
+import soot.BooleanType;
+import soot.Local;
+import soot.Modifier;
+import soot.PatchingChain;
+import soot.PhaseOptions;
+import soot.PrimType;
+import soot.RefLikeType;
+import soot.RefType;
+import soot.Scene;
+import soot.SceneTransformer;
+import soot.SootClass;
+import soot.SootField;
+import soot.SootFieldRef;
+import soot.SootMethod;
+import soot.SootMethodRef;
+import soot.Type;
+import soot.Unit;
+import soot.Value;
+import soot.VoidType;
 import soot.javaToJimple.LocalGenerator;
-import soot.jimple.*;
+import soot.jimple.ArrayRef;
+import soot.jimple.AssignStmt;
+import soot.jimple.ClassConstant;
+import soot.jimple.FieldRef;
+import soot.jimple.GotoStmt;
+import soot.jimple.InstanceFieldRef;
+import soot.jimple.InstanceInvokeExpr;
+import soot.jimple.IntConstant;
+import soot.jimple.InterfaceInvokeExpr;
+import soot.jimple.InvokeExpr;
+import soot.jimple.InvokeStmt;
+import soot.jimple.Jimple;
+import soot.jimple.JimpleBody;
+import soot.jimple.NopStmt;
+import soot.jimple.NullConstant;
+import soot.jimple.SpecialInvokeExpr;
+import soot.jimple.StaticInvokeExpr;
+import soot.jimple.Stmt;
+import soot.jimple.StringConstant;
+import soot.jimple.VirtualInvokeExpr;
 import soot.jimple.toolkits.reflection.ReflectionTraceInfo.Kind;
 import soot.jimple.toolkits.scalar.CopyPropagator;
 import soot.jimple.toolkits.scalar.DeadAssignmentEliminator;
 import soot.jimple.toolkits.scalar.NopEliminator;
 import soot.options.CGOptions;
 import soot.options.Options;
-import soot.rtlib.tamiflex.*;
+import soot.rtlib.tamiflex.DefaultHandler;
+import soot.rtlib.tamiflex.IUnexpectedReflectiveCallHandler;
+import soot.rtlib.tamiflex.OpaquePredicate;
+import soot.rtlib.tamiflex.ReflectiveCalls;
+import soot.rtlib.tamiflex.SootSig;
+import soot.rtlib.tamiflex.UnexpectedReflectiveCall;
 import soot.toolkits.scalar.UnusedLocalEliminator;
 import soot.util.Chain;
 import soot.util.HashChain;
-
-import java.util.*;
 
 public class ReflectiveCallsInliner extends SceneTransformer {
 	// caching currently does not work because it adds fields to Class, Method

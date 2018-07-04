@@ -20,10 +20,7 @@
  */
 package soot.jimple.toolkits.typing.fast;
 
-import soot.G;
-import soot.IntegerType;
-import soot.PrimType;
-import soot.RefType;
+import soot.*;
 import soot.singletons.Singletons;
 
 /**

@@ -19,6 +19,8 @@
 
 package soot.jbco.bafTransformations;
 
+import java.util.*;
+
 import soot.Body;
 import soot.BodyTransformer;
 import soot.Unit;
@@ -26,8 +28,6 @@ import soot.baf.GotoInst;
 import soot.baf.JSRInst;
 import soot.baf.TargetArgInst;
 import soot.jbco.IJbcoTransform;
-
-import java.util.Map;
 
 public class BAFCounter extends BodyTransformer implements IJbcoTransform {
 

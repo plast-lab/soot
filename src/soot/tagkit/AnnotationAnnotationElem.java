@@ -25,6 +25,7 @@
 
 package soot.tagkit;
 
+import soot.TypeSwitch;
 import soot.util.Switch;
 
 

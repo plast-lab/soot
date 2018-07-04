@@ -1,15 +1,36 @@
 package soot.toolkits.scalar;
 
-import soot.*;
-import soot.jimple.*;
-import soot.tagkit.*;
-import soot.util.Chain;
-
 import java.lang.reflect.Modifier;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
+
+import soot.Scene;
+import soot.SceneTransformer;
+import soot.SootClass;
+import soot.SootField;
+import soot.SootMethod;
+import soot.Type;
+import soot.Unit;
+import soot.ValueBox;
+import soot.VoidType;
+import soot.jimple.DoubleConstant;
+import soot.jimple.FieldRef;
+import soot.jimple.FloatConstant;
+import soot.jimple.IntConstant;
+import soot.jimple.Jimple;
+import soot.jimple.LongConstant;
+import soot.jimple.ReturnVoidStmt;
+import soot.jimple.Stmt;
+import soot.jimple.StringConstant;
+import soot.tagkit.DoubleConstantValueTag;
+import soot.tagkit.FloatConstantValueTag;
+import soot.tagkit.IntegerConstantValueTag;
+import soot.tagkit.LongConstantValueTag;
+import soot.tagkit.StringConstantValueTag;
+import soot.tagkit.Tag;
+import soot.util.Chain;
 
 /**
  * Transformer that creates a static initializer which sets constant values into

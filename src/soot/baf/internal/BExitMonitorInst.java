@@ -29,9 +29,8 @@
 
 package soot.baf.internal;
 
-import soot.baf.ExitMonitorInst;
-import soot.baf.InstSwitch;
-import soot.util.Switch;
+import soot.baf.*;
+import soot.util.*;
 
 public class BExitMonitorInst extends AbstractInst implements ExitMonitorInst
 {

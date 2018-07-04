@@ -25,14 +25,14 @@
 
 package soot.tagkit;
 
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.Map;
+
 import soot.Body;
 import soot.BodyTransformer;
 import soot.Unit;
 import soot.baf.BafBody;
-
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.Map;
 
 /** Interface to aggregate tags of units. */
 

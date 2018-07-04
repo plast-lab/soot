@@ -20,14 +20,10 @@
 
 package soot.dava.internal.AST;
 
-import soot.AbstractUnit;
-import soot.UnitPrinter;
-import soot.dava.toolkits.base.AST.ASTAnalysis;
-import soot.dava.toolkits.base.AST.analysis.Analysis;
-
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import soot.*;
+import java.util.*;
+import soot.dava.toolkits.base.AST.*;
+import soot.dava.toolkits.base.AST.analysis.*;
 
 public abstract class ASTNode extends AbstractUnit
 {

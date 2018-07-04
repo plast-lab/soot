@@ -20,9 +20,9 @@
 package soot.jimple.spark.internal;
 
 import soot.G;
+import soot.singletons.Singletons;
 import soot.SootField;
 import soot.SootMethod;
-import soot.singletons.Singletons;
 
 /**
  * Using this oracle one assumes, that a client of the target library can call

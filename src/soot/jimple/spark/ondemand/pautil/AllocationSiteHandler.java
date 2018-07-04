@@ -18,7 +18,16 @@
  */
 package soot.jimple.spark.ondemand.pautil;
 
-import soot.*;
+import java.util.HashSet;
+import java.util.Set;
+
+
+import soot.AnySubType;
+import soot.ArrayType;
+import soot.RefType;
+import soot.Scene;
+import soot.SootMethod;
+import soot.Type;
 import soot.jimple.spark.internal.TypeManager;
 import soot.jimple.spark.ondemand.genericutil.ImmutableStack;
 import soot.jimple.spark.pag.AllocNode;
@@ -29,9 +38,6 @@ import soot.jimple.spark.sets.P2SetVisitor;
 import soot.jimple.spark.sets.PointsToSetInternal;
 import soot.jimple.toolkits.callgraph.VirtualCalls;
 import soot.util.NumberedString;
-
-import java.util.HashSet;
-import java.util.Set;
 
 /**
  * Interface for handler for when an allocation site is encountered in a pointer

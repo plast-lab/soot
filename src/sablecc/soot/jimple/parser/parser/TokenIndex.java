@@ -2,8 +2,8 @@
 
 package sablecc.soot.jimple.parser.parser;
 
-import sablecc.soot.jimple.parser.analysis.AnalysisAdapter;
 import sablecc.soot.jimple.parser.node.*;
+import sablecc.soot.jimple.parser.analysis.*;
 
 class TokenIndex extends AnalysisAdapter
 {

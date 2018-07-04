@@ -19,15 +19,12 @@
 
 package soot.javaToJimple.jj.ast;
 
-import polyglot.ast.Expr;
-import polyglot.ext.jl.ast.ArrayInit_c;
-import polyglot.types.Type;
-import polyglot.util.InternalCompilerError;
-import polyglot.util.Position;
-import polyglot.visit.AscriptionVisitor;
-
-import java.util.Iterator;
-import java.util.List;
+import polyglot.ast.*;
+import polyglot.types.*;
+import polyglot.visit.*;
+import polyglot.util.*;
+import polyglot.ext.jl.ast.*;
+import java.util.*;
 
 public class JjArrayInit_c extends ArrayInit_c {
     

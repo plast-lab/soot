@@ -35,12 +35,9 @@
 
 package soot.toolkits.scalar;
 
-import soot.Unit;
-import soot.toolkits.graph.DirectedGraph;
-
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import soot.*;
+import soot.toolkits.graph.*;
+import java.util.*;
 
 /** Abstract class providing functionality for branched flow analysis.
  *

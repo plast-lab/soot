@@ -18,14 +18,8 @@
  */
 
 package soot.jimple.toolkits.pointer;
-
-import soot.G;
-import soot.PointsToSet;
-import soot.SootField;
-
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
+import java.util.*;
+import soot.*;
 
 /** Represents the read or write set of a statement. */
 public class SiteRWSet extends RWSet {

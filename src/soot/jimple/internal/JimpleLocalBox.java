@@ -30,8 +30,7 @@
 
 package soot.jimple.internal;
 
-import soot.AbstractValueBox;
-import soot.Value;
+import soot.*;
 
 public class JimpleLocalBox extends AbstractValueBox
 {

@@ -18,8 +18,7 @@
  */
 
 package soot;
-
-import soot.util.Numberable;
+import soot.util.*;
 
 /** Enumeration type representing the kind of a call graph edge.
  * @author Ondrej Lhotak

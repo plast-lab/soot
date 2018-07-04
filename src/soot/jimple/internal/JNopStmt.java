@@ -30,16 +30,13 @@
 
 package soot.jimple.internal;
 
-import soot.Unit;
-import soot.UnitPrinter;
-import soot.baf.Baf;
-import soot.jimple.Jimple;
-import soot.jimple.JimpleToBafContext;
-import soot.jimple.NopStmt;
-import soot.jimple.StmtSwitch;
-import soot.util.Switch;
+import soot.baf.*;
 
-import java.util.List;
+import soot.tagkit.*;
+import soot.jimple.*;
+import soot.*;
+import soot.util.*;
+import java.util.*;
 
 public class JNopStmt extends AbstractStmt implements NopStmt
 {

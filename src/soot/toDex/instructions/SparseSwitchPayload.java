@@ -1,14 +1,15 @@
 package soot.toDex.instructions;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.jf.dexlib2.builder.BuilderInstruction;
 import org.jf.dexlib2.builder.SwitchLabelElement;
 import org.jf.dexlib2.builder.instruction.BuilderSparseSwitchPayload;
+
 import soot.Unit;
 import soot.jimple.Stmt;
 import soot.toDex.LabelAssigner;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * The payload for a sparse-switch instruction.

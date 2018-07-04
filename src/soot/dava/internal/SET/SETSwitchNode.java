@@ -19,14 +19,13 @@
 
 package soot.dava.internal.SET;
 
-import soot.Value;
-import soot.dava.internal.AST.ASTNode;
-import soot.dava.internal.AST.ASTSwitchNode;
-import soot.dava.internal.asg.AugmentedStmt;
-import soot.dava.toolkits.base.finders.SwitchNode;
-import soot.util.IterableSet;
-
+import soot.*;
 import java.util.*;
+
+import soot.util.*;
+import soot.dava.internal.asg.*;
+import soot.dava.internal.AST.*;
+import soot.dava.toolkits.base.finders.*;
 
 public class SETSwitchNode extends SETDagNode {
 	private List<SwitchNode> switchNodeList;

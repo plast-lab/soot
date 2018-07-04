@@ -18,9 +18,7 @@
  */
 
 package soot;
-
-import soot.jimple.Constant;
-import soot.jimple.IdentityRef;
+import soot.jimple.*;
 
 /**
 * Interface for different methods of printing out a Unit.

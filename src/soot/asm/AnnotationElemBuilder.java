@@ -18,12 +18,23 @@
  */
 package soot.asm;
 
+import java.util.ArrayList;
+
 import org.objectweb.asm.AnnotationVisitor;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.Type;
-import soot.tagkit.*;
 
-import java.util.ArrayList;
+import soot.tagkit.AnnotationAnnotationElem;
+import soot.tagkit.AnnotationArrayElem;
+import soot.tagkit.AnnotationClassElem;
+import soot.tagkit.AnnotationDoubleElem;
+import soot.tagkit.AnnotationElem;
+import soot.tagkit.AnnotationEnumElem;
+import soot.tagkit.AnnotationFloatElem;
+import soot.tagkit.AnnotationIntElem;
+import soot.tagkit.AnnotationLongElem;
+import soot.tagkit.AnnotationStringElem;
+import soot.tagkit.AnnotationTag;
 
 /**
  * Annotation element builder.

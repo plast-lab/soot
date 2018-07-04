@@ -18,13 +18,10 @@
  */
 
 package soot.options;
+import java.util.*;
 
 import soot.*;
 import soot.plugins.internal.PluginLoader;
-
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.StringTokenizer;
 
 /** Soot command-line options parser base class.
  * @author Ondrej Lhotak

@@ -19,12 +19,11 @@
 
 package soot.dava.internal.SET;
 
-import soot.dava.internal.asg.AugmentedStmt;
-import soot.jimple.GotoStmt;
-import soot.util.IterableSet;
+import java.util.*;
 
-import java.util.HashSet;
-import java.util.Iterator;
+import soot.util.*;
+import soot.jimple.*;
+import soot.dava.internal.asg.*;
 
 public abstract class SETControlFlowNode extends SETNode {
 	private AugmentedStmt characterizingStmt;

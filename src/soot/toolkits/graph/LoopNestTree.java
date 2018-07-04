@@ -18,14 +18,14 @@
  */
 package soot.toolkits.graph;
 
+import java.util.Collection;
+import java.util.Comparator;
+import java.util.TreeSet;
+
 import soot.Body;
 import soot.jimple.Stmt;
 import soot.jimple.toolkits.annotation.logic.Loop;
 import soot.jimple.toolkits.annotation.logic.LoopFinder;
-
-import java.util.Collection;
-import java.util.Comparator;
-import java.util.TreeSet;
 
 /**
  * A loop nesting tree, implemented as a tree-map.

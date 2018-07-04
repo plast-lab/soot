@@ -1,16 +1,18 @@
 package soot.util.annotations;
 
-import com.google.common.reflect.AbstractInvocationHandler;
-import org.jboss.util.Classes;
-import soot.tagkit.AnnotationElem;
-import soot.tagkit.AnnotationTag;
-import soot.util.annotations.AnnotationElemSwitch.AnnotationElemResult;
-
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+
+import org.jboss.util.Classes;
+
+import com.google.common.reflect.AbstractInvocationHandler;
+
+import soot.tagkit.AnnotationElem;
+import soot.tagkit.AnnotationTag;
+import soot.util.annotations.AnnotationElemSwitch.AnnotationElemResult;
 
 /**
  * 

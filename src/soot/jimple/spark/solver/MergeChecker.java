@@ -21,7 +21,12 @@ package soot.jimple.spark.solver;
 
 import soot.FastHierarchy;
 import soot.G;
-import soot.jimple.spark.pag.*;
+import soot.jimple.spark.pag.AllocNode;
+import soot.jimple.spark.pag.FieldRefNode;
+import soot.jimple.spark.pag.Node;
+import soot.jimple.spark.pag.PAG;
+import soot.jimple.spark.pag.SparkField;
+import soot.jimple.spark.pag.VarNode;
 import soot.jimple.spark.sets.P2SetVisitor;
 import soot.jimple.spark.sets.PointsToSetInternal;
 import soot.util.HashMultiMap;

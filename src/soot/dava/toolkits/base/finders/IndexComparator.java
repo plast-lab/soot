@@ -19,7 +19,7 @@
 
 package soot.dava.toolkits.base.finders;
 
-import java.util.Comparator;
+import java.util.*;
 
 class IndexComparator implements Comparator
 {

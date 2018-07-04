@@ -19,19 +19,11 @@
 
 package soot.jbco.bafTransformations;
 
-import soot.Body;
-import soot.BodyTransformer;
-import soot.PatchingChain;
-import soot.Unit;
-import soot.baf.IdentityInst;
-import soot.baf.Inst;
 import soot.jbco.IJbcoTransform;
-import soot.tagkit.LineNumberTag;
-import soot.tagkit.Tag;
-
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+import soot.tagkit.*;
+import soot.*;
+import soot.baf.*;
 
 public class BafLineNumberer extends BodyTransformer implements IJbcoTransform {
   public void outputSummary() {}

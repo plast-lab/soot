@@ -20,14 +20,8 @@
 package soot.jimple.toolkits.callgraph;
 
 import soot.*;
-import soot.jimple.IntConstant;
-import soot.jimple.Jimple;
-import soot.jimple.JimpleBody;
-import soot.jimple.StringConstant;
-
-import java.util.List;
-import java.util.Map;
-import java.util.Vector;
+import soot.jimple.*;
+import java.util.*;
 
 public class UnreachableMethodTransformer extends BodyTransformer
 {

@@ -25,8 +25,7 @@
 
 package soot;
 
-import java.util.Collections;
-import java.util.Map;
+import java.util.*;
 
 /**
  *  An abstract class which acts on a Body. This class provides a harness and acts as an

@@ -1,20 +1,13 @@
 package soot.jimple.toolkits.thread.mhp.findobject;
 
-import soot.*;
-import soot.jimple.AssignStmt;
-import soot.jimple.DefinitionStmt;
-import soot.jimple.NewExpr;
-import soot.jimple.spark.pag.AllocNode;
-import soot.jimple.spark.pag.PAG;
-import soot.jimple.toolkits.callgraph.CallGraph;
+import soot.toolkits.graph.*;
+import soot.toolkits.scalar.*;
+import soot.jimple.toolkits.callgraph.*;
 import soot.jimple.toolkits.thread.mhp.pegcallgraph.PegCallGraph;
-import soot.toolkits.graph.CompleteUnitGraph;
-import soot.toolkits.graph.UnitGraph;
-import soot.toolkits.scalar.FlowSet;
-
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
+import soot.*;
+import soot.jimple.*;
+import soot.jimple.spark.pag.*;
+import java.util.*;
 
 // *** USE AT YOUR OWN RISK ***
 // May Happen in Parallel (MHP) analysis by Lin Li.

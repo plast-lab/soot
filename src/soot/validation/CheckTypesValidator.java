@@ -1,9 +1,26 @@
 package soot.validation;
 
-import soot.*;
-import soot.jimple.*;
-
 import java.util.List;
+
+import soot.ArrayType;
+import soot.Body;
+import soot.DoubleType;
+import soot.FloatType;
+import soot.IntType;
+import soot.LongType;
+import soot.NullType;
+import soot.PrimType;
+import soot.RefType;
+import soot.Scene;
+import soot.SootClass;
+import soot.SootMethodRef;
+import soot.Type;
+import soot.Unit;
+import soot.jimple.CaughtExceptionRef;
+import soot.jimple.DefinitionStmt;
+import soot.jimple.InstanceInvokeExpr;
+import soot.jimple.InvokeExpr;
+import soot.jimple.Stmt;
 
 public enum CheckTypesValidator implements BodyValidator {
 	INSTANCE;

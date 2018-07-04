@@ -18,13 +18,14 @@
  */
 package soot.jimple.spark.geom.dataRep;
 
+import java.util.Set;
+
+import soot.jimple.spark.geom.geomPA.Constants;
 import soot.jimple.spark.geom.geomPA.IVarAbstraction;
 import soot.jimple.spark.pag.SparkField;
 import soot.jimple.toolkits.callgraph.Edge;
 import soot.toolkits.scalar.Pair;
 import soot.util.Numberable;
-
-import java.util.Set;
 
 /**
  * The geometric encoding based constraint descriptor.

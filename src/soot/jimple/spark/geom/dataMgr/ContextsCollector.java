@@ -18,10 +18,9 @@
  */
 package soot.jimple.spark.geom.dataMgr;
 
-import soot.jimple.spark.geom.dataRep.SimpleInterval;
-
 import java.util.ArrayList;
 import java.util.List;
+import soot.jimple.spark.geom.dataRep.SimpleInterval;
 
 /**
  * Manage context intervals.

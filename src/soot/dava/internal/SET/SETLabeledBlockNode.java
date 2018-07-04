@@ -19,10 +19,9 @@
 
 package soot.dava.internal.SET;
 
-import soot.dava.internal.AST.ASTLabeledBlockNode;
-import soot.dava.internal.AST.ASTNode;
-import soot.dava.internal.asg.AugmentedStmt;
-import soot.util.IterableSet;
+import soot.util.*;
+import soot.dava.internal.asg.*;
+import soot.dava.internal.AST.*;
 
 public class SETLabeledBlockNode extends SETNode {
 	public SETLabeledBlockNode(IterableSet body) {

@@ -1,7 +1,19 @@
 package soot.util.annotations;
 
 import org.jboss.util.Classes;
-import soot.tagkit.*;
+
+import soot.tagkit.AbstractAnnotationElemTypeSwitch;
+import soot.tagkit.AnnotationAnnotationElem;
+import soot.tagkit.AnnotationArrayElem;
+import soot.tagkit.AnnotationBooleanElem;
+import soot.tagkit.AnnotationClassElem;
+import soot.tagkit.AnnotationDoubleElem;
+import soot.tagkit.AnnotationElem;
+import soot.tagkit.AnnotationEnumElem;
+import soot.tagkit.AnnotationFloatElem;
+import soot.tagkit.AnnotationIntElem;
+import soot.tagkit.AnnotationLongElem;
+import soot.tagkit.AnnotationStringElem;
 /**
  * 
  * An {@link AbstractAnnotationElemTypeSwitch} that converts an

@@ -20,19 +20,19 @@
 package soot.shimple.toolkits.scalar;
 
 import soot.*;
-import soot.jimple.*;
 import soot.options.Options;
-import soot.shimple.ShimpleBody;
-import soot.shimple.toolkits.scalar.SEvaluator.BottomConstant;
-import soot.shimple.toolkits.scalar.SEvaluator.MetaConstant;
-import soot.shimple.toolkits.scalar.SEvaluator.TopConstant;
 import soot.singletons.Singletons;
-import soot.toolkits.graph.ExceptionalUnitGraph;
-import soot.toolkits.graph.UnitGraph;
+import soot.util.*;
+import soot.jimple.*;
+import soot.shimple.*;
 import soot.toolkits.scalar.*;
-import soot.util.Chain;
+import soot.toolkits.graph.*;
 
 import java.util.*;
+
+import soot.shimple.toolkits.scalar.SEvaluator.MetaConstant;
+import soot.shimple.toolkits.scalar.SEvaluator.TopConstant;
+import soot.shimple.toolkits.scalar.SEvaluator.BottomConstant;
 
 /**
  * A powerful constant propagator and folder based on an algorithm

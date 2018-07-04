@@ -25,13 +25,11 @@
 
 
 package soot.coffi;
-
-import soot.*;
-import soot.jimple.Jimple;
-import soot.jimple.JimpleBody;
 import soot.options.Options;
 
-import java.util.Map;
+import soot.*;
+import java.util.*;
+import soot.jimple.*;
 
 public class CoffiMethodSource implements MethodSource
 {

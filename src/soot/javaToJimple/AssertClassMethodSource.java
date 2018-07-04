@@ -19,7 +19,7 @@
 
 package soot.javaToJimple;
 
-import java.util.ArrayList;
+import java.util.*;
 public class AssertClassMethodSource implements soot.MethodSource {
 
     public soot.Body getBody(soot.SootMethod sootMethod, String phaseName){

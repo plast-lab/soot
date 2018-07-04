@@ -1,8 +1,9 @@
 package soot.asm.backend.targets;
 
-import javax.annotation.Generated;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
+
+import javax.annotation.Generated;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Generated(value="forTesting")

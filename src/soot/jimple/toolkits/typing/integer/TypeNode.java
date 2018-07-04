@@ -26,8 +26,7 @@
 
 package soot.jimple.toolkits.typing.integer;
 
-import soot.G;
-import soot.Type;
+import soot.*;
 
 /**
  * Each instance of this class represents one basic type.

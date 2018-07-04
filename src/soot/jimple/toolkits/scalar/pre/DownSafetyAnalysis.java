@@ -27,12 +27,10 @@
 package soot.jimple.toolkits.scalar.pre;
 
 import soot.*;
-import soot.jimple.FieldRef;
-import soot.toolkits.graph.DirectedGraph;
 import soot.toolkits.scalar.*;
-
-import java.util.Iterator;
-import java.util.Map;
+import soot.toolkits.graph.*;
+import soot.jimple.*;
+import java.util.*;
 
 /**
  * Performs an DownSafe-analysis on the given graph. An expression is downsafe,

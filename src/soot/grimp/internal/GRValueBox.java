@@ -30,12 +30,8 @@
 
 package soot.grimp.internal;
 
-import soot.AbstractValueBox;
-import soot.Local;
-import soot.Value;
-import soot.jimple.ConcreteRef;
-import soot.jimple.Constant;
-import soot.jimple.Expr;
+import soot.*;
+import soot.jimple.*;
 
 public class GRValueBox extends AbstractValueBox
 {

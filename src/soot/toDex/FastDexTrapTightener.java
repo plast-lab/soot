@@ -1,16 +1,16 @@
 package soot.toDex;
 
+import java.util.Iterator;
+import java.util.Map;
+
 import soot.Body;
 import soot.BodyTransformer;
+import soot.singletons.Singletons;
 import soot.Trap;
 import soot.Unit;
 import soot.jimple.IdentityStmt;
 import soot.jimple.ParameterRef;
 import soot.jimple.ThisRef;
-import soot.singletons.Singletons;
-
-import java.util.Iterator;
-import java.util.Map;
 
 /**
  * Tries may not start or end at units which have no corresponding Dalvik

@@ -18,6 +18,10 @@
  */
 
 package soot.javaToJimple;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
 
 import polyglot.ast.ClassDecl;
 import polyglot.ast.New;
@@ -28,11 +32,6 @@ import soot.FastHierarchy;
 import soot.SootClass;
 import soot.SootMethod;
 import soot.singletons.Singletons;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
 
 public class InitialResolver implements IInitialResolver {
 

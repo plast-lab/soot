@@ -25,13 +25,10 @@
 
 package soot.jimple.toolkits.scalar.pre;
 
-import soot.EquivalentValue;
-import soot.Unit;
-import soot.toolkits.graph.DirectedGraph;
-import soot.toolkits.graph.UnitGraph;
+import soot.*;
 import soot.toolkits.scalar.*;
-
-import java.util.Map;
+import soot.toolkits.graph.*;
+import java.util.*;
 
 /**
  * Performs a Delayability-analysis on the given graph. This analysis is the

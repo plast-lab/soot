@@ -18,14 +18,14 @@
  */
 package soot.asm;
 
+import java.util.ArrayList;
+
 import soot.Local;
 import soot.Unit;
 import soot.ValueBox;
 import soot.jimple.AssignStmt;
 import soot.jimple.DefinitionStmt;
 import soot.jimple.Jimple;
-
-import java.util.ArrayList;
 
 /**
  * Frame of stack for an instruction.

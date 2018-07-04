@@ -26,8 +26,7 @@
 
 package soot.jimple.toolkits.typing;
 
-import soot.G;
-
+import soot.*;
 import java.util.*;
 
 class StronglyConnectedComponents

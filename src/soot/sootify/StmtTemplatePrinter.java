@@ -1,15 +1,31 @@
 package soot.sootify;
 
-import soot.PatchingChain;
-import soot.Unit;
-import soot.UnitBox;
-import soot.Value;
-import soot.jimple.*;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+
+import soot.PatchingChain;
+import soot.Unit;
+import soot.UnitBox;
+import soot.Value;
+import soot.jimple.AssignStmt;
+import soot.jimple.BreakpointStmt;
+import soot.jimple.EnterMonitorStmt;
+import soot.jimple.ExitMonitorStmt;
+import soot.jimple.GotoStmt;
+import soot.jimple.IdentityStmt;
+import soot.jimple.IfStmt;
+import soot.jimple.IntConstant;
+import soot.jimple.InvokeStmt;
+import soot.jimple.LookupSwitchStmt;
+import soot.jimple.NopStmt;
+import soot.jimple.RetStmt;
+import soot.jimple.ReturnStmt;
+import soot.jimple.ReturnVoidStmt;
+import soot.jimple.StmtSwitch;
+import soot.jimple.TableSwitchStmt;
+import soot.jimple.ThrowStmt;
 
 class StmtTemplatePrinter implements StmtSwitch {
 	private final TemplatePrinter p;

@@ -19,8 +19,7 @@
 
 package soot.javaToJimple;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 
 public class AccessFieldJBB extends AbstractJimpleBodyBuilder{

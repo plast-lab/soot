@@ -1,12 +1,12 @@
 package soot.jimple.spark.ondemand;
 
+import java.util.Set;
+
 import soot.Local;
 import soot.PointsToSet;
 import soot.Type;
 import soot.jimple.ClassConstant;
 import soot.jimple.spark.sets.EqualsSupportingPointsToSet;
-
-import java.util.Set;
 
 /**
  * This is a <i>lazy</i> points-to set that is potentially context sensitive. It is created by the {@link DemandCSPointsTo} analysis.

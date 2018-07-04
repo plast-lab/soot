@@ -19,16 +19,14 @@
 
 package soot.jbco.bafTransformations;
 
+import java.util.*;
+
 import soot.*;
-import soot.baf.*;
-import soot.baf.internal.BLoadInst;
 import soot.jbco.IJbcoTransform;
 import soot.jbco.util.Rand;
 import soot.toolkits.graph.BriefUnitGraph;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import soot.baf.internal.*;
+import soot.baf.*;
 
 /**
  * @author Michael Batchelder 

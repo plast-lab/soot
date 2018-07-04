@@ -30,14 +30,14 @@
 
 package soot.toolkits.scalar;
 
+import java.util.List;
+
 import soot.Body;
 import soot.Local;
 import soot.Unit;
 import soot.toolkits.graph.ExceptionalUnitGraph;
 import soot.toolkits.graph.UnitGraph;
 import soot.toolkits.scalar.SimpleLocalDefs.FlowAnalysisMode;
-
-import java.util.List;
 
 /**
  *   Provides an interface for querying for the definitions of a Local

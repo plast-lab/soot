@@ -25,13 +25,13 @@
 
 package soot.jimple.internal;
 
-import soot.Value;
-import soot.ValueBox;
-import soot.jimple.DefinitionStmt;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
+import soot.Value;
+import soot.ValueBox;
+import soot.jimple.DefinitionStmt;
 
 
 @SuppressWarnings("serial")

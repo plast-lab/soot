@@ -19,14 +19,18 @@
 
 package soot.jimple.toolkits.pointer;
 
-import soot.*;
-import soot.jimple.Stmt;
-import soot.toolkits.graph.StronglyConnectedComponentsFast;
-import soot.toolkits.graph.UnitGraph;
-
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+
+import soot.Local;
+import soot.RefLikeType;
+import soot.Unit;
+import soot.Value;
+import soot.ValueBox;
+import soot.jimple.Stmt;
+import soot.toolkits.graph.StronglyConnectedComponentsFast;
+import soot.toolkits.graph.UnitGraph;
 
 /**
  * A special version of the local must-alias analysis that takes redefinitions within loops into account.

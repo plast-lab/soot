@@ -20,16 +20,11 @@
 
 package soot.dava.internal.AST;
 
-import soot.Local;
-import soot.UnitPrinter;
-import soot.Value;
-import soot.ValueBox;
-import soot.dava.internal.SET.SETNodeLabel;
-import soot.dava.toolkits.base.AST.analysis.Analysis;
-import soot.jimple.Jimple;
-
-import java.util.ArrayList;
-import java.util.List;
+import soot.*;
+import soot.jimple.*;
+import java.util.*;
+import soot.dava.internal.SET.*;
+import soot.dava.toolkits.base.AST.analysis.*;
 
 public class ASTSynchronizedBlockNode extends ASTLabeledNode
 {

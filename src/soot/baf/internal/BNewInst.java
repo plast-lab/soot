@@ -29,10 +29,9 @@
 
 package soot.baf.internal;
 
-import soot.RefType;
-import soot.baf.InstSwitch;
-import soot.baf.NewInst;
-import soot.util.Switch;
+import soot.*;
+import soot.baf.*;
+import soot.util.*;
 
 public class BNewInst extends AbstractRefTypeInst implements NewInst
 {

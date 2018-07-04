@@ -30,9 +30,9 @@
 
 package soot.grimp.internal;
 
-import soot.Value;
-import soot.grimp.Grimp;
-import soot.jimple.internal.JThrowStmt;
+import soot.*;
+import soot.grimp.*;
+import soot.jimple.internal.*;
 
 public class GThrowStmt extends JThrowStmt
 {

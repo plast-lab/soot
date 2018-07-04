@@ -19,15 +19,12 @@
 
 package soot.dava.toolkits.base.AST.transformations;
 
-import soot.Value;
-import soot.dava.internal.AST.*;
-import soot.dava.internal.SET.SETNodeLabel;
-import soot.dava.internal.asg.AugmentedStmt;
-import soot.jimple.ConditionExpr;
-import soot.jimple.DefinitionStmt;
-import soot.jimple.Stmt;
-
 import java.util.*;
+import soot.*;
+import soot.jimple.*;
+import soot.dava.internal.SET.*;
+import soot.dava.internal.asg.*;
+import soot.dava.internal.AST.*;
 
 public class ForLoopCreationHelper {
 

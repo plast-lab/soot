@@ -19,12 +19,9 @@
 
 package soot.dava.toolkits.base.AST.transformations;
 
-import soot.G;
+import soot.*;
+import java.util.*;
 import soot.dava.internal.AST.*;
-
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
 
 
 /*

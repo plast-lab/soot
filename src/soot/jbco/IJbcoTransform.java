@@ -19,9 +19,8 @@
 
 package soot.jbco;
 
-import soot.G;
-
 import java.io.PrintStream;
+import soot.G;
 
 /**
  * @author Michael Batchelder 

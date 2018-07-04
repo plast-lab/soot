@@ -24,24 +24,31 @@
 
 package soot.dexpler.instructions;
 
+import static soot.dexpler.Util.dottedClassName;
+import static soot.dexpler.Util.isFloatLike;
+
+import java.util.HashSet;
+import java.util.Set;
+
 import org.jf.dexlib2.iface.instruction.Instruction;
 import org.jf.dexlib2.iface.instruction.ReferenceInstruction;
 import org.jf.dexlib2.iface.instruction.formats.Instruction21c;
 import org.jf.dexlib2.iface.instruction.formats.Instruction22c;
 import org.jf.dexlib2.iface.instruction.formats.Instruction23x;
 import org.jf.dexlib2.iface.reference.FieldReference;
-import soot.*;
+
+import soot.Local;
+import soot.Scene;
+import soot.SootClass;
+import soot.SootFieldRef;
+import soot.SootResolver;
+import soot.Type;
+import soot.UnknownType;
 import soot.dexpler.DexBody;
 import soot.dexpler.DexType;
 import soot.jimple.AssignStmt;
 import soot.jimple.ConcreteRef;
 import soot.jimple.Jimple;
-
-import java.util.HashSet;
-import java.util.Set;
-
-import static soot.dexpler.Util.dottedClassName;
-import static soot.dexpler.Util.isFloatLike;
 
 public abstract class FieldInstruction extends DexlibAbstractInstruction {
 

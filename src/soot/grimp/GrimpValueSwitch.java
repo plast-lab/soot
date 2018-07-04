@@ -27,7 +27,7 @@
 
 package soot.grimp;
 
-import soot.jimple.JimpleValueSwitch;
+import soot.jimple.*;
 
 public interface GrimpValueSwitch extends JimpleValueSwitch
 {

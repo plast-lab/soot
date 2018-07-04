@@ -30,11 +30,10 @@
 
 package soot.grimp.internal;
 
-import soot.Value;
-import soot.grimp.Grimp;
-import soot.jimple.DivExpr;
-import soot.jimple.ExprSwitch;
-import soot.util.Switch;
+import soot.*;
+import soot.grimp.*;
+import soot.jimple.*;
+import soot.util.*;
 
 public class GDivExpr extends AbstractGrimpFloatBinopExpr implements DivExpr
 {

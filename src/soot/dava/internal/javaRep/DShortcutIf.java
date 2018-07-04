@@ -1,13 +1,13 @@
 package soot.dava.internal.javaRep;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import soot.Type;
 import soot.UnitPrinter;
 import soot.ValueBox;
 import soot.jimple.Expr;
 import soot.util.Switch;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class DShortcutIf implements Expr {
 	ValueBox testExprBox;

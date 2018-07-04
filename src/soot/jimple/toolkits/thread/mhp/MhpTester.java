@@ -1,10 +1,9 @@
 package soot.jimple.toolkits.thread.mhp;
 
-import soot.SootMethod;
-import soot.Unit;
-import soot.jimple.toolkits.thread.AbstractRuntimeThread;
+import java.util.*;
 
-import java.util.List;
+import soot.*;
+import soot.jimple.toolkits.thread.AbstractRuntimeThread;
 
 /** MhpTester written by Richard L. Halpert 2007-03-15
  *  An interface for any object that can provide May-Happen-in-Parallel info and

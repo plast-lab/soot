@@ -31,17 +31,12 @@
 package soot.baf;
 
 import soot.*;
+import soot.jimple.*;
+import soot.jimple.internal.*;
 import soot.baf.internal.*;
-import soot.jimple.Constant;
-import soot.jimple.IntConstant;
-import soot.jimple.ParameterRef;
-import soot.jimple.ThisRef;
-import soot.jimple.internal.IdentityRefBox;
 import soot.singletons.Singletons;
 
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Baf
 {

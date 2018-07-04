@@ -25,7 +25,7 @@
 
 package soot.baf;
 
-import soot.ArrayType;
+import soot.*;
 
 public interface NewMultiArrayInst extends Inst
 {

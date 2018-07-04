@@ -19,7 +19,7 @@
 
 package soot.toolkits.graph;
 
-import java.util.List;
+import java.util.*;
 
 /**
  * Interface to compute and/or store the dominance frontiers of nodes

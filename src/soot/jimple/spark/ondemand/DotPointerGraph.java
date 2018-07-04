@@ -18,14 +18,20 @@
  */
 package soot.jimple.spark.ondemand;
 
-import soot.jimple.spark.ondemand.genericutil.Predicate;
-import soot.jimple.spark.pag.*;
-
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintWriter;
 import java.util.HashSet;
 import java.util.Set;
+
+
+
+import soot.jimple.spark.ondemand.genericutil.Predicate;
+import soot.jimple.spark.pag.AllocNode;
+import soot.jimple.spark.pag.FieldRefNode;
+import soot.jimple.spark.pag.Node;
+import soot.jimple.spark.pag.PagToDotDumper;
+import soot.jimple.spark.pag.VarNode;
 
 /**
  * you can just add edges and then dump them as a dot graph

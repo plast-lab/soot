@@ -29,13 +29,9 @@
 
 package soot.baf.internal;
 
-import soot.Unit;
-import soot.UnitBox;
-import soot.UnitPrinter;
-import soot.util.Switch;
-
-import java.util.Collections;
-import java.util.List;
+import soot.*;
+import soot.util.*;
+import java.util.*;
 
 public abstract class AbstractBranchInst extends AbstractInst
 {

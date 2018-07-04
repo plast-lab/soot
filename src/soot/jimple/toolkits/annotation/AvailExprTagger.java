@@ -18,17 +18,15 @@
  */
 
 package soot.jimple.toolkits.annotation;
-
 import soot.*;
-import soot.jimple.NaiveSideEffectTester;
-import soot.jimple.toolkits.pointer.PASideEffectTester;
-import soot.jimple.toolkits.scalar.PessimisticAvailableExpressionsAnalysis;
-import soot.jimple.toolkits.scalar.SlowAvailableExpressionsAnalysis;
+import java.util.*;
+
 import soot.options.AETOptions;
 import soot.singletons.Singletons;
-import soot.toolkits.graph.ExceptionalUnitGraph;
-
-import java.util.Map;
+import soot.toolkits.graph.*;
+import soot.jimple.*;
+import soot.jimple.toolkits.pointer.*;
+import soot.jimple.toolkits.scalar.*;
 
 /** A body transformer that records avail expression 
  * information in tags.  - both pessimistic and optimistic options*/

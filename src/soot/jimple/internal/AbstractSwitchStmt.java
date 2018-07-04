@@ -1,14 +1,14 @@
 package soot.jimple.internal;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 import soot.Unit;
 import soot.UnitBox;
 import soot.Value;
 import soot.ValueBox;
 import soot.jimple.SwitchStmt;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 @SuppressWarnings("serial")
 public abstract class AbstractSwitchStmt extends AbstractStmt implements SwitchStmt {

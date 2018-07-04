@@ -29,9 +29,7 @@
 
 package soot.baf.internal;
 
-import soot.RefType;
-import soot.Type;
-import soot.UnitPrinter;
+import soot.*;
 
 public abstract class AbstractRefTypeInst extends AbstractInst
 {

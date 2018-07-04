@@ -20,14 +20,11 @@
 package soot.shimple.toolkits.scalar;
 
 import soot.*;
-import soot.jimple.Constant;
-import soot.jimple.Expr;
-import soot.jimple.toolkits.scalar.Evaluator;
-import soot.shimple.PhiExpr;
-import soot.util.Switch;
-
-import java.util.Iterator;
-import java.util.Map;
+import soot.util.*;
+import soot.jimple.*;
+import soot.shimple.*;
+import soot.jimple.toolkits.scalar.*;
+import java.util.*;
 
 /**
  * Extension of soot.jimple.toolkits.scalar.Evaluator to handle Phi

@@ -24,14 +24,20 @@
 
 package soot.dexpler;
 
-import soot.*;
-import soot.jimple.FieldRef;
-import soot.jimple.Stmt;
-
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
+
+import soot.Body;
+import soot.Local;
+import soot.Scene;
+import soot.SootClass;
+import soot.SootField;
+import soot.Type;
+import soot.Unit;
+import soot.jimple.FieldRef;
+import soot.jimple.Stmt;
 
 /**
 

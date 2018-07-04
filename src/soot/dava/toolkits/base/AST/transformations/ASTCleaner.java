@@ -19,17 +19,12 @@
 
 package soot.dava.toolkits.base.AST.transformations;
 
-import soot.G;
-import soot.Local;
-import soot.SootClass;
-import soot.Type;
-import soot.dava.internal.AST.*;
-import soot.dava.internal.SET.SETNodeLabel;
-import soot.dava.toolkits.base.AST.analysis.DepthFirstAdapter;
+import soot.*;
+import java.util.*;
 
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
+import soot.dava.internal.SET.*;
+import soot.dava.internal.AST.*;
+import soot.dava.toolkits.base.AST.analysis.*;
 
 
 /*

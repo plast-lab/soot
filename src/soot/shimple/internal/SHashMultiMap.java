@@ -18,12 +18,8 @@
  */
 
 package soot.shimple.internal;
-
-import soot.util.HashMultiMap;
-import soot.util.MultiMap;
-
-import java.util.LinkedHashSet;
-import java.util.Set;
+import java.util.*;
+import soot.util.*;
 
 /**
  * A map with ordered sets as values, HashMap implementation.

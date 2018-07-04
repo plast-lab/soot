@@ -19,19 +19,14 @@
 
 package soot.dava.toolkits.base.AST.transformations;
 
-import soot.SootClass;
-import soot.SootMethod;
-import soot.VoidType;
-import soot.dava.internal.AST.ASTMethodNode;
-import soot.dava.internal.AST.ASTNode;
-import soot.dava.internal.AST.ASTStatementSequenceNode;
-import soot.dava.internal.asg.AugmentedStmt;
-import soot.jimple.ReturnVoidStmt;
-import soot.jimple.Stmt;
-import soot.util.Chain;
+import java.util.*;
 
-import java.util.Iterator;
-import java.util.List;
+import soot.*;
+import soot.jimple.*;
+import soot.util.Chain;
+import soot.dava.*;
+import soot.dava.internal.asg.*;
+import soot.dava.internal.AST.*;
 
 
 public class VoidReturnRemover{

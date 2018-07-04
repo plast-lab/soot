@@ -23,8 +23,7 @@ import soot.*;
 import soot.options.Options;
 import soot.singletons.Singletons;
 
-import java.util.Iterator;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Traverses all methods, in all classes from the Scene, and

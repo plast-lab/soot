@@ -1,7 +1,6 @@
 package soot.jimple.spark.sets;
-
-import soot.jimple.spark.pag.Node;
 import soot.util.BitVector;
+import soot.jimple.spark.pag.Node;
 
 /** An extension of a bit vector which is convenient to use to represent
  * points-to sets.  Used by SharedHybridSet.

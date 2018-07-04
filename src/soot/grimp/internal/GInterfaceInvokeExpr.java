@@ -31,17 +31,10 @@
 
 package soot.grimp.internal;
 
-import soot.SootMethodRef;
-import soot.UnitPrinter;
-import soot.Value;
-import soot.ValueBox;
-import soot.grimp.Grimp;
-import soot.grimp.Precedence;
-import soot.grimp.PrecedenceTest;
-import soot.jimple.internal.AbstractInterfaceInvokeExpr;
-
-import java.util.ArrayList;
-import java.util.List;
+import soot.*;
+import soot.grimp.*;
+import soot.jimple.internal.*;
+import java.util.*;
 
 public class GInterfaceInvokeExpr extends AbstractInterfaceInvokeExpr
     implements Precedence

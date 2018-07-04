@@ -1,9 +1,9 @@
 package soot.validation;
 
+import java.util.List;
+
 import soot.Body;
 import soot.UnitBox;
-
-import java.util.List;
 
 public enum UnitBoxesValidator implements BodyValidator {
 	INSTANCE;

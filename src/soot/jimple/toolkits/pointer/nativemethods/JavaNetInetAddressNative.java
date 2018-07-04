@@ -26,9 +26,9 @@
 
 package soot.jimple.toolkits.pointer.nativemethods;
 
-import soot.SootMethod;
-import soot.jimple.toolkits.pointer.representations.ReferenceVariable;
-import soot.jimple.toolkits.pointer.util.NativeHelper;
+import soot.*;
+import soot.jimple.toolkits.pointer.representations.*;
+import soot.jimple.toolkits.pointer.util.*;
 
 public class JavaNetInetAddressNative extends NativeMethodClass {
     public JavaNetInetAddressNative( NativeHelper helper ) { super(helper); }

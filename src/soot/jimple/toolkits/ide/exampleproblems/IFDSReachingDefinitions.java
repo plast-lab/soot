@@ -24,13 +24,30 @@ import heros.FlowFunctions;
 import heros.InterproceduralCFG;
 import heros.flowfunc.Identity;
 import heros.flowfunc.KillAll;
-import soot.*;
-import soot.jimple.*;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import soot.EquivalentValue;
+import soot.Local;
+import soot.NullType;
+import soot.Scene;
+import soot.SootMethod;
+import soot.Unit;
+import soot.Value;
+import soot.jimple.DefinitionStmt;
+import soot.jimple.InvokeExpr;
+import soot.jimple.Jimple;
+import soot.jimple.ReturnStmt;
+import soot.jimple.ReturnVoidStmt;
+import soot.jimple.Stmt;
 import soot.jimple.internal.JimpleLocal;
 import soot.jimple.toolkits.ide.DefaultJimpleIFDSTabulationProblem;
 import soot.toolkits.scalar.Pair;
-
-import java.util.*;
 
 public class IFDSReachingDefinitions extends DefaultJimpleIFDSTabulationProblem<Pair<Value, Set<DefinitionStmt>>,InterproceduralCFG<Unit, SootMethod>> {
 	public IFDSReachingDefinitions(InterproceduralCFG<Unit, SootMethod> icfg) {

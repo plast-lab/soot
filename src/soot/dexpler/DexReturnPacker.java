@@ -1,13 +1,13 @@
 package soot.dexpler;
 
+import java.util.Iterator;
+import java.util.Map;
+
 import soot.Body;
 import soot.BodyTransformer;
 import soot.Unit;
 import soot.jimple.ReturnStmt;
 import soot.jimple.ReturnVoidStmt;
-
-import java.util.Iterator;
-import java.util.Map;
 
 /**
  * This transformer is the inverse of the DexReturnInliner. It looks for

@@ -25,8 +25,7 @@
 
 package soot.jimple.toolkits.annotation.arraycheck;
 
-import soot.SootMethod;
-import soot.Type;
+import soot.*;
 
 class MethodReturn
 {

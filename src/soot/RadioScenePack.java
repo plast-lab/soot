@@ -19,9 +19,7 @@
 
 package soot;
 
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.Map;
+import java.util.*;
 
 /** A wrapper object for a pack of optimizations.
  * Provides chain-like operations, except that the key is the phase name. */

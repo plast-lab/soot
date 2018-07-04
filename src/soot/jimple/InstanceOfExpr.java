@@ -29,10 +29,8 @@
 
 package soot.jimple;
 
-import soot.Type;
-import soot.Value;
-import soot.ValueBox;
-import soot.util.Switch;
+import soot.*;
+import soot.util.*;
 
 public interface InstanceOfExpr extends Expr
 {

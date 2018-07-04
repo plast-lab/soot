@@ -3,12 +3,12 @@
  */
 package soot.util;
 
+import static java.lang.Long.numberOfTrailingZeros;
+
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-
-import static java.lang.Long.numberOfTrailingZeros;
 
 /**
  * @author Steven Lambeth

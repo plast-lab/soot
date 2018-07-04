@@ -30,8 +30,7 @@
 
 
 package soot.coffi;
-
-import soot.G;
+import soot.*;
 
 /** Procedural code for parsing and otherwise handling bytecode.
  * @author Clark Verbrugge

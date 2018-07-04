@@ -3,7 +3,16 @@
  */
 package soot.util;
 
-import java.util.*;
+import java.util.AbstractMap;
+import java.util.AbstractQueue;
+import java.util.Arrays;
+import java.util.ConcurrentModificationException;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.NoSuchElementException;
+import java.util.HashMap;
+import java.util.Set;
 
 /**
  * A fixed size priority queue based on bitsets. The elements of the priority

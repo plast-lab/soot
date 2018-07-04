@@ -18,14 +18,10 @@
  */
 
 package soot.jimple.spark.sets;
-
-import soot.Type;
 import soot.jimple.spark.pag.Node;
 import soot.jimple.spark.pag.PAG;
-
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Iterator;
+import java.util.*;
+import soot.Type;
 
 /** HashSet implementation of points-to set.
  * @author Ondrej Lhotak

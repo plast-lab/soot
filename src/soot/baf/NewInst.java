@@ -25,7 +25,7 @@
 
 package soot.baf;
 
-import soot.RefType;
+import soot.*;
 
 public interface NewInst extends Inst
 {

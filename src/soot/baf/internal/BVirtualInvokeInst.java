@@ -26,10 +26,9 @@
 
 package soot.baf.internal;
 
-import soot.SootMethodRef;
-import soot.baf.InstSwitch;
-import soot.baf.VirtualInvokeInst;
-import soot.util.Switch;
+import soot.*;
+import soot.baf.*;
+import soot.util.*;
 
 public class BVirtualInvokeInst extends AbstractInvokeInst implements VirtualInvokeInst
 {

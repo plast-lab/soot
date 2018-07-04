@@ -19,15 +19,15 @@
 
 package soot.jbco.bafTransformations;
 
-import soot.Body;
-import soot.BodyTransformer;
-import soot.Local;
-import soot.jbco.IJbcoTransform;
-
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+
+import soot.Body;
+import soot.BodyTransformer;
+import soot.Local;
+import soot.jbco.IJbcoTransform;
 
 /**
  * @author Michael Batchelder 

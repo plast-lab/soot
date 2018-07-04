@@ -1,10 +1,24 @@
 package soot.dava.toolkits.base.AST.transformations;
 
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
 import soot.Local;
 import soot.SootField;
 import soot.Value;
 import soot.ValueBox;
-import soot.dava.internal.AST.*;
+import soot.dava.internal.AST.ASTAggregatedCondition;
+import soot.dava.internal.AST.ASTBinaryCondition;
+import soot.dava.internal.AST.ASTCondition;
+import soot.dava.internal.AST.ASTDoWhileNode;
+import soot.dava.internal.AST.ASTForLoopNode;
+import soot.dava.internal.AST.ASTIfElseNode;
+import soot.dava.internal.AST.ASTIfNode;
+import soot.dava.internal.AST.ASTMethodNode;
+import soot.dava.internal.AST.ASTStatementSequenceNode;
+import soot.dava.internal.AST.ASTSwitchNode;
+import soot.dava.internal.AST.ASTUnaryCondition;
+import soot.dava.internal.AST.ASTWhileNode;
 import soot.dava.internal.asg.AugmentedStmt;
 import soot.dava.toolkits.base.AST.analysis.DepthFirstAdapter;
 import soot.dava.toolkits.base.AST.structuredAnalysis.CP;
@@ -12,10 +26,6 @@ import soot.dava.toolkits.base.AST.structuredAnalysis.CPFlowSet;
 import soot.dava.toolkits.base.AST.structuredAnalysis.CPHelper;
 import soot.jimple.FieldRef;
 import soot.jimple.Stmt;
-
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
 
 /*
  * The traversal utilizes the results of the CP (constant propagation analysis) to substitute uses

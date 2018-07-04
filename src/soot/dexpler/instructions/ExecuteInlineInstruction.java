@@ -1,5 +1,7 @@
 package soot.dexpler.instructions;
 
+import java.util.List;
+
 import org.jf.dexlib2.AccessFlags;
 import org.jf.dexlib2.analysis.AnalyzedInstruction;
 import org.jf.dexlib2.analysis.ClassPath;
@@ -12,9 +14,8 @@ import org.jf.dexlib2.iface.instruction.Instruction;
 import org.jf.dexlib2.iface.instruction.formats.Instruction35mi;
 import org.jf.dexlib2.iface.instruction.formats.Instruction3rmi;
 import org.jf.dexlib2.iface.reference.MethodReference;
-import soot.dexpler.DexBody;
 
-import java.util.List;
+import soot.dexpler.DexBody;
 
 public class ExecuteInlineInstruction extends MethodInvocationInstruction implements OdexInstruction {
 	

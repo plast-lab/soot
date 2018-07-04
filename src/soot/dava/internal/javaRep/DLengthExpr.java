@@ -19,12 +19,9 @@
 
 package soot.dava.internal.javaRep;
 
-import soot.UnitPrinter;
-import soot.Value;
-import soot.grimp.Grimp;
-import soot.grimp.Precedence;
-import soot.grimp.PrecedenceTest;
-import soot.jimple.internal.AbstractLengthExpr;
+import soot.*;
+import soot.grimp.*;
+import soot.jimple.internal.*;
 
 public class DLengthExpr extends AbstractLengthExpr implements Precedence
 {

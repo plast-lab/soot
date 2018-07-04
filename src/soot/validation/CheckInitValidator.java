@@ -1,12 +1,16 @@
 package soot.validation;
 
-import soot.*;
+import java.util.List;
+
+import soot.Body;
+import soot.Local;
+import soot.Unit;
+import soot.Value;
+import soot.ValueBox;
 import soot.toolkits.exceptions.ThrowAnalysisFactory;
 import soot.toolkits.graph.ExceptionalUnitGraph;
 import soot.toolkits.scalar.FlowSet;
 import soot.toolkits.scalar.InitAnalysis;
-
-import java.util.List;
 
 public enum CheckInitValidator implements BodyValidator {
 	INSTANCE;

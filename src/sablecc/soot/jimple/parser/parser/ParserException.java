@@ -2,7 +2,7 @@
 
 package sablecc.soot.jimple.parser.parser;
 
-import sablecc.soot.jimple.parser.node.Token;
+import sablecc.soot.jimple.parser.node.*;
 
 @SuppressWarnings("serial")
 public class ParserException extends Exception

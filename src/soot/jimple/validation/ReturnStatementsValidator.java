@@ -1,12 +1,16 @@
 package soot.jimple.validation;
 
+import java.util.List;
+
 import soot.Body;
 import soot.Unit;
-import soot.jimple.*;
+import soot.jimple.GotoStmt;
+import soot.jimple.RetStmt;
+import soot.jimple.ReturnStmt;
+import soot.jimple.ReturnVoidStmt;
+import soot.jimple.ThrowStmt;
 import soot.validation.BodyValidator;
 import soot.validation.ValidationException;
-
-import java.util.List;
 
 public enum ReturnStatementsValidator implements BodyValidator {
 	INSTANCE;	

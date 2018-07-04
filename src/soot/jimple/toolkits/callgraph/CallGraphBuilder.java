@@ -19,7 +19,20 @@
 
 package soot.jimple.toolkits.callgraph;
 
-import soot.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+
+import soot.EntryPoints;
+import soot.G;
+import soot.Local;
+import soot.MethodOrMethodContext;
+import soot.PointsToAnalysis;
+import soot.PointsToSet;
+import soot.Scene;
+import soot.Type;
+import soot.Value;
 import soot.jimple.IntConstant;
 import soot.jimple.NewArrayExpr;
 import soot.jimple.spark.pag.AllocNode;
@@ -28,11 +41,6 @@ import soot.jimple.spark.pag.Node;
 import soot.jimple.spark.sets.P2SetVisitor;
 import soot.jimple.spark.sets.PointsToSetInternal;
 import soot.util.queue.QueueReader;
-
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
 
 /**
  * Models the call graph.

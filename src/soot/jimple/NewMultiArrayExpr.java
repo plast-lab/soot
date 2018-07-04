@@ -29,13 +29,9 @@
 
 package soot.jimple;
 
-import soot.ArrayType;
-import soot.Type;
-import soot.Value;
-import soot.ValueBox;
-import soot.util.Switch;
-
-import java.util.List;
+import soot.*;
+import soot.util.*;
+import java.util.*;
 
 public interface NewMultiArrayExpr extends Expr, AnyNewExpr
 {

@@ -25,10 +25,10 @@
 
 package soot;
 
+import java.text.DecimalFormat;
+
 import soot.options.Options;
 import soot.singletons.Singletons;
-
-import java.text.DecimalFormat;
 
 public class Timers
 {

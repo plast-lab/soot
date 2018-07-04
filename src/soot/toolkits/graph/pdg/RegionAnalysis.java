@@ -19,14 +19,29 @@
 package soot.toolkits.graph.pdg;
 
 
-import soot.*;
-import soot.options.Options;
-import soot.toolkits.graph.*;
-
 import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.List;
+
+import soot.Body;
+import soot.G;
+import soot.SootClass;
+import soot.SootMethod;
+import soot.Unit;
+import soot.options.Options;
+import soot.toolkits.graph.Block;
+import soot.toolkits.graph.BlockGraph;
+import soot.toolkits.graph.BriefBlockGraph;
+import soot.toolkits.graph.BriefUnitGraph;
+import soot.toolkits.graph.DirectedGraph;
+import soot.toolkits.graph.DominatorNode;
+import soot.toolkits.graph.DominatorTree;
+import soot.toolkits.graph.ExceptionalBlockGraph;
+import soot.toolkits.graph.ExceptionalUnitGraph;
+import soot.toolkits.graph.MHGDominatorsFinder;
+import soot.toolkits.graph.MHGPostDominatorsFinder;
+import soot.toolkits.graph.UnitGraph;
 
 /**
  * This class computes the set of weak regions for a given method. It is based on the

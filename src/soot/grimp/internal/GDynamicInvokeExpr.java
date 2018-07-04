@@ -30,17 +30,20 @@
 
 
 package soot.grimp.internal;
+import java.util.ArrayList;
+import java.util.List;
 
-import soot.*;
+import soot.SootMethod;
+import soot.SootMethodRef;
+import soot.UnitPrinter;
+import soot.Value;
+import soot.ValueBox;
 import soot.grimp.Grimp;
 import soot.jimple.DynamicInvokeExpr;
 import soot.jimple.ExprSwitch;
 import soot.jimple.Jimple;
 import soot.jimple.internal.AbstractInvokeExpr;
 import soot.util.Switch;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @SuppressWarnings({"serial","rawtypes","unchecked"})
 public class GDynamicInvokeExpr extends AbstractInvokeExpr implements DynamicInvokeExpr 

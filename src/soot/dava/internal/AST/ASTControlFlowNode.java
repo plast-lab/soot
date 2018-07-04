@@ -20,11 +20,9 @@
 
 package soot.dava.internal.AST;
 
-import soot.dava.internal.SET.SETNodeLabel;
-import soot.dava.toolkits.base.AST.ASTAnalysis;
-import soot.dava.toolkits.base.AST.ASTWalker;
-import soot.dava.toolkits.base.AST.TryContentsFinder;
-import soot.jimple.ConditionExpr;
+import soot.jimple.*;
+import soot.dava.internal.SET.*;
+import soot.dava.toolkits.base.AST.*;
 
 public abstract class ASTControlFlowNode extends ASTLabeledNode
 {

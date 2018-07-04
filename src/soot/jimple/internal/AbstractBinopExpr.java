@@ -26,14 +26,11 @@
 
 package soot.jimple.internal;
 
-import soot.UnitPrinter;
-import soot.Value;
-import soot.ValueBox;
-import soot.grimp.PrecedenceTest;
-import soot.jimple.Expr;
+import soot.*;
+import soot.jimple.*;
+import java.util.*;
 
-import java.util.ArrayList;
-import java.util.List;
+import soot.grimp.PrecedenceTest;
 
 @SuppressWarnings("serial")
 public abstract class AbstractBinopExpr implements Expr

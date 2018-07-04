@@ -29,11 +29,9 @@
 
 package soot.jimple;
 
-import soot.G;
-import soot.NullType;
-import soot.Type;
+import soot.*;
 import soot.singletons.Singletons;
-import soot.util.Switch;
+import soot.util.*;
 
 public class NullConstant extends Constant
 {

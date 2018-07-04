@@ -19,16 +19,10 @@
 
 package soot.jbco.jimpleTransformations;
 
-import soot.Local;
-import soot.Unit;
-import soot.Value;
-import soot.ValueBox;
-import soot.jimple.DefinitionStmt;
-import soot.jimple.NewExpr;
-import soot.toolkits.graph.DirectedGraph;
-import soot.toolkits.scalar.ArraySparseSet;
-import soot.toolkits.scalar.BackwardFlowAnalysis;
-import soot.toolkits.scalar.FlowSet;
+import soot.toolkits.graph.*;
+import soot.toolkits.scalar.*;
+import soot.*;
+import soot.jimple.*;
 
 /**
  * @author Michael Batchelder 

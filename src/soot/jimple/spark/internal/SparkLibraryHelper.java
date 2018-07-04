@@ -19,8 +19,19 @@
 
 package soot.jimple.spark.internal;
 
-import soot.*;
-import soot.jimple.spark.pag.*;
+import soot.AnySubType;
+import soot.ArrayType;
+import soot.RefType;
+import soot.SootMethod;
+import soot.Type;
+import soot.TypeSwitch;
+import soot.jimple.spark.pag.AllocNode;
+import soot.jimple.spark.pag.ArrayElement;
+import soot.jimple.spark.pag.FieldRefNode;
+import soot.jimple.spark.pag.LocalVarNode;
+import soot.jimple.spark.pag.Node;
+import soot.jimple.spark.pag.PAG;
+import soot.jimple.spark.pag.VarNode;
 
 /**
  * This {@link TypeSwitch} can be used to add library behavior to the PAG. It

@@ -22,9 +22,8 @@ package soot.jimple.toolkits.annotation.nullcheck;
 
 import soot.*;
 import soot.jimple.*;
-import soot.toolkits.graph.UnitGraph;
+import soot.toolkits.graph.*;
 import soot.toolkits.scalar.*;
-
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 

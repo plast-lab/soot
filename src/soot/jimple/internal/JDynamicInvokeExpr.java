@@ -26,14 +26,25 @@
 
 package soot.jimple.internal;
 
-import org.objectweb.asm.Opcodes;
-import soot.*;
-import soot.baf.Baf;
-import soot.jimple.*;
-import soot.util.Switch;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import org.objectweb.asm.Opcodes;
+
+import soot.SootClass;
+import soot.SootMethod;
+import soot.SootMethodRef;
+import soot.Unit;
+import soot.UnitPrinter;
+import soot.Value;
+import soot.ValueBox;
+import soot.baf.Baf;
+import soot.jimple.ConvertToBaf;
+import soot.jimple.DynamicInvokeExpr;
+import soot.jimple.ExprSwitch;
+import soot.jimple.Jimple;
+import soot.jimple.JimpleToBafContext;
+import soot.util.Switch;
 
 @SuppressWarnings("serial")
 public class JDynamicInvokeExpr extends AbstractInvokeExpr implements DynamicInvokeExpr, ConvertToBaf {

@@ -25,8 +25,7 @@
 
 package soot.baf;
 
-import soot.Local;
-import soot.Type;
+import soot.*;
 
 public interface LoadInst extends Inst
 {

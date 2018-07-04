@@ -1,14 +1,21 @@
 package soot.dexpler;
 
-import soot.*;
+import java.util.Iterator;
+import java.util.Map;
+
+import soot.Body;
+import soot.BodyTransformer;
+import soot.G;
+import soot.Local;
+import soot.Unit;
+import soot.Value;
+import soot.ValueBox;
 import soot.jimple.ArrayRef;
 import soot.jimple.AssignStmt;
 import soot.jimple.Constant;
+import soot.jimple.Stmt;
 import soot.options.Options;
 import soot.toolkits.scalar.UnusedLocalEliminator;
-
-import java.util.Iterator;
-import java.util.Map;
 
 /**
  * Transformer that simplifies array initializations. It converts

@@ -24,9 +24,13 @@
 
 package soot.dexpler.instructions;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.jf.dexlib2.iface.instruction.Instruction;
 import org.jf.dexlib2.iface.instruction.SwitchElement;
 import org.jf.dexlib2.iface.instruction.formats.SparseSwitchPayload;
+
 import soot.IntType;
 import soot.Local;
 import soot.Unit;
@@ -37,9 +41,6 @@ import soot.jimple.IntConstant;
 import soot.jimple.Jimple;
 import soot.jimple.LookupSwitchStmt;
 import soot.jimple.Stmt;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class SparseSwitchInstruction extends SwitchInstruction {
 

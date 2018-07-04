@@ -29,11 +29,9 @@
 
 package soot.baf.internal;
 
-import soot.AbstractJasminClass;
-import soot.Type;
-import soot.baf.InstSwitch;
-import soot.baf.XorInst;
-import soot.util.Switch;
+import soot.*;
+import soot.baf.*;
+import soot.util.*;
 
 public class BXorInst extends AbstractOpTypeInst implements XorInst
 {

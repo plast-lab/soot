@@ -18,11 +18,9 @@
  */
 
 package soot.util;
+import java.util.*;
 
 import heros.solver.Pair;
-
-import java.util.Map;
-import java.util.Set;
 
 /** A map with sets as values.
  *

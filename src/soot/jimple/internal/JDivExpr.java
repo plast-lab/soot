@@ -30,13 +30,10 @@
 
 package soot.jimple.internal;
 
-import soot.Type;
-import soot.Value;
-import soot.baf.Baf;
-import soot.jimple.DivExpr;
-import soot.jimple.ExprSwitch;
-import soot.jimple.Jimple;
-import soot.util.Switch;
+import soot.*;
+import soot.jimple.*;
+import soot.baf.*;
+import soot.util.*;
 
 public class JDivExpr extends AbstractJimpleFloatBinopExpr implements DivExpr
 {

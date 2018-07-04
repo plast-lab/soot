@@ -1,11 +1,9 @@
 
 package soot.jimple.toolkits.thread;
 
-import soot.SootMethod;
-import soot.jimple.Stmt;
-
-import java.util.ArrayList;
-import java.util.List;
+import soot.*;
+import soot.jimple.*;
+import java.util.*;
 
 /** AbstractRuntimeThread written by Richard L. Halpert 2007-03-04
  *  Acts as a container for the thread information collected by 

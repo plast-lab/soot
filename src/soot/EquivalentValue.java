@@ -26,10 +26,9 @@
 
 
 package soot;
+import java.util.*;
 
-import soot.util.Switch;
-
-import java.util.List;
+import soot.util.*;
 
 /** 
  * Encapsulates the Value class, but uses EquivTo for equality comparisons. 

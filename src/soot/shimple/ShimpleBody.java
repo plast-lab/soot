@@ -19,19 +19,13 @@
 
 package soot.shimple;
 
-import soot.Body;
-import soot.G;
-import soot.SootMethod;
-import soot.jimple.Jimple;
-import soot.jimple.JimpleBody;
-import soot.jimple.StmtBody;
+import soot.*;
 import soot.options.Options;
 import soot.options.ShimpleOptions;
-import soot.shimple.internal.SPatchingChain;
-import soot.shimple.internal.ShimpleBodyBuilder;
-import soot.util.HashChain;
-
-import java.util.Map;
+import soot.jimple.*;
+import soot.shimple.internal.*;
+import soot.util.*;
+import java.util.*;
 
 // * <p> We decided to hide all the intelligence in
 // * internal.ShimpleBodyBuilder for clarity of API.  Eventually we will

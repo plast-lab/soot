@@ -29,10 +29,9 @@
 
 package soot.baf;
 
-import soot.G;
-import soot.Type;
 import soot.singletons.Singletons;
-import soot.util.Switch;
+import soot.util.*;
+import soot.*;
 
 public class DoubleWordType extends Type
 {

@@ -2,11 +2,8 @@
 
 package sablecc.soot.jimple.parser.node;
 
-import sablecc.soot.jimple.parser.analysis.Analysis;
-
-import java.util.LinkedList;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.*;
+import sablecc.soot.jimple.parser.analysis.*;
 
 @SuppressWarnings("nls")
 public final class AFullIdentNonvoidType extends PNonvoidType

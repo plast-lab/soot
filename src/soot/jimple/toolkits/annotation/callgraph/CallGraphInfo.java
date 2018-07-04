@@ -19,9 +19,8 @@
 
 package soot.jimple.toolkits.annotation.callgraph;
 
-import soot.SootMethod;
-
-import java.util.ArrayList;
+import java.util.*;
+import soot.*;
 
 public class CallGraphInfo {
 

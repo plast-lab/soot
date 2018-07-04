@@ -19,8 +19,8 @@
 
 package soot.dava.internal.javaRep;
 
-import soot.RefType;
-import soot.jimple.ThisRef;
+import soot.*;
+import soot.jimple.*;
 
 public class DThisRef extends ThisRef
 {

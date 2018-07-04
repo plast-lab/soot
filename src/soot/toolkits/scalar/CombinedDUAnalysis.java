@@ -19,14 +19,24 @@
 
 package soot.toolkits.scalar;
 
-import soot.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+
+import soot.G;
+import soot.Local;
+import soot.Unit;
+import soot.Value;
+import soot.ValueBox;
 import soot.options.Options;
 import soot.toolkits.graph.UnitGraph;
 import soot.util.Cons;
 import soot.util.HashMultiMap;
 import soot.util.MultiMap;
-
-import java.util.*;
 
 /**
  *   Analysis that computes live locals, local defs, and local uses all at once.

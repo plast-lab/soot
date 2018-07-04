@@ -1,10 +1,11 @@
 package soot.toDex.instructions;
 
+import java.util.List;
+
 import org.jf.dexlib2.builder.BuilderInstruction;
 import org.jf.dexlib2.builder.instruction.BuilderArrayPayload;
-import soot.toDex.LabelAssigner;
 
-import java.util.List;
+import soot.toDex.LabelAssigner;
 
 /**
  * Payload for the fill-array-data instructions in dex

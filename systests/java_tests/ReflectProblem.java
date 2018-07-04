@@ -1,3 +1,5 @@
+import java.lang.reflect.*;
+
 public class ReflectProblem {
     public static void main(String [] args) throws Exception{
         Field f = C.class.getField("cf");

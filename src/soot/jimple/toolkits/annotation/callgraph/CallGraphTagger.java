@@ -20,15 +20,11 @@
 package soot.jimple.toolkits.annotation.callgraph;
 
 import soot.*;
-import soot.jimple.Stmt;
-import soot.jimple.toolkits.callgraph.CallGraph;
-import soot.jimple.toolkits.callgraph.Edge;
+import soot.jimple.toolkits.callgraph.*;
 import soot.singletons.Singletons;
-import soot.tagkit.Host;
-import soot.tagkit.LinkTag;
-
-import java.util.Iterator;
-import java.util.Map;
+import soot.tagkit.*;
+import java.util.*;
+import soot.jimple.*;
 
 public class CallGraphTagger extends BodyTransformer {
 

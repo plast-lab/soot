@@ -19,11 +19,25 @@
 package soot.toolkits.graph.pdg;
 
 
+import java.util.ArrayList;
+import java.util.Enumeration;
+import java.util.Hashtable;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+import java.util.Set;
+import java.util.HashSet;
+
 import soot.Body;
 import soot.SootClass;
-import soot.toolkits.graph.*;
-
-import java.util.*;
+import soot.toolkits.graph.Block;
+import soot.toolkits.graph.BlockGraph;
+import soot.toolkits.graph.DominatorNode;
+import soot.toolkits.graph.DominatorTree;
+import soot.toolkits.graph.HashMutableEdgeLabelledDirectedGraph;
+import soot.toolkits.graph.UnitGraph;
+import soot.toolkits.graph.pdg.IRegion;
 
 
 /**

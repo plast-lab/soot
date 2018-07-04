@@ -1,12 +1,12 @@
 package soot.validation;
 
-import soot.Body;
-import soot.Unit;
-import soot.ValueBox;
-
 import java.util.IdentityHashMap;
 import java.util.List;
 import java.util.Set;
+
+import soot.Body;
+import soot.Unit;
+import soot.ValueBox;
 
 import static java.util.Collections.newSetFromMap;
 

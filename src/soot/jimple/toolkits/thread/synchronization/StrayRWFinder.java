@@ -1,19 +1,20 @@
 package soot.jimple.toolkits.thread.synchronization;
 
-import soot.Body;
-import soot.G;
-import soot.Scene;
-import soot.Unit;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.List;
+
+import soot.*;
 import soot.jimple.Stmt;
-import soot.jimple.toolkits.pointer.*;
+import soot.jimple.toolkits.pointer.FullObjectSet;
+import soot.jimple.toolkits.pointer.SideEffectAnalysis;
+import soot.jimple.toolkits.pointer.RWSet;
+import soot.jimple.toolkits.pointer.Union;
+import soot.jimple.toolkits.pointer.UnionFactory;
 import soot.toolkits.graph.UnitGraph;
 import soot.toolkits.scalar.ArraySparseSet;
-import soot.toolkits.scalar.BackwardFlowAnalysis;
 import soot.toolkits.scalar.FlowSet;
-
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
+import soot.toolkits.scalar.BackwardFlowAnalysis;
 
 /**
  * @author Richard L. Halpert

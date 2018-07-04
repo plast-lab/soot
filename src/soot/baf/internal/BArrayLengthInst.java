@@ -29,9 +29,8 @@
 
 package soot.baf.internal;
 
-import soot.baf.ArrayLengthInst;
-import soot.baf.InstSwitch;
-import soot.util.Switch;
+import soot.baf.*;
+import soot.util.*;
 
 public class BArrayLengthInst extends AbstractInst implements ArrayLengthInst
 {

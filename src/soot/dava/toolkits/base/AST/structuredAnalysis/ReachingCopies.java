@@ -31,13 +31,10 @@
 
 package soot.dava.toolkits.base.AST.structuredAnalysis;
 
-import soot.Local;
-import soot.Value;
-import soot.dava.internal.AST.ASTUnaryBinaryCondition;
-import soot.jimple.DefinitionStmt;
-import soot.jimple.Stmt;
-
-import java.util.Iterator;
+import soot.*;
+import java.util.*;
+import soot.jimple.*;
+import soot.dava.internal.AST.*;
 
 /*
  ReachingCopies

@@ -26,14 +26,9 @@
 
 package soot.jimple.internal;
 
-import soot.IntType;
-import soot.Type;
-import soot.UnitPrinter;
-import soot.ValueBox;
-import soot.jimple.ExprSwitch;
-import soot.jimple.Jimple;
-import soot.jimple.LengthExpr;
-import soot.util.Switch;
+import soot.*;
+import soot.jimple.*;
+import soot.util.*;
 
 @SuppressWarnings("serial")
 public abstract class AbstractLengthExpr extends AbstractUnopExpr implements LengthExpr

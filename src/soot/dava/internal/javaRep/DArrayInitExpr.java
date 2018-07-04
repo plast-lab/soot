@@ -1,13 +1,13 @@
 package soot.dava.internal.javaRep;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import soot.Type;
 import soot.UnitPrinter;
 import soot.Value;
 import soot.ValueBox;
 import soot.util.Switch;
-
-import java.util.ArrayList;
-import java.util.List;
 /*
  * TODO: Starting with a 1D array in mind will try to refactor for multi D arrays
  * later

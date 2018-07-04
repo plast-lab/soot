@@ -25,12 +25,16 @@
 
 package soot.toolkits.scalar;
 
+import java.util.BitSet;
+import java.util.IdentityHashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+
 import soot.Timers;
 import soot.toolkits.graph.DirectedGraph;
 import soot.toolkits.graph.Orderer;
 import soot.toolkits.graph.PseudoTopologicalOrderer;
-
-import java.util.*;
 
 /**
  * Abstract class that provides a fixed-point iteration for forward flow

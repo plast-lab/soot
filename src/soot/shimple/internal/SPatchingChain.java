@@ -21,13 +21,8 @@ package soot.shimple.internal;
 
 import soot.*;
 import soot.options.Options;
-import soot.shimple.PhiExpr;
-import soot.shimple.Shimple;
-import soot.shimple.ShimpleBody;
-import soot.util.Chain;
-import soot.util.HashMultiMap;
-import soot.util.MultiMap;
-
+import soot.util.*;
+import soot.shimple.*;
 import java.util.*;
 
 /**

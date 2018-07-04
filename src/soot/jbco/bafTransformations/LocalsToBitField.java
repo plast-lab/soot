@@ -19,15 +19,13 @@
 
 package soot.jbco.bafTransformations;
 
+import java.util.*;
+
 import soot.*;
 import soot.baf.*;
 import soot.jbco.IJbcoTransform;
 import soot.jbco.util.Rand;
-import soot.jimple.IntConstant;
-import soot.jimple.LongConstant;
-import soot.jimple.ParameterRef;
-
-import java.util.*;
+import soot.jimple.*;
 
 public class LocalsToBitField extends BodyTransformer  implements IJbcoTransform {
 

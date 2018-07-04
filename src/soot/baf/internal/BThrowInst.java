@@ -29,9 +29,8 @@
 
 package soot.baf.internal;
 
-import soot.baf.InstSwitch;
-import soot.baf.ThrowInst;
-import soot.util.Switch;
+import soot.baf.*;
+import soot.util.*;
 
 public class BThrowInst extends AbstractInst implements ThrowInst
 {

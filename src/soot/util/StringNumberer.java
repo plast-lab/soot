@@ -18,11 +18,10 @@
  */
 
 package soot.util;
-
-import heros.ThreadSafe;
-
 import java.util.HashMap;
 import java.util.Map;
+
+import heros.ThreadSafe;
 
 /** A class that numbers strings, so they can be placed in bitsets.
  *

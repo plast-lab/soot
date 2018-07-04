@@ -25,10 +25,10 @@
 
 package soot.baf;
 
+import java.util.List;
+
 import soot.SootMethodRef;
 import soot.Value;
-
-import java.util.List;
 
 public interface DynamicInvokeInst extends MethodArgInst
 {

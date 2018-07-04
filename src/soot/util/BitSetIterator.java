@@ -26,7 +26,7 @@
 
 package soot.util;
 
-import java.util.NoSuchElementException;
+import java.util.*;
 
 
 /** A fast enumerator for sparse bit sets. When the enumerator is

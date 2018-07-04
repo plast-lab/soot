@@ -18,10 +18,7 @@
  */
 
 package soot.util;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class MapNumberer<T> implements Numberer<T> {
     Map<T, Integer> map = new HashMap<T, Integer>();

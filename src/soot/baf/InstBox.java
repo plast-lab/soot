@@ -29,8 +29,7 @@
 
 package soot.baf;
 
-import soot.AbstractUnitBox;
-import soot.Unit;
+import soot.*;
 
 class InstBox extends AbstractUnitBox
 {

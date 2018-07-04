@@ -18,10 +18,8 @@
  */
 
 package soot;
-
-import soot.util.NumberedString;
-
-import java.util.List;
+import java.util.*;
+import soot.util.*;
 
 /** Representation of a reference to a method as it appears in a class file.
  * Note that the method directly referred to may not actually exist; the

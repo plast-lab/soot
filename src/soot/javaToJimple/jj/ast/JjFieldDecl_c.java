@@ -19,13 +19,11 @@
 
 package soot.javaToJimple.jj.ast;
 
-import polyglot.ast.Expr;
-import polyglot.ast.TypeNode;
-import polyglot.ext.jl.ast.FieldDecl_c;
-import polyglot.types.Flags;
-import polyglot.types.Type;
-import polyglot.util.Position;
-import polyglot.visit.AscriptionVisitor;
+import polyglot.ast.*;
+import polyglot.visit.*;
+import polyglot.ext.jl.ast.*;
+import polyglot.types.*;
+import polyglot.util.*;
 
 public class JjFieldDecl_c extends FieldDecl_c {
 

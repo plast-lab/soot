@@ -18,11 +18,11 @@
  */
 package soot.jimple.spark.sets;
 
+import java.util.Set;
+
 import soot.PointsToSet;
 import soot.Type;
 import soot.jimple.ClassConstant;
-
-import java.util.Set;
 
 /**
  * A decorator that implements equals/hashCode for {@link PointsToSet} supporting the {@link EqualsSupportingPointsToSet} interface.

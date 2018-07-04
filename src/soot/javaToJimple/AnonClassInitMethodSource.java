@@ -19,7 +19,7 @@
 
 package soot.javaToJimple;
 
-import soot.PackManager;
+import soot.*;
 
 public class AnonClassInitMethodSource extends soot.javaToJimple.PolyglotMethodSource {
 

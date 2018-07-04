@@ -1,8 +1,8 @@
 package soot.validation;
 
-import soot.Body;
-
 import java.util.List;
+
+import soot.Body;
 
 /**
  * Implement this interface if you want to provide your own body Validator

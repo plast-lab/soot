@@ -25,10 +25,7 @@
 
 
 package soot.util;
-
-import java.io.FilterReader;
-import java.io.IOException;
-import java.io.Reader;
+import java.io.*;
 
 /** A FilterReader which catches escaped characters (<code>\\unnnn</code>) in the
  * input and de-escapes them.  Used in the Jimple Parser. */

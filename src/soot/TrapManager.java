@@ -25,8 +25,7 @@
 
 package soot;
 
-import soot.util.Chain;
-
+import soot.util.*;
 import java.util.*;
 
 /** Utility methods for dealing with traps. */

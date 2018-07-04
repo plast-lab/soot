@@ -26,10 +26,10 @@
 
 package soot;
 
-import soot.options.Options;
-import soot.toolkits.graph.interaction.InteractionHandler;
+import java.util.*;
 
-import java.util.Iterator;
+import soot.options.Options;
+import soot.toolkits.graph.interaction.*;
 
 /** A wrapper object for a pack of optimizations.
  * Provides chain-like operations, except that the key is the phase name. */

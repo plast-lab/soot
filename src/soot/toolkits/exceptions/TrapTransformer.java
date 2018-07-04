@@ -1,5 +1,10 @@
 package soot.toolkits.exceptions;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 import soot.BodyTransformer;
 import soot.Unit;
 import soot.Value;
@@ -8,11 +13,6 @@ import soot.jimple.ExitMonitorStmt;
 import soot.toolkits.graph.UnitGraph;
 import soot.util.HashMultiMap;
 import soot.util.MultiMap;
-
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
 
 /**
  * Common abstract base class for all body transformers that change the trap

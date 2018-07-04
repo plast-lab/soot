@@ -1,22 +1,19 @@
 
 package soot.jimple.toolkits.thread.mhp;
 
-import heros.util.SootThreadGroup;
 import soot.*;
-import soot.jimple.Stmt;
-import soot.jimple.spark.ondemand.DemandCSPointsTo;
-import soot.jimple.spark.pag.AllocNode;
-import soot.jimple.spark.pag.PAG;
-import soot.jimple.toolkits.callgraph.CallGraph;
-import soot.jimple.toolkits.callgraph.Edge;
+import soot.toolkits.scalar.*;
+import soot.toolkits.graph.*;
+import soot.jimple.*;
+import soot.jimple.toolkits.callgraph.*;
 import soot.jimple.toolkits.thread.AbstractRuntimeThread;
 import soot.jimple.toolkits.thread.mhp.findobject.AllocNodesFinder;
 import soot.jimple.toolkits.thread.mhp.findobject.MultiRunStatementsFinder;
 import soot.jimple.toolkits.thread.mhp.pegcallgraph.PegCallGraph;
+import soot.jimple.spark.ondemand.DemandCSPointsTo;
+import soot.jimple.spark.pag.*;
 import soot.options.SparkOptions;
-import soot.toolkits.graph.CompleteUnitGraph;
-import soot.toolkits.graph.UnitGraph;
-import soot.toolkits.scalar.FlowSet;
+import heros.util.SootThreadGroup;
 
 import java.util.*;
 

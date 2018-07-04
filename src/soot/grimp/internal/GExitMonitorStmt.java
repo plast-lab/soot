@@ -30,9 +30,9 @@
 
 package soot.grimp.internal;
 
-import soot.Value;
-import soot.grimp.Grimp;
-import soot.jimple.internal.JExitMonitorStmt;
+import soot.grimp.*;
+import soot.jimple.internal.*;
+import soot.*;
 
 public class GExitMonitorStmt extends JExitMonitorStmt
 {

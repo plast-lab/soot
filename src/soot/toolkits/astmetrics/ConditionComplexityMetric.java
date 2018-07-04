@@ -1,6 +1,11 @@
 package soot.toolkits.astmetrics;
 
-import polyglot.ast.*;
+import polyglot.ast.Binary;
+import polyglot.ast.Expr;
+import polyglot.ast.If;
+import polyglot.ast.Loop;
+import polyglot.ast.Node;
+import polyglot.ast.Unary;
 import polyglot.visit.NodeVisitor;
 
 /*

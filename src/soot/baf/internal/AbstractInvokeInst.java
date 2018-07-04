@@ -30,8 +30,7 @@
 package soot.baf.internal;
 
 import soot.*;
-
-import java.util.Iterator;
+import java.util.*;
 
 abstract class AbstractInvokeInst extends AbstractInst
 {

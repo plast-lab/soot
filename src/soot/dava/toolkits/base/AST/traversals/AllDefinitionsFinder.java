@@ -31,11 +31,9 @@
 
 package soot.dava.toolkits.base.AST.traversals;
 
-import soot.dava.toolkits.base.AST.analysis.DepthFirstAdapter;
-import soot.jimple.DefinitionStmt;
-
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+import soot.jimple.*;
+import soot.dava.toolkits.base.AST.analysis.*;
 
 
 /*

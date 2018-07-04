@@ -18,8 +18,7 @@
  */
 
 package soot.jimple.paddle;
-
-import soot.SceneTransformer;
+import soot.*;
 
 /** Soot interface to the PaddleTransformer.
  * @author Ondrej Lhotak

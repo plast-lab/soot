@@ -26,8 +26,8 @@
 
 package soot.grimp;
 
-import soot.RefType;
-import soot.jimple.StaticInvokeExpr;
+import soot.*;
+import soot.jimple.*;
 
 public interface NewInvokeExpr extends StaticInvokeExpr
 {

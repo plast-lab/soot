@@ -29,9 +29,8 @@
 
 package soot.jimple;
 
-import soot.IntType;
-import soot.Type;
-import soot.util.Switch;
+import soot.*;
+import soot.util.*;
 
 public class IntConstant extends ArithmeticConstant
 {

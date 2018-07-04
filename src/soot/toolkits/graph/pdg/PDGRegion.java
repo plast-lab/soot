@@ -19,6 +19,12 @@
 package soot.toolkits.graph.pdg;
 
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
+import java.util.List;
+
 import soot.G;
 import soot.SootClass;
 import soot.SootMethod;
@@ -26,8 +32,6 @@ import soot.Unit;
 import soot.options.Options;
 import soot.toolkits.graph.Block;
 import soot.toolkits.graph.UnitGraph;
-
-import java.util.*;
 
 
 /**

@@ -18,8 +18,7 @@
  */
 
 package soot.jimple.paddle;
-
-import soot.util.Numberable;
+import soot.util.*;
 
 /** Represents a field.
  * @author Ondrej Lhotak

@@ -2,11 +2,8 @@
 
 package sablecc.soot.jimple.parser.analysis;
 
+import java.util.*;
 import sablecc.soot.jimple.parser.node.*;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 public class ReversedDepthFirstAdapter extends AnalysisAdapter
 {

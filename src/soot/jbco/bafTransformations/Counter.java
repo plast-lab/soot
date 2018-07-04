@@ -19,10 +19,10 @@
 
 package soot.jbco.bafTransformations;
 
+import java.util.Map;
+
 import soot.Body;
 import soot.BodyTransformer;
-
-import java.util.Map;
 
 public class Counter extends BodyTransformer {
 

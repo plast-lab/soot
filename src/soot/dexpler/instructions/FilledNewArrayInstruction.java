@@ -24,9 +24,12 @@
 
 package soot.dexpler.instructions;
 
+import static soot.dexpler.Util.isFloatLike;
+
 import org.jf.dexlib2.iface.instruction.Instruction;
 import org.jf.dexlib2.iface.instruction.formats.Instruction35c;
 import org.jf.dexlib2.iface.reference.TypeReference;
+
 import soot.ArrayType;
 import soot.Local;
 import soot.Type;
@@ -34,9 +37,11 @@ import soot.dexpler.DexBody;
 import soot.dexpler.DexType;
 import soot.dexpler.IDalvikTyper;
 import soot.dexpler.typing.DalvikTyper;
-import soot.jimple.*;
-
-import static soot.dexpler.Util.isFloatLike;
+import soot.jimple.ArrayRef;
+import soot.jimple.AssignStmt;
+import soot.jimple.IntConstant;
+import soot.jimple.Jimple;
+import soot.jimple.NewArrayExpr;
 
 public class FilledNewArrayInstruction extends FilledArrayInstruction {
 

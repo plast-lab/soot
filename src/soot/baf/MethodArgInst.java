@@ -25,8 +25,7 @@
 
 package soot.baf;
 
-import soot.SootMethod;
-import soot.SootMethodRef;
+import soot.*;
 
 public interface MethodArgInst extends Inst
 {

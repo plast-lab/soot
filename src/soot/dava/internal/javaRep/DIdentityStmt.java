@@ -19,9 +19,8 @@
 
 package soot.dava.internal.javaRep;
 
-import soot.UnitPrinter;
-import soot.Value;
-import soot.grimp.internal.GIdentityStmt;
+import soot.*;
+import soot.grimp.internal.*;
 
 public class DIdentityStmt extends GIdentityStmt
 {

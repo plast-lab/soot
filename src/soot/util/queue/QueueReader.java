@@ -18,8 +18,7 @@
  */
 
 package soot.util.queue;
-
-import java.util.NoSuchElementException;
+import java.util.*;
 
 /** A queue of Object's. One can add objects to the queue, and they are
  * later read by a QueueReader. One can create arbitrary numbers of

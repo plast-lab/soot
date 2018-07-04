@@ -25,10 +25,8 @@
 
 package soot.jimple.toolkits.annotation.arraycheck;
 
-import soot.toolkits.graph.HashMutableDirectedGraph;
-
-import java.util.Iterator;
-import java.util.List;
+import soot.toolkits.graph.*;
+import java.util.*;
 
 /**
    add skipNode method to direct all predecessor edges to successors.

@@ -19,15 +19,10 @@
 
 package soot.jimple.toolkits.callgraph;
 
-import soot.Body;
-import soot.BodyTransformer;
-import soot.Scene;
-import soot.SootMethod;
-import soot.toolkits.graph.BriefUnitGraph;
-import soot.toolkits.scalar.FlowSet;
-
-import java.util.Iterator;
-import java.util.Map;
+import soot.*;
+import java.util.*;
+import soot.toolkits.graph.*;
+import soot.toolkits.scalar.*;
 
 public class ClinitElimTransformer extends BodyTransformer {
     

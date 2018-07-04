@@ -1,8 +1,8 @@
 package soot.validation;
 
-import soot.SootClass;
-
 import java.util.List;
+
+import soot.SootClass;
 
 /**
  * Implement this interface if you want to provide your own class validator

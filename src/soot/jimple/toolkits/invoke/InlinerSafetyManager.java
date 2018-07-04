@@ -27,8 +27,7 @@ package soot.jimple.toolkits.invoke;
 
 import soot.*;
 import soot.jimple.*;
-
-import java.util.Iterator;
+import java.util.*;
 
 /** Methods for checking safety requirements for inlining. */
 public class InlinerSafetyManager

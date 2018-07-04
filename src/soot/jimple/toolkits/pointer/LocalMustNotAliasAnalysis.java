@@ -17,8 +17,17 @@
  * Boston, MA 02111-1307, USA.
  */
 package soot.jimple.toolkits.pointer;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
 
-import soot.*;
+import soot.Body;
+import soot.Local;
+import soot.RefLikeType;
+import soot.RefType;
+import soot.Unit;
+import soot.Value;
 import soot.jimple.DefinitionStmt;
 import soot.jimple.NewExpr;
 import soot.jimple.Stmt;
@@ -26,10 +35,6 @@ import soot.jimple.internal.AbstractNewExpr;
 import soot.toolkits.graph.DirectedGraph;
 import soot.toolkits.graph.UnitGraph;
 import soot.toolkits.scalar.ForwardFlowAnalysis;
-
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Set;
 
 /** LocalNotMayAliasAnalysis attempts to determine if two local
  * variables (at two potentially different program points) definitely

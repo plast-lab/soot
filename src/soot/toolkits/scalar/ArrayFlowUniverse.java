@@ -26,8 +26,7 @@
 
 package soot.toolkits.scalar;
 
-import java.util.Arrays;
-import java.util.Iterator;
+import java.util.*;
 
 /** 
  * Provides an implementation of a flow universe, wrapping arrays.

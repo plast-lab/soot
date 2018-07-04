@@ -1,5 +1,11 @@
 package soot.dexpler;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
 import soot.Body;
 import soot.Trap;
 import soot.Unit;
@@ -9,8 +15,6 @@ import soot.singletons.Singletons;
 import soot.toolkits.exceptions.TrapTransformer;
 import soot.toolkits.graph.ExceptionalGraph.ExceptionDest;
 import soot.toolkits.graph.ExceptionalUnitGraph;
-
-import java.util.*;
 
 /**
  * Transformer that splits traps for Dalvik whenever a statements within the

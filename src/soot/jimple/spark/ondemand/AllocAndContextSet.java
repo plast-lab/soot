@@ -18,6 +18,9 @@
  */
 package soot.jimple.spark.ondemand;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import soot.PointsToSet;
 import soot.Type;
 import soot.jimple.ClassConstant;
@@ -30,9 +33,6 @@ import soot.jimple.spark.pag.StringConstantNode;
 import soot.jimple.spark.sets.EqualsSupportingPointsToSet;
 import soot.jimple.spark.sets.P2SetVisitor;
 import soot.jimple.spark.sets.PointsToSetInternal;
-
-import java.util.HashSet;
-import java.util.Set;
 
 public final class AllocAndContextSet extends ArraySet<AllocAndContext> implements EqualsSupportingPointsToSet {
 

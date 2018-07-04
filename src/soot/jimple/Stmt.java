@@ -29,9 +29,7 @@
 
 package soot.jimple;
 
-import soot.Unit;
-import soot.UnitPrinter;
-import soot.ValueBox;
+import soot.*;
 
 public interface Stmt extends Unit
 {

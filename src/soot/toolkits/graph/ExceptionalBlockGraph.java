@@ -26,13 +26,19 @@
 
 package soot.toolkits.graph;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
 import soot.Body;
 import soot.Trap;
 import soot.Unit;
 import soot.toolkits.exceptions.ThrowAnalysis;
 import soot.toolkits.exceptions.ThrowableSet;
-
-import java.util.*;
 
 /**
  *  <p>Represents a CFG where the nodes are {@link Block}s and the

@@ -1,11 +1,9 @@
 package soot.jimple.toolkits.thread.synchronization;
 
-import soot.*;
-import soot.jimple.toolkits.pointer.CodeBlockRWSet;
+import java.util.*;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
+import soot.jimple.toolkits.pointer.CodeBlockRWSet;
+import soot.*;
 
 class CriticalSection extends SynchronizedRegion
 {

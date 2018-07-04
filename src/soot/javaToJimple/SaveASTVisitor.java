@@ -19,10 +19,10 @@
 
 package soot.javaToJimple;
 
+import java.util.*;
+
 import polyglot.frontend.Job;
 import polyglot.frontend.Source;
-
-import java.util.HashMap;
 
 public class SaveASTVisitor extends polyglot.frontend.AbstractPass {
 

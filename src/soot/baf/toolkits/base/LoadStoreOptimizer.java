@@ -25,20 +25,15 @@
 
 
 package soot.baf.toolkits.base;
+import soot.options.Options;
 
+import soot.singletons.Singletons;
+import soot.util.*;
+import java.util.*;
 import soot.*;
 import soot.baf.*;
-import soot.options.Options;
-import soot.singletons.Singletons;
-import soot.toolkits.graph.Block;
-import soot.toolkits.graph.BlockGraph;
-import soot.toolkits.graph.ZonedBlockGraph;
-import soot.toolkits.scalar.LocalDefs;
-import soot.toolkits.scalar.LocalUses;
-import soot.toolkits.scalar.UnitValueBoxPair;
-import soot.util.Chain;
-
-import java.util.*;
+import soot.toolkits.scalar.*;
+import soot.toolkits.graph.*;
 
 public class LoadStoreOptimizer extends BodyTransformer
 {

@@ -20,11 +20,10 @@
 package soot.dava.toolkits.base.AST.analysis;
 
 
-import soot.Type;
-import soot.Value;
-import soot.dava.internal.AST.*;
-import soot.dava.internal.javaRep.DVariableDeclarationStmt;
+import soot.*;
 import soot.jimple.*;
+import soot.dava.internal.AST.*;
+import soot.dava.internal.javaRep.*;
 
 public interface Analysis{
 

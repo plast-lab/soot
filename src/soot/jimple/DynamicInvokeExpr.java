@@ -29,10 +29,10 @@
 
 package soot.jimple;
 
+import java.util.List;
+
 import soot.SootMethodRef;
 import soot.Value;
-
-import java.util.List;
 
 public interface DynamicInvokeExpr extends InvokeExpr
 {

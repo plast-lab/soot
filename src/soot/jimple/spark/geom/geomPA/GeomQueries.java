@@ -18,6 +18,10 @@
  */
 package soot.jimple.spark.geom.geomPA;
 
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Queue;
+
 import soot.Local;
 import soot.PointsToSet;
 import soot.SootMethod;
@@ -27,12 +31,12 @@ import soot.jimple.spark.geom.dataMgr.PtSensVisitor;
 import soot.jimple.spark.geom.dataRep.CgEdge;
 import soot.jimple.spark.geom.dataRep.IntervalContextVar;
 import soot.jimple.spark.geom.dataRep.SimpleInterval;
-import soot.jimple.spark.pag.*;
+import soot.jimple.spark.pag.AllocDotField;
+import soot.jimple.spark.pag.AllocNode;
+import soot.jimple.spark.pag.LocalVarNode;
+import soot.jimple.spark.pag.SparkField;
+import soot.jimple.spark.pag.VarNode;
 import soot.jimple.toolkits.callgraph.Edge;
-
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.Queue;
 
 /**
  * A powerful interface for querying points-to results in many ways.

@@ -25,8 +25,7 @@
 
 package soot.dava.toolkits.base.AST;
 
-import soot.G;
-import soot.Value;
+import soot.*;
 import soot.jimple.*;
 import soot.singletons.Singletons;
 

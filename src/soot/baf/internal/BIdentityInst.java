@@ -29,17 +29,10 @@
 
 package soot.baf.internal;
 
-import soot.UnitPrinter;
-import soot.Value;
-import soot.ValueBox;
-import soot.baf.Baf;
-import soot.baf.IdentityInst;
-import soot.baf.InstSwitch;
-import soot.util.Switch;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import soot.*;
+import soot.baf.*;
+import soot.util.*;
+import java.util.*;
 
 public class BIdentityInst extends AbstractInst 
     implements IdentityInst

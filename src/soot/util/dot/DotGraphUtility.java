@@ -25,9 +25,7 @@
  * @author Feng Qian 
  */
 package soot.util.dot;
-
-import java.io.IOException;
-import java.io.OutputStream;
+import java.io.*;
 
 public class DotGraphUtility {
 

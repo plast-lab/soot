@@ -29,9 +29,8 @@
 
 package soot.baf.internal;
 
-import soot.baf.InstSwitch;
-import soot.baf.NopInst;
-import soot.util.Switch;
+import soot.baf.*;
+import soot.util.*;
 
 public class BNopInst extends AbstractInst implements NopInst
 {

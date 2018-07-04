@@ -30,15 +30,24 @@
 
 package soot.jimple.internal;
 
-import soot.*;
-import soot.baf.Baf;
-import soot.baf.PlaceholderInst;
-import soot.jimple.*;
-import soot.util.Switch;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
+import soot.Unit;
+import soot.UnitBox;
+import soot.UnitPrinter;
+import soot.Value;
+import soot.ValueBox;
+import soot.baf.Baf;
+import soot.baf.PlaceholderInst;
+import soot.jimple.ConvertToBaf;
+import soot.jimple.IntConstant;
+import soot.jimple.Jimple;
+import soot.jimple.JimpleToBafContext;
+import soot.jimple.LookupSwitchStmt;
+import soot.jimple.StmtSwitch;
+import soot.util.Switch;
 
 public class JLookupSwitchStmt extends AbstractSwitchStmt 
     implements LookupSwitchStmt

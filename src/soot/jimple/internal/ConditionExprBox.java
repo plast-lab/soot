@@ -30,9 +30,8 @@
 
 package soot.jimple.internal;
 
-import soot.AbstractValueBox;
-import soot.Value;
-import soot.jimple.ConditionExpr;
+import soot.*;
+import soot.jimple.*;
 
 public class ConditionExprBox extends AbstractValueBox
 {

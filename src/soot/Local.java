@@ -26,7 +26,7 @@
 
 package soot;
 
-import soot.util.Numberable;
+import soot.util.*;
 
 /** A local variable, used within Body
  * classes.  Intermediate representations must use an implementation

@@ -30,10 +30,9 @@
 
 package soot.grimp.internal;
 
-import soot.Type;
-import soot.Value;
-import soot.grimp.Grimp;
-import soot.jimple.internal.AbstractInstanceOfExpr;
+import soot.*;
+import soot.grimp.*;
+import soot.jimple.internal.*;
 
 public class GInstanceOfExpr extends AbstractInstanceOfExpr
 {

@@ -2,9 +2,7 @@
 
 package sablecc.soot.jimple.parser.node;
 
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 @SuppressWarnings("nls")
 public abstract class Node implements Switchable, Cloneable

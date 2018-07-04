@@ -19,14 +19,12 @@
 
 package soot.jimple.toolkits.annotation.tags;
 
-import soot.G;
-import soot.Unit;
-import soot.baf.Inst;
-import soot.singletons.Singletons;
-import soot.tagkit.Tag;
-import soot.tagkit.TagAggregator;
-
 import java.util.LinkedList;
+
+import soot.*;
+import soot.baf.*;
+import soot.singletons.Singletons;
+import soot.tagkit.*;
 
 /** The aggregator for ArrayNullCheckAttribute. */
 

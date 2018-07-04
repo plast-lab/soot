@@ -20,6 +20,12 @@
 
 package soot.plugins.internal;
 
+import java.io.File;
+
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Unmarshaller;
+
 import soot.G;
 import soot.PackManager;
 import soot.Transform;
@@ -27,11 +33,6 @@ import soot.plugins.SootPhasePlugin;
 import soot.plugins.model.PhasePluginDescription;
 import soot.plugins.model.PluginDescription;
 import soot.plugins.model.Plugins;
-
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBException;
-import javax.xml.bind.Unmarshaller;
-import java.io.File;
 
 /**
  * Class for loading xml-based plugin configuration files.

@@ -29,18 +29,13 @@
 
 
 package soot.jimple.toolkits.base;
-
-import soot.*;
-import soot.jimple.*;
 import soot.options.Options;
-import soot.toolkits.scalar.LocalUses;
-import soot.toolkits.scalar.UnitValueBoxPair;
-import soot.util.Chain;
+import soot.*;
+import soot.toolkits.scalar.*;
+import soot.jimple.*;
+import soot.util.*;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class PartialConstructorFolder extends BodyTransformer
 {

@@ -19,6 +19,8 @@
 
 package soot.jbco.jimpleTransformations;
 
+import java.util.*;
+
 import soot.*;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -46,13 +48,8 @@ import soot.Value;
 import soot.ValueBox;
 import soot.VoidType;
 import soot.jbco.IJbcoTransform;
-import soot.jbco.util.BodyBuilder;
-import soot.jbco.util.Rand;
-import soot.jimple.FieldRef;
-import soot.jimple.IntConstant;
-import soot.jimple.Jimple;
-
-import java.util.*;
+import soot.jbco.util.*;
+import soot.jimple.*;
 
 /**
  * @author Michael Batchelder

@@ -26,13 +26,14 @@
 
 package soot.baf.internal;
 
-import soot.*;
-import soot.baf.DynamicInvokeInst;
-import soot.baf.InstSwitch;
-import soot.jimple.Jimple;
-import soot.util.Switch;
-
 import java.util.List;
+
+import org.objectweb.asm.Opcodes;
+
+import soot.*;
+import soot.baf.*;
+import soot.jimple.Jimple;
+import soot.util.*;
 
 @SuppressWarnings({ "serial", "unchecked" })
 public class BDynamicInvokeInst extends AbstractInvokeInst implements DynamicInvokeInst

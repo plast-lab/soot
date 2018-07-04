@@ -20,15 +20,11 @@
 
 package soot.dava.internal.AST;
 
-import soot.Unit;
-import soot.UnitPrinter;
-import soot.dava.internal.asg.AugmentedStmt;
-import soot.dava.toolkits.base.AST.ASTAnalysis;
-import soot.dava.toolkits.base.AST.ASTWalker;
-import soot.dava.toolkits.base.AST.TryContentsFinder;
-import soot.dava.toolkits.base.AST.analysis.Analysis;
-
-import java.util.List;
+import soot.*;
+import java.util.*;
+import soot.dava.internal.asg.*;
+import soot.dava.toolkits.base.AST.*;
+import soot.dava.toolkits.base.AST.analysis.*;
 
 public class ASTStatementSequenceNode extends ASTNode {
 	private List<AugmentedStmt> statementSequence;

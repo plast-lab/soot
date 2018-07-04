@@ -26,14 +26,10 @@
 
 package soot.jimple.internal;
 
-import soot.SootMethodRef;
-import soot.Value;
-import soot.ValueBox;
-import soot.jimple.InstanceInvokeExpr;
+import soot.*;
+import soot.jimple.*;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 @SuppressWarnings("serial")
 public abstract class AbstractInstanceInvokeExpr extends AbstractInvokeExpr 

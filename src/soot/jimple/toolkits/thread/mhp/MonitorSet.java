@@ -1,9 +1,8 @@
 
 package soot.jimple.toolkits.thread.mhp;
 
-import soot.toolkits.scalar.ArraySparseSet;
-
-import java.util.Iterator;
+import java.util.*;
+import soot.toolkits.scalar.*;
 
 // *** USE AT YOUR OWN RISK ***
 // May Happen in Parallel (MHP) analysis by Lin Li.

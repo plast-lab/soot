@@ -8,6 +8,8 @@ package soot.toolkits.purity;
  * by Antoine Mine, 2005/02/08
  */
 
+import java.util.*;
+
 public class BinarySearchTree {
     Node root;
     int size;

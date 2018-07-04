@@ -24,16 +24,34 @@
  */
 
 package soot.xml;
+import java.io.PrintWriter;
+import java.util.Collection;
+import java.util.Date;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.StringTokenizer;
+import java.util.Vector;
 
-import soot.*;
+import soot.Body;
+import soot.G;
+import soot.LabeledUnitPrinter;
+import soot.Local;
+import soot.Main;
+import soot.Modifier;
+import soot.NormalUnitPrinter;
+import soot.Scene;
 import soot.singletons.Singletons;
+import soot.SootClass;
+import soot.SootField;
+import soot.SootMethod;
+import soot.Trap;
+import soot.Unit;
+import soot.ValueBox;
 import soot.toolkits.graph.ExceptionalUnitGraph;
 import soot.toolkits.scalar.LiveLocals;
 import soot.toolkits.scalar.SimpleLiveLocals;
 import soot.util.Chain;
-
-import java.io.PrintWriter;
-import java.util.*;
 
 /** XML printing routines all XML output comes through here */
 public class XMLPrinter {

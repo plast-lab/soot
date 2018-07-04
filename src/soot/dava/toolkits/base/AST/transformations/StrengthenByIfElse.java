@@ -19,17 +19,12 @@
 
 package soot.dava.toolkits.base.AST.transformations;
 
+import java.util.*;
+import soot.jimple.*;
+import soot.dava.internal.SET.*;
 import soot.dava.internal.AST.*;
-import soot.dava.internal.SET.SETNodeLabel;
-import soot.dava.internal.asg.AugmentedStmt;
-import soot.dava.internal.javaRep.DAbruptStmt;
-import soot.jimple.ReturnStmt;
-import soot.jimple.ReturnVoidStmt;
-import soot.jimple.Stmt;
-
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import soot.dava.internal.asg.*;
+import soot.dava.internal.javaRep.*;
 
 /*
  Nomair A. Naeem 18-FEB-2005

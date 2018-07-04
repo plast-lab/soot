@@ -19,17 +19,31 @@
 
 package soot.dava.toolkits.base.AST.transformations;
 
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+
 import soot.BooleanType;
 import soot.Value;
-import soot.dava.internal.AST.*;
+import soot.dava.internal.AST.ASTCondition;
+import soot.dava.internal.AST.ASTControlFlowNode;
+import soot.dava.internal.AST.ASTDoWhileNode;
+import soot.dava.internal.AST.ASTForLoopNode;
+import soot.dava.internal.AST.ASTIfElseNode;
+import soot.dava.internal.AST.ASTIfNode;
+import soot.dava.internal.AST.ASTLabeledBlockNode;
+import soot.dava.internal.AST.ASTLabeledNode;
+import soot.dava.internal.AST.ASTMethodNode;
+import soot.dava.internal.AST.ASTNode;
+import soot.dava.internal.AST.ASTStatementSequenceNode;
+import soot.dava.internal.AST.ASTSwitchNode;
+import soot.dava.internal.AST.ASTTryNode;
+import soot.dava.internal.AST.ASTUnaryCondition;
+import soot.dava.internal.AST.ASTWhileNode;
 import soot.dava.internal.javaRep.DIntConstant;
 import soot.dava.internal.javaRep.DNotExpr;
 import soot.dava.toolkits.base.AST.analysis.DepthFirstAdapter;
 import soot.dava.toolkits.base.AST.traversals.ASTParentNodeFinder;
-
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
 
 /*
  * if (true)   ---> remove conditional copy ifbody to parent

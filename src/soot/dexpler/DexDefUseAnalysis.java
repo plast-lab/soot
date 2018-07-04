@@ -1,5 +1,12 @@
 package soot.dexpler;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
 import soot.Body;
 import soot.Local;
 import soot.Unit;
@@ -7,8 +14,6 @@ import soot.ValueBox;
 import soot.jimple.AssignStmt;
 import soot.jimple.DefinitionStmt;
 import soot.toolkits.scalar.LocalDefs;
-
-import java.util.*;
 
 /**
  * Simplistic caching, flow-insensitive def/use analysis

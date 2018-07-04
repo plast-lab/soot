@@ -19,14 +19,11 @@
 
 package soot.dava.internal.javaRep;
 
-import soot.IntType;
-import soot.Type;
-import soot.Value;
-import soot.grimp.Grimp;
-import soot.grimp.internal.AbstractGrimpIntBinopExpr;
-import soot.jimple.CmpExpr;
-import soot.jimple.ExprSwitch;
-import soot.util.Switch;
+import soot.*;
+import soot.util.*;
+import soot.grimp.*;
+import soot.jimple.*;
+import soot.grimp.internal.*;
 
 /*
  * TODO

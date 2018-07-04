@@ -24,12 +24,36 @@ import heros.FlowFunctions;
 import heros.InterproceduralCFG;
 import heros.flowfunc.Identity;
 import heros.flowfunc.KillAll;
-import soot.*;
-import soot.jimple.*;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import soot.Local;
+import soot.PointsToAnalysis;
+import soot.PointsToSet;
+import soot.PrimType;
+import soot.Scene;
+import soot.SootMethod;
+import soot.Type;
+import soot.Unit;
+import soot.UnknownType;
+import soot.Value;
+import soot.jimple.ArrayRef;
+import soot.jimple.Constant;
+import soot.jimple.DefinitionStmt;
+import soot.jimple.InstanceFieldRef;
+import soot.jimple.InvokeExpr;
+import soot.jimple.Jimple;
+import soot.jimple.NewExpr;
+import soot.jimple.Ref;
+import soot.jimple.ReturnStmt;
+import soot.jimple.Stmt;
 import soot.jimple.toolkits.ide.DefaultJimpleIFDSTabulationProblem;
 import soot.toolkits.scalar.Pair;
-
-import java.util.*;
 
 @SuppressWarnings("serial")
 public class IFDSPossibleTypes extends DefaultJimpleIFDSTabulationProblem<Pair<Value,Type>,InterproceduralCFG<Unit, SootMethod>> {

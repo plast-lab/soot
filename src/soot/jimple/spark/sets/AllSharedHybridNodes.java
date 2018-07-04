@@ -1,9 +1,9 @@
 package soot.jimple.spark.sets;
 
+import java.util.LinkedList;
+
 import soot.G;
 import soot.singletons.Singletons;
-
-import java.util.LinkedList;
 
 /**A singleton to hold the hash table for SharedHybridSet*/
 

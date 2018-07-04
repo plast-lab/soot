@@ -19,12 +19,20 @@
  */
 package soot;
 
-import jastadd.soot.JastAddJ.*;
-import soot.javaToJimple.IInitialResolver;
-import soot.singletons.Singletons;
-
-import java.util.*;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
+
+import soot.javaToJimple.IInitialResolver;
+import jastadd.soot.JastAddJ.BodyDecl;
+import jastadd.soot.JastAddJ.CompilationUnit;
+import jastadd.soot.JastAddJ.ConstructorDecl;
+import jastadd.soot.JastAddJ.MethodDecl;
+import jastadd.soot.JastAddJ.Program;
+import jastadd.soot.JastAddJ.TypeDecl;
+import soot.singletons.Singletons;
 
 /**
  * An {@link IInitialResolver} for the JastAdd frontend.

@@ -19,10 +19,19 @@
  */
 
 package soot.dava;
-
-import soot.*;
+import soot.AbstractUnitPrinter;
+import soot.ArrayType;
+import soot.RefType;
+import soot.SootFieldRef;
+import soot.SootMethodRef;
+import soot.Type;
+import soot.Unit;
 import soot.dava.toolkits.base.renamer.RemoveFullyQualifiedName;
-import soot.jimple.*;
+import soot.jimple.ClassConstant;
+import soot.jimple.Constant;
+import soot.jimple.IdentityRef;
+import soot.jimple.Jimple;
+import soot.jimple.ThisRef;
 
 /**
  * UnitPrinter implementation for Dava.

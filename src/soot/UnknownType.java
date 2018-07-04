@@ -28,9 +28,8 @@
 
 
 package soot;
-
 import soot.singletons.Singletons;
-import soot.util.Switch;
+import soot.util.*;
 
 /**
  *   Soot representation used for not-yet-typed objects. Implemented as

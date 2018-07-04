@@ -29,16 +29,40 @@
 
 package soot.jimple.toolkits.typing;
 
-import soot.*;
-import soot.jimple.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+
+import soot.Body;
+import soot.BodyTransformer;
+import soot.ByteType;
+import soot.CharType;
+import soot.ErroneousType;
+import soot.G;
+import soot.Local;
+import soot.NullType;
+import soot.PhaseOptions;
+import soot.Scene;
+import soot.ShortType;
+import soot.Type;
+import soot.Unit;
+import soot.UnknownType;
+import soot.ValueBox;
+import soot.jimple.ArrayRef;
+import soot.jimple.FieldRef;
+import soot.jimple.InstanceFieldRef;
+import soot.jimple.InstanceInvokeExpr;
+import soot.jimple.InvokeExpr;
+import soot.jimple.JimpleBody;
+import soot.jimple.Stmt;
 import soot.jimple.toolkits.scalar.ConstantPropagatorAndFolder;
 import soot.jimple.toolkits.scalar.DeadAssignmentEliminator;
 import soot.options.JBTROptions;
 import soot.options.Options;
 import soot.singletons.Singletons;
 import soot.toolkits.scalar.UnusedLocalEliminator;
-
-import java.util.*;
 
 /**
  * This transformer assigns types to local variables.

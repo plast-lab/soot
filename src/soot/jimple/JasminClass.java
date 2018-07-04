@@ -26,21 +26,18 @@
 
 
 package soot.jimple;
-
-import soot.*;
-import soot.grimp.AbstractGrimpValueSwitch;
-import soot.grimp.NewInvokeExpr;
-import soot.jimple.internal.StmtBox;
 import soot.options.Options;
+import soot.*;
+import soot.jimple.internal.*;
 import soot.tagkit.LineNumberTag;
-import soot.toolkits.graph.ExceptionalUnitGraph;
-import soot.toolkits.scalar.FastColorer;
-import soot.toolkits.scalar.LocalDefs;
-import soot.toolkits.scalar.LocalUses;
-import soot.util.Chain;
+import soot.toolkits.graph.*;
+import soot.toolkits.scalar.*;
+import soot.util.*;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
+
+import soot.grimp.*;
 
 
 /*

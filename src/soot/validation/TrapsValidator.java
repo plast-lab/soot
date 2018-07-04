@@ -1,11 +1,11 @@
 package soot.validation;
 
+import java.util.List;
+
 import soot.Body;
 import soot.PatchingChain;
 import soot.Trap;
 import soot.Unit;
-
-import java.util.List;
 
 public enum TrapsValidator implements BodyValidator {
 	INSTANCE;	

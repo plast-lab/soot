@@ -18,8 +18,7 @@
  */
 
 package soot;
-
-import soot.jimple.AnyNewExpr;
+import soot.jimple.*;
 
 /** A generic interface to an escape analysis.
  * @author Ondrej Lhotak

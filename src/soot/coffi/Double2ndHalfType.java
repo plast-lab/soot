@@ -31,8 +31,7 @@
 
 package soot.coffi;
 
-import soot.G;
-import soot.Type;
+import soot.*;
 import soot.singletons.Singletons;
 
 public class Double2ndHalfType extends Type

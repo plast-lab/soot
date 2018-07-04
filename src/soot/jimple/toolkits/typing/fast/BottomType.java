@@ -21,8 +21,8 @@
 package soot.jimple.toolkits.typing.fast;
 
 import soot.G;
-import soot.Type;
 import soot.singletons.Singletons;
+import soot.Type;
 
 /**
  * @author Ben Bellamy

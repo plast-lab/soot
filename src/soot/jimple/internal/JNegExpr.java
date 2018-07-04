@@ -30,14 +30,10 @@
 
 package soot.jimple.internal;
 
-import soot.Unit;
-import soot.Value;
-import soot.baf.Baf;
-import soot.jimple.ConvertToBaf;
-import soot.jimple.Jimple;
-import soot.jimple.JimpleToBafContext;
-
-import java.util.List;
+import soot.*;
+import soot.jimple.*;
+import soot.baf.*;
+import java.util.*;
 
 public class JNegExpr extends AbstractNegExpr implements ConvertToBaf
 {

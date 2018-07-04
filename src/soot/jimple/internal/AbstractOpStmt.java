@@ -1,10 +1,10 @@
 package soot.jimple.internal;
 
-import soot.Value;
-import soot.ValueBox;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import soot.Value;
+import soot.ValueBox;
 
 @SuppressWarnings("serial")
 public abstract class AbstractOpStmt extends AbstractStmt {

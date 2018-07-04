@@ -18,10 +18,10 @@
  */
 package soot.asm;
 
-import soot.*;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import soot.*;
 
 /**
  * Contains static utility methods.

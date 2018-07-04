@@ -1,13 +1,13 @@
 package soot.toDex;
 
+import java.util.Map;
+
 import soot.Body;
 import soot.BodyTransformer;
+import soot.singletons.Singletons;
 import soot.Trap;
 import soot.Unit;
 import soot.jimple.Jimple;
-import soot.singletons.Singletons;
-
-import java.util.Map;
 
 /**
  * Transformer that splits nested traps for Dalvik which does not support

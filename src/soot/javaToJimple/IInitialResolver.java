@@ -18,12 +18,12 @@
  */
 package soot.javaToJimple;
 
-import soot.SootClass;
-import soot.Type;
-
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+
+import soot.SootClass;
+import soot.Type;
 
 public interface IInitialResolver {
 	

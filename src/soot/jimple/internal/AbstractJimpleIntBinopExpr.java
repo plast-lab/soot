@@ -30,14 +30,10 @@
 
 package soot.jimple.internal;
 
-import soot.Type;
-import soot.Unit;
-import soot.Value;
-import soot.jimple.ConvertToBaf;
-import soot.jimple.Jimple;
-import soot.jimple.JimpleToBafContext;
+import soot.*;
+import soot.jimple.*;
 
-import java.util.List;
+import java.util.*;
 
 @SuppressWarnings("serial")
 abstract public class AbstractJimpleIntBinopExpr extends AbstractIntBinopExpr

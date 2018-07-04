@@ -25,8 +25,7 @@
 
 package soot.jimple.toolkits.annotation.arraycheck;
 
-import soot.Local;
-import soot.SootMethod;
+import soot.*;
 
 class ArrayReferenceNode
 {

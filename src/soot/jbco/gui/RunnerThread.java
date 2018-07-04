@@ -18,11 +18,8 @@
  */
 
 package soot.jbco.gui;
-
+import java.io.*;
 import javax.swing.*;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.InputStreamReader;
 public class RunnerThread implements Runnable {
 
   public boolean stopRun = false;

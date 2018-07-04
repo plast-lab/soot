@@ -18,21 +18,12 @@
  */
 
 package soot.jimple.spark.sets;
-
-import soot.G;
-import soot.PointsToSet;
-import soot.RefType;
-import soot.Type;
 import soot.jimple.ClassConstant;
 import soot.jimple.spark.internal.TypeManager;
-import soot.jimple.spark.pag.ClassConstantNode;
-import soot.jimple.spark.pag.Node;
-import soot.jimple.spark.pag.PAG;
-import soot.jimple.spark.pag.StringConstantNode;
+import soot.jimple.spark.pag.*;
 import soot.util.BitVector;
-
-import java.util.HashSet;
-import java.util.Set;
+import soot.*;
+import java.util.*;
 
 /** Abstract base class for implementations of points-to sets.
  * @author Ondrej Lhotak

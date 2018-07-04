@@ -19,11 +19,16 @@
 
 package soot.jbco;
 
-import soot.*;
-import soot.tagkit.LineNumberTag;
-
 import java.util.Iterator;
 import java.util.Map;
+
+import soot.Body;
+import soot.BodyTransformer;
+import soot.Transform;
+import soot.PackManager;
+import soot.PatchingChain;
+import soot.Unit;
+import soot.tagkit.LineNumberTag;
 
 public class LineNumberGenerator {
   

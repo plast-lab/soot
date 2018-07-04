@@ -29,13 +29,9 @@
 
 package soot.baf.internal;
 
-import soot.AbstractJasminClass;
-import soot.SootField;
-import soot.SootFieldRef;
-import soot.UnitPrinter;
-import soot.baf.FieldGetInst;
-import soot.baf.InstSwitch;
-import soot.util.Switch;
+import soot.*;
+import soot.baf.*;
+import soot.util.*;
 
 public class BFieldGetInst extends AbstractInst implements FieldGetInst
 {

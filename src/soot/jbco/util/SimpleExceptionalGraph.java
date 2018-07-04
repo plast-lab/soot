@@ -19,15 +19,12 @@
 
 package soot.jbco.util;
 
+import java.util.*;
+
 import soot.Body;
 import soot.Trap;
 import soot.Unit;
 import soot.toolkits.graph.TrapUnitGraph;
-
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
 
 /**
  * @author Michael Batchelder 

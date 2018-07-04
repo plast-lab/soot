@@ -1,12 +1,13 @@
 package soot.toolkits.scalar;
 
+import java.util.HashSet;
+import java.util.List;
+
 import org.junit.Test;
+
 import soot.Local;
 import soot.Unit;
 import soot.toolkits.graph.UnitGraph;
-
-import java.util.HashSet;
-import java.util.List;
 
 public class CombinedDUAnalysisTest {
 	

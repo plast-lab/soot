@@ -20,18 +20,12 @@
 package soot.shimple.internal;
 
 import soot.*;
-import soot.jimple.*;
-import soot.jimple.toolkits.scalar.CopyPropagator;
-import soot.jimple.toolkits.scalar.DeadAssignmentEliminator;
-import soot.shimple.PiExpr;
-import soot.shimple.Shimple;
-import soot.shimple.ShimpleBody;
-import soot.shimple.ShimpleFactory;
-import soot.toolkits.graph.*;
-import soot.util.HashMultiMap;
-import soot.util.MultiMap;
-
+import soot.util.*;
 import java.util.*;
+import soot.shimple.*;
+import soot.jimple.*;
+import soot.jimple.toolkits.scalar.*;
+import soot.toolkits.graph.*;
 
 /**
  * This class does the real high-level work.  It takes a Jimple body

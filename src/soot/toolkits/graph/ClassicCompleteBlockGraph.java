@@ -20,13 +20,8 @@
 
 package soot.toolkits.graph;
 
-import soot.Body;
-import soot.Trap;
-import soot.Unit;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
+import soot.*;
 
 /**
  *  <p>Represents a CFG where the nodes are {@link Block}s and the

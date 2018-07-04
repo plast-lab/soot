@@ -20,17 +20,32 @@
 
 package soot.dexpler;
 
-import soot.*;
-import soot.jimple.*;
-import soot.jimple.toolkits.scalar.LocalCreation;
-import soot.jimple.toolkits.scalar.UnreachableCodeEliminator;
-import soot.toolkits.graph.ExceptionalUnitGraph;
-import soot.toolkits.scalar.LocalDefs;
-
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+
+import soot.Body;
+import soot.BodyTransformer;
+import soot.Local;
+import soot.RefType;
+import soot.Scene;
+import soot.SootMethodRef;
+import soot.Type;
+import soot.Unit;
+import soot.Value;
+import soot.jimple.AssignStmt;
+import soot.jimple.DefinitionStmt;
+import soot.jimple.IntConstant;
+import soot.jimple.Jimple;
+import soot.jimple.LengthExpr;
+import soot.jimple.NullConstant;
+import soot.jimple.Stmt;
+import soot.jimple.StringConstant;
+import soot.jimple.toolkits.scalar.LocalCreation;
+import soot.jimple.toolkits.scalar.UnreachableCodeEliminator;
+import soot.toolkits.graph.ExceptionalUnitGraph;
+import soot.toolkits.scalar.LocalDefs;
 
 /**
  * If Dalvik bytecode contains statements using a base array which is always

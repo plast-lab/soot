@@ -29,10 +29,8 @@
 
 package soot.jimple;
 
-import soot.RefType;
-import soot.SootMethodRef;
-import soot.Type;
-import soot.util.Switch;
+import soot.*;
+import soot.util.*;
 
 public class MethodHandle extends Constant
 {

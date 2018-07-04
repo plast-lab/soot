@@ -1,9 +1,9 @@
 package soot.util;
 
+import soot.util.BitVector;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import soot.util.BitVector;
 
 /**
  * JUnit test suite for the BitVector.intersects() method

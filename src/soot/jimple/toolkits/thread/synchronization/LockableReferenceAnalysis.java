@@ -1,16 +1,14 @@
 package soot.jimple.toolkits.thread.synchronization;
 
 import soot.*;
-import soot.jimple.*;
-import soot.jimple.toolkits.infoflow.FakeJimpleLocal;
-import soot.jimple.toolkits.pointer.CodeBlockRWSet;
-import soot.jimple.toolkits.pointer.RWSet;
-import soot.toolkits.graph.BriefUnitGraph;
-import soot.toolkits.graph.UnitGraph;
-import soot.toolkits.scalar.BackwardFlowAnalysis;
-
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
+
+import soot.toolkits.graph.*;
+import soot.toolkits.scalar.*;
+import soot.jimple.*;
+import soot.jimple.toolkits.pointer.*;
+import soot.jimple.toolkits.infoflow.*;
 
 /**
  * Finds the set of local variables and/or references that represent all of

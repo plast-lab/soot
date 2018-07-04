@@ -1,10 +1,10 @@
 package soot.validation;
 
-import soot.SootClass;
-
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+
+import soot.SootClass;
 
 /**
  * Validates classes to make sure that the outer class chain is not recursive

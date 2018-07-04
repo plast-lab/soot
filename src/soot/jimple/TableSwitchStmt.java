@@ -29,9 +29,8 @@
 
 package soot.jimple;
 
-import soot.Unit;
-
-import java.util.List;
+import soot.*;
+import java.util.*;
 
 public interface TableSwitchStmt extends SwitchStmt
 {

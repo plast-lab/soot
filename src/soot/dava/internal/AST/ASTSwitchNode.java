@@ -20,20 +20,13 @@
 
 package soot.dava.internal.AST;
 
-import soot.UnitPrinter;
-import soot.Value;
-import soot.ValueBox;
-import soot.dava.internal.SET.SETNodeLabel;
-import soot.dava.toolkits.base.AST.ASTAnalysis;
-import soot.dava.toolkits.base.AST.ASTWalker;
-import soot.dava.toolkits.base.AST.TryContentsFinder;
-import soot.dava.toolkits.base.AST.analysis.Analysis;
-import soot.jimple.Jimple;
+import soot.*;
+import java.util.*;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
+import soot.jimple.*;
+import soot.dava.internal.SET.*;
+import soot.dava.toolkits.base.AST.*;
+import soot.dava.toolkits.base.AST.analysis.*;
 
 public class ASTSwitchNode extends ASTLabeledNode
 {

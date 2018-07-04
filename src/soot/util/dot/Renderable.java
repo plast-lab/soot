@@ -25,8 +25,7 @@
 
 package soot.util.dot;
 
-import java.io.IOException;
-import java.io.OutputStream;
+import java.io.*;
 
 public interface Renderable {
   void render(OutputStream device, int indent) throws IOException;

@@ -30,10 +30,9 @@
 
 package soot.grimp.internal;
 
-import soot.Unit;
-import soot.Value;
-import soot.grimp.Grimp;
-import soot.jimple.internal.JIfStmt;
+import soot.*;
+import soot.grimp.*;
+import soot.jimple.internal.*;
 
 public class GIfStmt extends JIfStmt
 {

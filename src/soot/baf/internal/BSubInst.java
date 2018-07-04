@@ -29,11 +29,9 @@
 
 package soot.baf.internal;
 
-import soot.AbstractJasminClass;
-import soot.Type;
-import soot.baf.InstSwitch;
-import soot.baf.SubInst;
-import soot.util.Switch;
+import soot.*;
+import soot.baf.*;
+import soot.util.*;
 
 public class BSubInst extends AbstractOpTypeInst implements SubInst
 {

@@ -29,11 +29,9 @@
 
 package soot.baf.internal;
 
-import soot.AbstractJasminClass;
-import soot.Type;
-import soot.baf.AndInst;
-import soot.baf.InstSwitch;
-import soot.util.Switch;
+import soot.*;
+import soot.baf.*;
+import soot.util.*;
 
 public class BAndInst extends AbstractOpTypeInst implements AndInst
 {

@@ -26,10 +26,14 @@
 
 package soot.toolkits.scalar;
 
-import java.util.*;
-
 import static java.util.Collections.emptyList;
 import static java.util.Collections.singletonList;
+
+import java.util.ArrayList;
+import java.util.BitSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.NoSuchElementException;
 
 /**
  * Reference implementation for a BoundedFlowSet. Items are stored in an Array.

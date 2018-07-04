@@ -20,13 +20,11 @@
 
 package soot.dava.internal.AST;
 
-import soot.UnitPrinter;
-import soot.dava.internal.SET.SETNodeLabel;
-import soot.dava.toolkits.base.AST.analysis.Analysis;
-import soot.jimple.ConditionExpr;
-
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+import soot.*;
+import soot.jimple.*;
+import soot.dava.internal.SET.*;
+import soot.dava.toolkits.base.AST.analysis.*;
 
 public class ASTWhileNode extends ASTControlFlowNode
 {

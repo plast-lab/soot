@@ -28,10 +28,27 @@
  */ 
 package soot.dava.toolkits.base.AST.structuredAnalysis;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+
 import soot.Local;
 import soot.Value;
 import soot.dava.DecompilationException;
-import soot.dava.internal.AST.*;
+import soot.dava.internal.AST.ASTDoWhileNode;
+import soot.dava.internal.AST.ASTForLoopNode;
+import soot.dava.internal.AST.ASTIfElseNode;
+import soot.dava.internal.AST.ASTIfNode;
+import soot.dava.internal.AST.ASTLabeledBlockNode;
+import soot.dava.internal.AST.ASTNode;
+import soot.dava.internal.AST.ASTStatementSequenceNode;
+import soot.dava.internal.AST.ASTSwitchNode;
+import soot.dava.internal.AST.ASTSynchronizedBlockNode;
+import soot.dava.internal.AST.ASTTryNode;
+import soot.dava.internal.AST.ASTUnaryBinaryCondition;
+import soot.dava.internal.AST.ASTUnconditionalLoopNode;
+import soot.dava.internal.AST.ASTWhileNode;
 import soot.dava.internal.SET.SETNodeLabel;
 import soot.dava.internal.javaRep.DAbruptStmt;
 import soot.jimple.RetStmt;
@@ -39,11 +56,6 @@ import soot.jimple.ReturnStmt;
 import soot.jimple.ReturnVoidStmt;
 import soot.jimple.Stmt;
 import soot.toolkits.scalar.FlowSet;
-
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
 
 /*
  * Sort of the mark phase of a mark and sweep dead code eliminator.

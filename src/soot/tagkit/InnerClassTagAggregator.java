@@ -28,15 +28,10 @@
 package soot.tagkit;
 
 
-import soot.G;
-import soot.Scene;
-import soot.SceneTransformer;
-import soot.SootClass;
+import soot.*;
 import soot.singletons.Singletons;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.Map;
+import java.util.*;
 
 /** The aggregator for LineNumberTable attribute. */
 public class InnerClassTagAggregator extends SceneTransformer {

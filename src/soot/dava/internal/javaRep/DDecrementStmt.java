@@ -19,10 +19,9 @@
 
 package soot.dava.internal.javaRep;
 
-import soot.UnitPrinter;
-import soot.Value;
-import soot.grimp.Grimp;
-import soot.grimp.internal.GAssignStmt;
+import soot.*;
+import soot.grimp.*;
+import soot.grimp.internal.*;
 
 public class DDecrementStmt extends GAssignStmt{
     public DDecrementStmt(Value variable, Value rvalue){

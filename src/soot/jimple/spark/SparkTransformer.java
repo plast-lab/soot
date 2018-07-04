@@ -18,8 +18,19 @@
  */
 
 package soot.jimple.spark;
+import java.util.Date;
+import java.util.Map;
 
-import soot.*;
+import soot.G;
+import soot.Local;
+import soot.PointsToAnalysis;
+import soot.Scene;
+import soot.SceneTransformer;
+import soot.SootClass;
+import soot.SootMethod;
+import soot.SourceLocator;
+import soot.Unit;
+import soot.Value;
 import soot.jimple.DefinitionStmt;
 import soot.jimple.FieldRef;
 import soot.jimple.ReachingTypeDumper;
@@ -27,19 +38,29 @@ import soot.jimple.Stmt;
 import soot.jimple.spark.builder.ContextInsensitiveBuilder;
 import soot.jimple.spark.geom.geomPA.GeomPointsTo;
 import soot.jimple.spark.ondemand.DemandCSPointsTo;
-import soot.jimple.spark.pag.*;
+import soot.jimple.spark.pag.AllocDotField;
+import soot.jimple.spark.pag.AllocNode;
+import soot.jimple.spark.pag.Node;
+import soot.jimple.spark.pag.PAG;
+import soot.jimple.spark.pag.PAG2HTML;
+import soot.jimple.spark.pag.PAGDumper;
+import soot.jimple.spark.pag.VarNode;
 import soot.jimple.spark.sets.P2SetVisitor;
 import soot.jimple.spark.sets.PointsToSetInternal;
-import soot.jimple.spark.solver.*;
+import soot.jimple.spark.solver.EBBCollapser;
+import soot.jimple.spark.solver.PropAlias;
+import soot.jimple.spark.solver.PropCycle;
+import soot.jimple.spark.solver.PropIter;
+import soot.jimple.spark.solver.PropMerge;
+import soot.jimple.spark.solver.PropWorklist;
+import soot.jimple.spark.solver.Propagator;
+import soot.jimple.spark.solver.SCCCollapser;
 import soot.jimple.toolkits.callgraph.CallGraphBuilder;
 import soot.options.SparkOptions;
 import soot.singletons.Singletons;
 import soot.tagkit.Host;
 import soot.tagkit.StringTag;
 import soot.tagkit.Tag;
-
-import java.util.Date;
-import java.util.Map;
 
 /** Main entry point for Spark.
  * @author Ondrej Lhotak

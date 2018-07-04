@@ -2,12 +2,8 @@
 
 package sablecc.soot.jimple.parser.lexer;
 
+import java.io.*;
 import sablecc.soot.jimple.parser.node.*;
-
-import java.io.BufferedInputStream;
-import java.io.DataInputStream;
-import java.io.IOException;
-import java.io.PushbackReader;
 
 @SuppressWarnings("nls")
 public class Lexer

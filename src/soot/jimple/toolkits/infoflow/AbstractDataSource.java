@@ -1,10 +1,9 @@
 package soot.jimple.toolkits.infoflow;
 
 import soot.*;
-import soot.util.Switch;
+import soot.util.*;
 
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 // Wraps any object as a Value
 

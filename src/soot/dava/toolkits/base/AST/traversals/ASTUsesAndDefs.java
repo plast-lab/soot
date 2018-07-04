@@ -30,20 +30,15 @@
 
 package soot.dava.toolkits.base.AST.traversals;
 
-import soot.Local;
-import soot.Value;
-import soot.ValueBox;
-import soot.dava.internal.AST.*;
-import soot.dava.internal.asg.AugmentedStmt;
-import soot.dava.toolkits.base.AST.analysis.DepthFirstAdapter;
-import soot.dava.toolkits.base.AST.structuredAnalysis.ReachingDefs;
-import soot.jimple.DefinitionStmt;
-import soot.jimple.Stmt;
+import soot.*;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
+
+import soot.jimple.*;
+import soot.dava.internal.asg.*;
+import soot.dava.internal.AST.*;
+import soot.dava.toolkits.base.AST.analysis.*;
+import soot.dava.toolkits.base.AST.structuredAnalysis.*;
 
 /*
  THE ALGORITHM USES THE RESULTS OF REACHINGDEFS STRUCTURAL FLOW ANALYSIS

@@ -25,18 +25,15 @@
 
 package soot.jimple.toolkits.graph;
 
-import soot.*;
-import soot.jimple.GotoStmt;
-import soot.jimple.IfStmt;
-import soot.jimple.Jimple;
 import soot.options.Options;
-import soot.toolkits.graph.Block;
-import soot.toolkits.graph.BlockGraph;
-import soot.toolkits.graph.BriefBlockGraph;
-import soot.util.Chain;
 
+import soot.*;
+import soot.util.*;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
+
+import soot.jimple.*;
+import soot.toolkits.graph.*;
 
 /**
  * "unrolls" the condition of while/for loops.<br>

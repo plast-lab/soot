@@ -19,16 +19,37 @@
 
 package soot.jbco.util;
 
-import soot.*;
-import soot.baf.*;
-import soot.jimple.Jimple;
-import soot.jimple.ThisRef;
-import soot.util.Chain;
-
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
+
+import soot.Local;
+import soot.PatchingChain;
+import soot.RefType;
+import soot.SootClass;
+import soot.SootMethod;
+import soot.SootField;
+import soot.Trap;
+import soot.Type;
+import soot.Unit;
+import soot.baf.IfCmpEqInst;
+import soot.baf.IfCmpGeInst;
+import soot.baf.IfCmpGtInst;
+import soot.baf.IfCmpLeInst;
+import soot.baf.IfCmpLtInst;
+import soot.baf.IfCmpNeInst;
+import soot.baf.IfEqInst;
+import soot.baf.IfGeInst;
+import soot.baf.IfGtInst;
+import soot.baf.IfLeInst;
+import soot.baf.IfLtInst;
+import soot.baf.IfNeInst;
+import soot.baf.IfNonNullInst;
+import soot.baf.IfNullInst;
+import soot.jimple.Jimple;
+import soot.jimple.ThisRef;
+import soot.util.Chain;
 
 /**
  * @author Michael Batchelder 

@@ -30,10 +30,7 @@
 
 package soot.util;
 
-import java.util.AbstractSet;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
+import java.util.*;
 
 /**
  * Provides an implementation of the Set object using java.util.Array

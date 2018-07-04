@@ -19,20 +19,14 @@
 
 package soot.dava.toolkits.base.misc;
 
-import soot.G;
-import soot.Scene;
-import soot.SootClass;
-import soot.dava.Dava;
-import soot.singletons.Singletons;
-import soot.util.IterableSet;
+import soot.*;
+import java.io.*;
+import java.util.*;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.StringTokenizer;
-import java.util.jar.JarFile;
+import soot.singletons.Singletons;
+import soot.util.*;
+import soot.dava.*;
+import java.util.jar.*;
 
 public class PackageNamer
 {

@@ -25,10 +25,8 @@
 
 
 package soot.util;
-
-import soot.Body;
-import soot.Unit;
-import soot.toolkits.graph.UnitGraph;
+import soot.toolkits.graph.*;
+import soot.*;
 
 import java.util.*;
 

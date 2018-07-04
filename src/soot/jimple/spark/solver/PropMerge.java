@@ -19,13 +19,10 @@
 
 package soot.jimple.spark.solver;
 
-import soot.G;
 import soot.jimple.spark.pag.*;
-import soot.jimple.spark.sets.P2SetVisitor;
-import soot.jimple.spark.sets.PointsToSetInternal;
-
-import java.util.Set;
-import java.util.TreeSet;
+import soot.jimple.spark.sets.*;
+import soot.*;
+import java.util.*;
 
 /**
  * Propagates points-to sets along pointer assignment graph using a merging of

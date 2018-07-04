@@ -1,13 +1,17 @@
 package soot.dexpler;
 
-import soot.*;
+import java.util.Map;
+
+import soot.Body;
+import soot.BodyTransformer;
+import soot.Local;
+import soot.Trap;
+import soot.Unit;
 import soot.javaToJimple.LocalGenerator;
 import soot.jimple.CaughtExceptionRef;
 import soot.jimple.IdentityStmt;
 import soot.jimple.Jimple;
 import soot.jimple.Stmt;
-
-import java.util.Map;
 
 /**
  * Transformer to ensure that all exception handlers pull the exception object.

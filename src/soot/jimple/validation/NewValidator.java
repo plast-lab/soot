@@ -19,14 +19,28 @@
 
 package soot.jimple.validation;
 
-import soot.*;
-import soot.jimple.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
+
+import soot.Body;
+import soot.Local;
+import soot.RefType;
+import soot.Unit;
+import soot.Value;
+import soot.ValueBox;
+import soot.jimple.AssignStmt;
+import soot.jimple.InvokeExpr;
+import soot.jimple.InvokeStmt;
+import soot.jimple.NewExpr;
+import soot.jimple.SpecialInvokeExpr;
+import soot.jimple.Stmt;
 import soot.toolkits.graph.BriefUnitGraph;
 import soot.toolkits.graph.UnitGraph;
 import soot.validation.BodyValidator;
 import soot.validation.ValidationException;
-
-import java.util.*;
 
 /**
  * A relatively simple validator. It tries to check whether

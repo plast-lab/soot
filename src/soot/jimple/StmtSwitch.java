@@ -29,7 +29,7 @@
 
 package soot.jimple;
 
-import soot.util.Switch;
+import soot.util.*;
 
 public interface StmtSwitch extends Switch
 {

@@ -29,8 +29,7 @@
 
 package soot.jimple;
 
-import soot.Unit;
-import soot.UnitBox;
+import soot.*;
 
 public interface GotoStmt extends Stmt
 {

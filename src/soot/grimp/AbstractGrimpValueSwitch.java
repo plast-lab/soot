@@ -26,7 +26,7 @@
 
 package soot.grimp;
 
-import soot.jimple.AbstractJimpleValueSwitch;
+import soot.jimple.*;
 
 public abstract class AbstractGrimpValueSwitch extends AbstractJimpleValueSwitch implements GrimpValueSwitch
 {

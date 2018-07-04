@@ -20,13 +20,11 @@
 package soot.jbco.jimpleTransformations;
 
 import soot.*;
+import soot.util.*;
 import soot.jbco.IJbcoTransform;
 import soot.jbco.util.Rand;
 import soot.jimple.*;
-import soot.util.Chain;
-
-import java.util.Iterator;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @author Michael Batchelder 

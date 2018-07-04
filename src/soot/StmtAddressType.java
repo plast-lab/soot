@@ -25,9 +25,8 @@
 
 
 package soot;
-
 import soot.singletons.Singletons;
-import soot.util.Switch;
+import soot.util.*;
 
 /**
  *   Soot representation of the Java type for a statement address. Implemented as

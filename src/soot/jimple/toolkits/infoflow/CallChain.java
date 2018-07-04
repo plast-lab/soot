@@ -1,12 +1,10 @@
 
 package soot.jimple.toolkits.infoflow;
 
-import soot.SootMethod;
-import soot.jimple.toolkits.callgraph.Edge;
+import soot.*;
+import soot.jimple.toolkits.callgraph.*;
 
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 /** CallChain written by Richard L. Halpert 2007-03-07
  *  Stores a list of edges, and has a "next pointer" to a continuation of the list

@@ -31,11 +31,8 @@
 
 package soot.coffi;
 
-import soot.ArrayType;
-import soot.RefType;
-import soot.Type;
-
-import java.io.PrintStream;
+import java.io.*;
+import soot.*;
 
 class TypeArray
 {

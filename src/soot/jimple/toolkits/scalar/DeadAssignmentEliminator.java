@@ -29,17 +29,56 @@
 
 
 package soot.jimple.toolkits.scalar;
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.Deque;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
-import soot.*;
-import soot.jimple.*;
+import soot.Body;
+import soot.BodyTransformer;
+import soot.G;
+import soot.IntType;
+import soot.Local;
+import soot.LongType;
+import soot.NullType;
+import soot.PhaseOptions;
+import soot.RefType;
+import soot.Scene;
+import soot.Timers;
+import soot.Trap;
+import soot.Type;
+import soot.Unit;
+import soot.UnknownType;
+import soot.Value;
+import soot.ValueBox;
+import soot.jimple.ArrayRef;
+import soot.jimple.AssignStmt;
+import soot.jimple.BinopExpr;
+import soot.jimple.CastExpr;
+import soot.jimple.DivExpr;
+import soot.jimple.FieldRef;
+import soot.jimple.InstanceFieldRef;
+import soot.jimple.IntConstant;
+import soot.jimple.InvokeExpr;
+import soot.jimple.Jimple;
+import soot.jimple.LongConstant;
+import soot.jimple.NewArrayExpr;
+import soot.jimple.NewExpr;
+import soot.jimple.NewMultiArrayExpr;
+import soot.jimple.NopStmt;
+import soot.jimple.NullConstant;
+import soot.jimple.RemExpr;
+import soot.jimple.Stmt;
 import soot.options.Options;
 import soot.singletons.Singletons;
 import soot.toolkits.scalar.LocalDefs;
 import soot.toolkits.scalar.LocalUses;
 import soot.toolkits.scalar.UnitValueBoxPair;
 import soot.util.Chain;
-
-import java.util.*;
 
 public class DeadAssignmentEliminator extends BodyTransformer
 {

@@ -21,9 +21,7 @@ package soot.javaToJimple;
 
 import soot.options.Options;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
+import java.util.*;
 
 public class Util {
 

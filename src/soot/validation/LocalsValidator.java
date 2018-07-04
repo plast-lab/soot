@@ -1,11 +1,11 @@
 package soot.validation;
 
+import java.util.List;
+
 import soot.Body;
 import soot.Local;
 import soot.Value;
 import soot.ValueBox;
-
-import java.util.List;
 
 public enum LocalsValidator implements BodyValidator {
 	INSTANCE;	

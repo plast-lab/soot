@@ -1,11 +1,11 @@
 package soot.validation;
 
+import java.util.List;
+
 import soot.SootClass;
 import soot.SootMethod;
 import soot.Type;
 import soot.VoidType;
-
-import java.util.List;
 
 /**
  * Validates classes to make sure that all method signatures are valid

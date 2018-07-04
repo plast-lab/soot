@@ -19,17 +19,22 @@
 
 package soot.toolkits.exceptions;
 
-import soot.*;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+
+import soot.Body;
+import soot.BodyTransformer;
+import soot.G;
+import soot.Scene;
+import soot.Trap;
+import soot.Unit;
 import soot.jimple.toolkits.scalar.UnreachableCodeEliminator;
 import soot.options.Options;
 import soot.singletons.Singletons;
 import soot.toolkits.graph.ExceptionalUnitGraph;
 import soot.toolkits.graph.ExceptionalUnitGraph.ExceptionDest;
 import soot.util.Chain;
-
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
 
 /**
  * A {@link BodyTransformer} that shrinks the protected area covered by each

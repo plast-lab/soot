@@ -19,7 +19,8 @@
 
 package soot.shimple;
 
-import soot.shimple.toolkits.graph.GlobalValueNumberer;
+import soot.*;
+import soot.shimple.toolkits.graph.*;
 import soot.toolkits.graph.*;
 
 /**

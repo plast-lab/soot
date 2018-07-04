@@ -25,10 +25,9 @@
 
 
 package soot.jimple;
-
-import soot.*;
-import soot.jimple.parser.JimpleAST;
 import soot.options.Options;
+import soot.*;
+import soot.jimple.parser.*;
 
 public class JimpleMethodSource implements MethodSource
 {

@@ -20,28 +20,18 @@
 package soot.dava.toolkits.base.AST.transformations;
 
 import soot.*;
-import soot.dava.DavaBody;
-import soot.dava.DecompilationException;
-import soot.dava.internal.AST.ASTMethodNode;
-import soot.dava.internal.AST.ASTNode;
-import soot.dava.internal.AST.ASTStatementSequenceNode;
-import soot.dava.internal.AST.ASTTryNode;
-import soot.dava.internal.asg.AugmentedStmt;
-import soot.dava.internal.javaRep.DInstanceFieldRef;
-import soot.dava.internal.javaRep.DIntConstant;
-import soot.dava.internal.javaRep.DStaticFieldRef;
-import soot.dava.internal.javaRep.DVariableDeclarationStmt;
-import soot.dava.toolkits.base.AST.analysis.DepthFirstAdapter;
-import soot.dava.toolkits.base.AST.structuredAnalysis.MustMayInitialize;
-import soot.dava.toolkits.base.AST.traversals.AllVariableUses;
-import soot.grimp.internal.GAssignStmt;
+import soot.dava.*;
 import soot.jimple.*;
-import soot.jimple.internal.JimpleLocal;
+import soot.jimple.internal.*;
+import soot.grimp.internal.*;
+import soot.dava.internal.AST.*;
+import soot.dava.internal.asg.*;
+import soot.dava.internal.javaRep.*;
+import soot.dava.toolkits.base.AST.analysis.*;
+import soot.dava.toolkits.base.AST.traversals.*;
+import soot.dava.toolkits.base.AST.structuredAnalysis.*;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 /**
  * Maintained by: Nomair A. Naeem

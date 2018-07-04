@@ -25,8 +25,8 @@
 
 package soot.baf;
 
-import soot.Local;
-import soot.jimple.Constant;
+import  soot.jimple.*;
+import soot.*;
 
 
 public interface IncInst extends Inst

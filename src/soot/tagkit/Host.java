@@ -25,7 +25,7 @@
 
 package soot.tagkit;
 
-import java.util.List;
+import java.util.*;
 
 // implemented by SootClass, SootField, SootMethod, Scene
 

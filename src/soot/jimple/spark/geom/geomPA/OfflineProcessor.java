@@ -19,15 +19,31 @@
 package soot.jimple.spark.geom.geomPA;
 
 
-import soot.SootClass;
+import java.util.ArrayList;
+import java.util.Deque;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.Set;
+
+import soot.jimple.AssignStmt;
+import soot.jimple.CastExpr;
 import soot.jimple.InstanceInvokeExpr;
 import soot.jimple.Stmt;
+import soot.RefLikeType;
+import soot.SootClass;
+import soot.SootMethod;
+import soot.Type;
+import soot.Value;
 import soot.jimple.spark.geom.dataRep.PlainConstraint;
 import soot.jimple.spark.geom.utils.ZArrayNumberer;
-import soot.jimple.spark.pag.*;
+import soot.jimple.spark.pag.GlobalVarNode;
+import soot.jimple.spark.pag.AllocNode;
+import soot.jimple.spark.pag.LocalVarNode;
+import soot.jimple.spark.pag.Node;
+import soot.jimple.spark.pag.SparkField;
+import soot.jimple.spark.pag.VarNode;
 import soot.jimple.spark.sets.P2SetVisitor;
-
-import java.util.*;
 
 /**
  * Implementation of pre-processing algorithms performed prior to the pointer analysis.

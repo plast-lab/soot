@@ -19,13 +19,11 @@
 
 package soot.toolkits.graph;
 
-import soot.Unit;
-import soot.jimple.Stmt;
-import soot.toolkits.scalar.ArraySparseSet;
-import soot.toolkits.scalar.FlowSet;
-import soot.toolkits.scalar.ForwardFlowAnalysis;
+import soot.*;
+import java.util.*;
 
-import java.util.List;
+import soot.jimple.Stmt;
+import soot.toolkits.scalar.*;
 
 // STEP 1: What are we computing?
 // SETS OF Units that are dominators => Use ArraySparseSet.

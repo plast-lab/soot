@@ -29,10 +29,7 @@ import soot.*;
 import soot.jimple.internal.*;
 import soot.singletons.Singletons;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 /**
  * The Jimple class contains all the constructors for the components of the

@@ -25,12 +25,27 @@
 package soot.dexpler;
 
 import org.jf.dexlib2.iface.Field;
-import org.jf.dexlib2.iface.value.*;
+import org.jf.dexlib2.iface.value.BooleanEncodedValue;
+import org.jf.dexlib2.iface.value.ByteEncodedValue;
+import org.jf.dexlib2.iface.value.CharEncodedValue;
+import org.jf.dexlib2.iface.value.DoubleEncodedValue;
+import org.jf.dexlib2.iface.value.EncodedValue;
+import org.jf.dexlib2.iface.value.FloatEncodedValue;
+import org.jf.dexlib2.iface.value.IntEncodedValue;
+import org.jf.dexlib2.iface.value.LongEncodedValue;
+import org.jf.dexlib2.iface.value.ShortEncodedValue;
+import org.jf.dexlib2.iface.value.StringEncodedValue;
+
 import soot.Modifier;
 import soot.Scene;
 import soot.SootField;
 import soot.Type;
-import soot.tagkit.*;
+import soot.tagkit.DoubleConstantValueTag;
+import soot.tagkit.FloatConstantValueTag;
+import soot.tagkit.IntegerConstantValueTag;
+import soot.tagkit.LongConstantValueTag;
+import soot.tagkit.StringConstantValueTag;
+import soot.tagkit.Tag;
 
 /**
  * This class represents all instance and static fields of a dex class. It holds

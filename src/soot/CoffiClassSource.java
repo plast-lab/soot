@@ -18,17 +18,13 @@
  */
 
 package soot;
-
 import soot.SourceLocator.FoundFile;
 import soot.javaToJimple.IInitialResolver;
 import soot.javaToJimple.IInitialResolver.Dependencies;
 import soot.options.Options;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.List;
+import java.io.*;
+import java.util.*;
 
 /** A class source for resolving from .class files through coffi.
  */

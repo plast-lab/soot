@@ -1,12 +1,9 @@
 package soot.jimple.toolkits.thread.synchronization;
 
-import soot.Value;
-import soot.jimple.toolkits.pointer.CodeBlockRWSet;
+import java.util.*;
+import soot.*;
 import soot.jimple.toolkits.pointer.RWSet;
-
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import soot.jimple.toolkits.pointer.CodeBlockRWSet;
 
 class CriticalSectionGroup implements Iterable<CriticalSection>
 {

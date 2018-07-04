@@ -1,14 +1,15 @@
 package soot.toDex;
 
-import org.jf.dexlib2.builder.Label;
-import org.jf.dexlib2.builder.MethodImplementationBuilder;
-import soot.jimple.Stmt;
-import soot.toDex.instructions.AbstractPayload;
-import soot.toDex.instructions.SwitchPayload;
-
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
+
+import org.jf.dexlib2.builder.Label;
+import org.jf.dexlib2.builder.MethodImplementationBuilder;
+
+import soot.jimple.Stmt;
+import soot.toDex.instructions.AbstractPayload;
+import soot.toDex.instructions.SwitchPayload;
 
 public class LabelAssigner {
 

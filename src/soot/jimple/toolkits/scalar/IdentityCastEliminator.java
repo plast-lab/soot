@@ -1,12 +1,17 @@
 package soot.jimple.toolkits.scalar;
 
-import soot.*;
-import soot.jimple.AssignStmt;
-import soot.jimple.CastExpr;
-import soot.singletons.Singletons;
-
 import java.util.Iterator;
 import java.util.Map;
+
+import soot.Body;
+import soot.BodyTransformer;
+import soot.G;
+import soot.Local;
+import soot.singletons.Singletons;
+import soot.Type;
+import soot.Unit;
+import soot.jimple.AssignStmt;
+import soot.jimple.CastExpr;
 
 /**
  * Transformer that removes unnecessary identity casts such as
