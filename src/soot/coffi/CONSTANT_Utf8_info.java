@@ -115,10 +115,6 @@ public class CONSTANT_Utf8_info extends cp_info {
       }
       return true;
    }
-   // Should never be called! But if it is, let's make it a performance problem, not a correctness one!
-   public int hashCode() {
-      return 1;
-   }
    /** Compares this entry with another cp_info object (which may reside
     * in a different constant pool).
     * @param constant_pool constant pool of ClassFile for this.

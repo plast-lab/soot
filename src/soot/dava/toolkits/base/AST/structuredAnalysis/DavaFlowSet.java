@@ -305,12 +305,6 @@ public class DavaFlowSet<T> extends AbstractFlowSet<T> {
 			return super.equals(otherFlow);
 	}
 
-	// Should never be called! But if it is, let's make it a performance problem, not a correctness one!
-	@Override
-	public int hashCode() {
-		return 1;
-	}
-
 	public void copy(FlowSet<T> destFlow) {
 		if (this == destFlow)
 			return;

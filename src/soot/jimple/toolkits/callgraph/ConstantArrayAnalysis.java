@@ -38,11 +38,6 @@ public class ConstantArrayAnalysis extends ForwardFlowAnalysis<Unit, ConstantArr
 					Arrays.equals(typeState, otherTypes.typeState) && 
 					mustAssign.equals(otherTypes.mustAssign);
 		}
-		// Should never be called! But if it is, let's make it a performance problem, not a correctness one!
-		@Override
-		public int hashCode() {
-			return 1;
-		}
 	}
 	
 	public static class ArrayTypes {
@@ -67,11 +62,7 @@ public class ConstantArrayAnalysis extends ForwardFlowAnalysis<Unit, ConstantArr
 			ArrayState otherState = (ArrayState) obj;
 			return otherState.active.equals(active) && Arrays.equals(state, otherState.state);
 		}
-		// Should never be called! But if it is, let's make it a performance problem, not a correctness one!
-		@Override
-		public int hashCode() {
-			return 1;
-		}
+
 		public void deepCloneLocalValueSlot(int localRef, int index) {
 			this.state[localRef] = (ArrayTypesInternal) this.state[localRef].clone();
 			this.state[localRef].typeState[index] = (BitSet) this.state[localRef].typeState[index].clone();

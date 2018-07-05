@@ -67,12 +67,6 @@ public class SegmentNode implements Comparable<SegmentNode> {
 
     }
 
-	// Should never be called! But if it is, let's make it a performance problem, not a correctness one!
-	@Override
-	public int hashCode() {
-		return 1;
-	}
-
 	@Override
 	public int compareTo(SegmentNode o) 
 	{

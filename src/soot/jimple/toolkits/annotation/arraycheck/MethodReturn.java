@@ -45,14 +45,9 @@ class MethodReturn
 	return m.getReturnType();
     }
 
-//    public int hashCode()
-//    {
-//	return m.hashCode()+m.getParameterCount();
-//    }
-    // Let's not risk the above. It prejudices what m.hashCode considers.
     public int hashCode()
     {
-        return m.hashCode();
+	return m.hashCode()+m.getParameterCount();
     }
 
     public boolean equals(Object other)

@@ -128,20 +128,9 @@ final class Operand {
 			return true;
 		return stackOrValue().equivTo(other.stackOrValue());
 	}
-
-    // For consistency
-    int equivHashCode() {
-		return stackOrValue().equivHashCode();
-	}
-
+	
 	@Override
 	public boolean equals(Object other) {
 		return other instanceof Operand && equivTo((Operand) other);
-	}
-
-	// Should never be called! But if it is, let's make it a performance problem, not a correctness one!
-	@Override
-	public int hashCode() {
-		return 1;
 	}
 }

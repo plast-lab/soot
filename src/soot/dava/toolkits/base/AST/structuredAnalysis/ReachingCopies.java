@@ -94,12 +94,6 @@ public class ReachingCopies extends StructuredAnalysis {
 			return false;
 		}
 
-		// Should never be called! But if it is, let's make it a performance problem, not a correctness one!
-		@Override
-		public int hashCode() {
-			return 1;
-		}
-
 		/**
 		 * Method checks whether local occurs in the left or right side of the
 		 * localpair different semantics than the usual contains method which

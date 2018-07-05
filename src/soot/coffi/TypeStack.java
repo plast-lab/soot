@@ -130,12 +130,6 @@ class TypeStack
             return false;
     }
 
-    // Should never be called! But if it is, let's make it a performance problem, not a correctness one!
-    @Override
-    public int hashCode() {
-        return 1;
-    }
-
     public TypeStack merge(TypeStack other)
     {
 

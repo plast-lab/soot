@@ -44,12 +44,6 @@ public class Double2ndHalfType extends Type
         return otherType instanceof Double2ndHalfType;
     }
 
-    // Should never be called! But if it is, let's make it a performance problem, not a correctness one!
-    @Override
-    public int hashCode() {
-        return 1;
-    }
-
     public String toString()
     {
         return "double2ndhalf";
