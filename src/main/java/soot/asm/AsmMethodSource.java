@@ -1368,7 +1368,10 @@ final class AsmMethodSource implements MethodSource {
       }
 
       // create ref to actual method
-      SootClass bclass = Scene.v().getSootClass(SootClass.INVOKEDYNAMIC_DUMMY_CLASS_NAME);
+      SootClass bclass;
+      synchronized (Scene.v()) {
+        bclass = Scene.v().getSootClass(SootClass.INVOKEDYNAMIC_DUMMY_CLASS_NAME);
+      }
 
       // Generate parameters & returnType & parameterTypes
       Type[] types = Util.v().jimpleTypesOfFieldOrMethodDescriptor(insn.desc);
