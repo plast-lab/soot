@@ -14,13 +14,13 @@ mainClassName = "soot.Main"
 archivesBaseName = "sootclasses"
 
 sourceSets {
-    main {
-        java {
-            srcDir 'src'
-        }
-    }
+  main {
+    java.srcDirs = ['src/main/' ]
+  }
+  generated {
+    java.srcDirs = ['generated/']
+  }
 }
-
 wrapper {
     gradleVersion = '4.9'
 }
@@ -28,16 +28,24 @@ wrapper {
 repositories {
 
     mavenLocal()
-
-    mavenCentral()
+    maven { url "http://centauri.di.uoa.gr:8081/artifactory/plast-deps" }
+    maven { url "http://centauri.di.uoa.gr:8081/artifactory/plast-public" }
 
     maven {
-        url "http://centauri.di.uoa.gr:8081/artifactory/plast-public"
+        name "soot-snapshot"
+        url "https://soot-build.cs.uni-paderborn.de/nexus/repository/soot-snapshot"
+    }
+
+    maven {
+        name "soot-release"
+        url "https://soot-build.cs.uni-paderborn.de/nexus/repository/soot-release"
     }
 }
 
 dependencies {
-    compile 'org.codehaus.groovy:groovy-all:2.4.7',             // Groovy
+    compile 'commons-io:commons-io:2.6',
+            'xmlpull:xmlpull:1.1.3.4d_b4_min',
+            'org.codehaus.groovy:groovy-all:2.4.7',             // Groovy
             'org.apache.ivy:ivy:2.5.0-rc1',                     // Apache Ivy (for downloading jars from maven repos)
             'org.ow2.asm:asm-debug-all:5.2',                    // Java Bytecode library
             'com.google.guava:guava:23.0',                      // GSON library
@@ -48,14 +56,16 @@ dependencies {
             'junit:junit:4.12',
             'org.jboss:jboss-common-core:2.5.0.Final',
             'org.mockito:mockito-all:1.10.19',
-            'org.powermock:powermock-module-junit4:1.6.6',
+            'org.powermock:powermock-mockito-release-full:1.6.1',
             'org.hamcrest:hamcrest-all:1.3',
             'org.slf4j:slf4j-api:1.7.24',
             'cglib:cglib:3.2.5',
             'ext:polyglot:1.0',
-            'ext:herosclasses:1.1',
+            'heros:heros:1.0.1-SNAPSHOT',
             'ext:AXMLPrinter:2.0',
-            'ext:jasminclasses:2.5.0'
+            'ext:jasminclasses:2.5.0',
+            'ext:axml:2.0.0-SNAPSHOT',
+            'org.hamcrest:hamcrest-all:1.3'
 }
 
 task fullJar(type: Jar) {
