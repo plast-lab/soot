@@ -98,11 +98,11 @@ publishing {
 release {
     scmAdapters = [
         net.researchgate.release.GitAdapter
-    ]    
+    ]
 
     failOnSnapshotDependencies = false
-    failOnUnversionedFiles = false
-    failOnCommitNeeded = false
+    failOnUnversionedFiles = true
+    failOnCommitNeeded = true
     
     git {
         requireBranch = 'develop'
