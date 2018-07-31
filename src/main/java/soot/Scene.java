@@ -761,15 +761,18 @@ public class Scene // extends AbstractHost
       throw new RuntimeException("already managed: " + c.getName());
     }
 
-    if(containsClass(c.getName()))
-      throw new RuntimeException("duplicate class: "+c.getName());		    // We ignore duplicate "invokedynamic" classes, unless
-    // they are not phantom (so the user may have defined them
-    // and thus they clash with Soot's class).
-    if (c.getName().equals(SootClass.INVOKEDYNAMIC_DUMMY_CLASS_NAME) && (!c.isPhantom))
-      throw new RuntimeException("Found non-phantom duplicate " +
-              SootClass.INVOKEDYNAMIC_DUMMY_CLASS_NAME);
-    else
-      throw new RuntimeException("duplicate class: "+c.getName());
+    if(containsClass(c.getName())) {
+      // We ignore duplicate "invokedynamic" classes, unless
+      // they are not phantom (so the user may have defined them
+      // and thus they clash with Soot's class).
+      if (c.getName().equals(SootClass.INVOKEDYNAMIC_DUMMY_CLASS_NAME)) {
+        if (!c.isPhantom)
+          throw new RuntimeException("Found non-phantom duplicate " +
+                  SootClass.INVOKEDYNAMIC_DUMMY_CLASS_NAME);
+      }
+      else
+        throw new RuntimeException("duplicate class: "+c.getName());
+    }
 
     classes.add(c);
     nameToClass.put(c.getName(), c.getType());

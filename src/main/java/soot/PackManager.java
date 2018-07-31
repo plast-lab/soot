@@ -1088,7 +1088,7 @@ public class PackManager {
     return bafBody;
   }
 
-  protected void writeClass(SootClass c) {
+  public void writeClass(SootClass c) {
     // Create code assignments for those values we only have in code
     // assignments
     if (Options.v().output_format() == Options.output_format_jimple) {
@@ -1270,7 +1270,7 @@ public class PackManager {
     }
   }
 
-  private void retrieveAllBodies() {
+  public void retrieveAllBodies() {
     // The old coffi front-end is not thread-safe
     int threadNum = Options.v().coffi() ? 1 : Runtime.getRuntime().availableProcessors();
     CountingThreadPoolExecutor executor
