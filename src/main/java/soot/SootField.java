@@ -42,7 +42,7 @@ public class SootField extends AbstractHost implements ClassMember, SparkField, 
   protected boolean isPhantom = false;
 
   /** Constructs a Soot field with the given name, type and modifiers. */
-  public SootField(String name, soot.Type type, int modifiers, Sting initialValue) {
+  public SootField(String name, soot.Type type, int modifiers, String initialValue) {
     this.name = name;
     this.type = type;
     this.modifiers = modifiers;
