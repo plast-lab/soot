@@ -38,13 +38,13 @@ repositories {
 
 dependencies {
     compile 'org.codehaus.groovy:groovy-all:2.4.7',             // Groovy
-            'org.apache.ivy:ivy:2.3.0',                         // Apache Ivy (for downloading jars from maven repos)
+            'org.apache.ivy:ivy:2.5.0-rc1',                     // Apache Ivy (for downloading jars from maven repos)
             'org.ow2.asm:asm-debug-all:5.2',                    // Java Bytecode library
-            'com.google.guava:guava:18.0',                       // GSON library
+            'com.google.guava:guava:23.0',                      // GSON library
             'org.apache.ant:ant:1.10.1',
-            'org.smali:dexlib2:2.2.4',                           // Dexlib2: library for reading/modifying/writing Android dex files
-            'org.smali:util:2.2.4',                              // Dexlib2 utilities
-            'org.javassist:javassist:3.21.0-GA',
+            'org.smali:dexlib2:2.2.4',                          // Dexlib2: library for reading/modifying/writing Android dex files
+            'org.smali:util:2.2.4',                             // Dexlib2: utilities
+            'org.javassist:javassist:3.23.1-GA',
             'junit:junit:4.12',
             'org.jboss:jboss-common-core:2.5.0.Final',
             'org.mockito:mockito-all:1.10.19',
