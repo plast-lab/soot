@@ -2,7 +2,7 @@ plugins {
     id 'java'
     id 'application'
     id 'maven-publish'
-    id 'net.researchgate.release' version '2.4.0'
+    id 'net.researchgate.release' version '2.6.0'
 }
 
 group = 'ext'
@@ -21,8 +21,8 @@ sourceSets {
     }
 }
 
-task wrapper(type: Wrapper) {
-    gradleVersion = '3.1'
+wrapper {
+    gradleVersion = '4.9'
 }
 
 repositories {
@@ -42,8 +42,8 @@ dependencies {
             'org.ow2.asm:asm-debug-all:5.2',                    // Java Bytecode library
             'com.google.guava:guava:18.0',                       // GSON library
             'org.apache.ant:ant:1.10.1',
-            'org.smali:dexlib2:2.2b4',                           // Dexlib2: library for reading/modifying/writing Android dex files
-            'org.smali:util:2.2b4',                              // Dexlib2 utilities
+            'org.smali:dexlib2:2.2.4',                           // Dexlib2: library for reading/modifying/writing Android dex files
+            'org.smali:util:2.2.4',                              // Dexlib2 utilities
             'org.javassist:javassist:3.21.0-GA',
             'junit:junit:4.12',
             'org.jboss:jboss-common-core:2.5.0.Final',
