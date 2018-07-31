@@ -148,7 +148,7 @@ public class HashChain<E> extends AbstractCollection<E> implements Chain<E> {
   }
 
   @Override
-  public void insertAfter(E toInsert, E point) {
+  public synchronized void insertAfter(E toInsert, E point) {
     if (toInsert == null) {
       throw new RuntimeException("Bad idea! You tried to insert " + " a null object into a Chain!");
     }
@@ -168,7 +168,7 @@ public class HashChain<E> extends AbstractCollection<E> implements Chain<E> {
     map.put(toInsert, newLink);
   }
 
-  public void insertAfter(Collection<? extends E> toInsert, E point) {
+  public synchronized void insertAfter(Collection<? extends E> toInsert, E point) {
     // if the list is null, treat it as an empty list
     if (toInsert == null) {
       throw new RuntimeException("Warning! You tried to insert " + "a null list into a Chain!");
@@ -182,7 +182,7 @@ public class HashChain<E> extends AbstractCollection<E> implements Chain<E> {
   }
 
   @Override
-  public void insertAfter(List<E> toInsert, E point) {
+  public synchronized void insertAfter(List<E> toInsert, E point) {
     insertAfter((Collection<? extends E>) toInsert, point);
   }
 
@@ -192,7 +192,7 @@ public class HashChain<E> extends AbstractCollection<E> implements Chain<E> {
   }
 
   @Override
-  public void insertBefore(E toInsert, E point) {
+  public synchronized void insertBefore(E toInsert, E point) {
     if (toInsert == null) {
       throw new RuntimeException("Bad idea! You tried to insert " + "a null object into a Chain!");
     }
@@ -438,7 +438,7 @@ public class HashChain<E> extends AbstractCollection<E> implements Chain<E> {
   }
 
   @Override
-  public void addFirst(E item) {
+  public synchronized void addFirst(E item) {
     if (item == null) {
       throw new RuntimeException("Bad idea!  You tried to insert " + "a null object into a Chain!");
     }
@@ -461,7 +461,7 @@ public class HashChain<E> extends AbstractCollection<E> implements Chain<E> {
   }
 
   @Override
-  public void addLast(E item) {
+  public synchronized void addLast(E item) {
     if (item == null) {
       throw new RuntimeException("Bad idea! You tried to insert " + " a null object into a Chain!");
     }
