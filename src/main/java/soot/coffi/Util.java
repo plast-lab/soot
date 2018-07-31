@@ -523,7 +523,7 @@ public class Util {
 
   private final Map<String, Type[]> cache = new HashMap<String, Type[]>();
 
-  public Type[] jimpleTypesOfFieldOrMethodDescriptor(String descriptor) {
+  public synchronized Type[] jimpleTypesOfFieldOrMethodDescriptor(String descriptor) {
     Type[] ret = null;
     synchronized (cache) {
       ret = cache.get(descriptor);

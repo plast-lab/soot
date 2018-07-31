@@ -405,6 +405,9 @@ public class SourceLocator {
 
     if (!Options.v().output_jar()) {
       b.append(getOutputDir());
+
+      if (rep == Options.output_format_jimple || rep == Options.output_format_shimple)
+        b.append(File.separatorChar + "jimple");
     }
 
     if ((b.length() > 0) && (b.charAt(b.length() - 1) != File.separatorChar)) {

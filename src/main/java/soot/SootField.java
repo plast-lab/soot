@@ -35,10 +35,19 @@ public class SootField extends AbstractHost implements ClassMember, SparkField, 
   protected String name;
   protected Type type;
   protected int modifiers;
+  protected String initialValue;
 
   protected boolean isDeclared = false;
   protected SootClass declaringClass;
   protected boolean isPhantom = false;
+
+  /** Constructs a Soot field with the given name, type and modifiers. */
+  public SootField(String name, soot.Type type, int modifiers, Sting initialValue) {
+    this.name = name;
+    this.type = type;
+    this.modifiers = modifiers;
+    this.initialValue = initialValue;
+  }
 
   /** Constructs a Soot field with the given name, type and modifiers. */
   public SootField(String name, Type type, int modifiers) {
@@ -214,5 +223,9 @@ public class SootField extends AbstractHost implements ClassMember, SparkField, 
     if (type instanceof RefLikeType) {
       Scene.v().getFieldNumberer().add(this);
     }
+  }
+
+  public String getInitialValue() {
+    return initialValue;
   }
 }
