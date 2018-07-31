@@ -278,7 +278,10 @@ public class Scene // extends AbstractHost
   }
 
   public void extendSootClassPath(String newPathElement) {
-    sootClassPath += File.pathSeparator + newPathElement;
+    if (sootClassPath == "")
+      sootClassPath = newPathElement;
+    else
+      sootClassPath += File.pathSeparator + newPathElement;
     SourceLocator.v().extendClassPath(newPathElement);
   }
 

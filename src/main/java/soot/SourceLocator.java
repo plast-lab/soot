@@ -421,7 +421,9 @@ public class SourceLocator {
         b.append(c.getName().replace('.', '_'));
         b.append("_Maker");
       } else {
-        b.append(c.getName());
+        // Generate tree structure for Jimple output or generation
+        // fails for deep hierarchies ("file name too long").
+        b.append(c.getName().replace('.', File.separatorChar));
       }
       b.append(getExtensionFor(rep));
 
