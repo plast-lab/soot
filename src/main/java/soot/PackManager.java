@@ -1088,7 +1088,7 @@ public class PackManager {
     return bafBody;
   }
 
-  public void writeClass(SootClass c) {
+  protected void writeClass(SootClass c) {
     // Create code assignments for those values we only have in code
     // assignments
     if (Options.v().output_format() == Options.output_format_jimple) {
@@ -1270,7 +1270,7 @@ public class PackManager {
     }
   }
 
-  public void retrieveAllBodies() {
+  private void retrieveAllBodies() {
     // The old coffi front-end is not thread-safe
     int threadNum = Options.v().coffi() ? 1 : Runtime.getRuntime().availableProcessors();
     CountingThreadPoolExecutor executor
@@ -1315,49 +1315,6 @@ public class PackManager {
         throw new RuntimeException(executor.getException());
       }
     }
-  }
-
-  private Iterator<SootClass> classes() {
-    return Scene.v().getClasses().snapshotIterator();
-  }
-
-  public void retrieveAllSceneClassesBodies() {
-    // The old coffi front-end is not thread-safe
-    int threadNum = Options.v().coffi() ? 1 : Runtime.getRuntime().availableProcessors();
-    CountingThreadPoolExecutor executor =  new CountingThreadPoolExecutor(threadNum,
-            threadNum, 30, TimeUnit.SECONDS,
-            new LinkedBlockingQueue<>());
-    Iterator<SootClass> clIt = classes();
-    while( clIt.hasNext() ) {
-      SootClass cl = clIt.next();
-      //note: the following is a snapshot iterator;
-      //this is necessary because it can happen that phantom methods
-      //are added during resolution
-      Iterator<SootMethod> methodIt = cl.getMethods().iterator();
-      while (methodIt.hasNext()) {
-        final SootMethod m = methodIt.next();
-        if( m.isConcrete() ) {
-          executor.execute(new Runnable() {
-            @Override
-            public void run() {
-              m.retrieveActiveBody();
-            }
-          });
-        }
-      }
-    }
-    // Wait till all method bodies have been loaded
-    try {
-      executor.awaitCompletion();
-      executor.shutdown();
-    } catch (InterruptedException e) {
-      // Something went horribly wrong
-      throw new RuntimeException("Could not wait for loader threads to "
-              + "finish: " + e.getMessage(), e);
-    }
-    // If something went wrong, we tell the world
-    if (executor.getException() != null)
-      throw (RuntimeException) executor.getException();
   }
 
 }
