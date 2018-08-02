@@ -160,20 +160,20 @@ public class LocalPacker extends BodyTransformer {
           // with different locals that share the same name which can
           // lead to all sorts of funny results. (SA, 2017-03-02)
 
-          // int signIndex = newLocal.getName().indexOf("#");
-          // if (signIndex != -1)
-          // newLocal.setName(newLocal.getName().substring(0, signIndex));
+           int signIndex = newLocal.getName().indexOf("#");
+           if (signIndex != -1)
+           newLocal.setName(newLocal.getName().substring(0, signIndex));
 
           // If we have a split local, let's find a better name for it
-          int signIndex = newLocal.getName().indexOf("#");
-          if (signIndex != -1) {
-            String newName = newLocal.getName().substring(0, signIndex);
-            if (usedLocalNames.add(newName)) {
-              newLocal.setName(newName);
-            } else {
-              // just leave it alone for now
-            }
-          }
+//          int signIndex = newLocal.getName().indexOf("#");
+//          if (signIndex != -1) {
+//            String newName = newLocal.getName().substring(0, signIndex);
+//            if (usedLocalNames.add(newName)) {
+//              newLocal.setName(newName);
+//            } else {
+//              // just leave it alone for now
+//            }
+//          }
 
           groupIntToLocal.put(pair, newLocal);
           body.getLocals().add(newLocal);
