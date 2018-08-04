@@ -423,7 +423,10 @@ public class SourceLocator {
       } else {
         // Generate tree structure for Jimple output or generation
         // fails for deep hierarchies ("file name too long").
-        b.append(c.getName().replace('.', File.separatorChar));
+        if (rep == Options.output_format_jimple || rep == Options.output_format_shimple)
+          b.append(c.getName().replace('.', File.separatorChar));
+        else
+          b.append(c.getName());
       }
       b.append(getExtensionFor(rep));
 

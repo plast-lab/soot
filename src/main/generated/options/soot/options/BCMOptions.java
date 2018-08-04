@@ -27,7 +27,7 @@ package soot.options;
 import java.util.*;
 
 /** Option parser for Busy Code Motion. */
-@javax.annotation.Generated(value = "Saxonica v3.0", date = "2018-07-31T15:10:35.136+03:00", comments = "from soot_options.xml")
+@javax.annotation.Generated(value = "Saxonica v3.0", date = "2018-08-04T15:30:36.556+03:00", comments = "from soot_options.xml")
 public class BCMOptions {
 
     private Map<String, String> options;
